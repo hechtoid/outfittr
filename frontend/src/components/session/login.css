@@ -1,11 +1,11 @@
 .login-form-box {
   display: flex;
   margin: auto; 
-  background: white;
-  height: 525px;
-  width: 600px;
+  /* background: white; */
+  /* height: 525px;
+  width: 600px; */
   border-radius: 15px;
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
 
 .login-form {
@@ -37,9 +37,11 @@
   text-decoration: none;
   color: darkgreen;
   font-weight: bold;
+
+
 }
 
-.login-link:hover {
+.signup-link:hover {
   text-decoration: underline;
   color: #05da66;
 }
@@ -50,4 +52,10 @@
   color: #008a2d;
   font-size: 40px;
   margin: 0;
+}
+
+.signup-text {
+  /* color: white; */
+  font-weight: bold;
+
 }

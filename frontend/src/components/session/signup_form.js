@@ -98,7 +98,7 @@ class SignupForm extends React.Component {
                 {this.renderErrors()}
                   <p>
                     Already have an account?  
-                    <Link className="login-link" to={'/login'}>Login</Link>
+                    <Link className="login-link" to={'/'}>Login</Link>
                   </p>
               </div>
             </form>
