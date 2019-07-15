@@ -23,7 +23,7 @@ class MainPage extends React.Component {
         <div className="splash-left-box">
           <h3> What is Outfittr?</h3>
             <p>Outfittr is a wardrobe app that generates an outfit for you to wear each day.  
-              Outfits will be tailored from your clorthes in your wardrobe based on guidelines uyou give it, 
+              Outfits will be tailored from your clorthes in your wardrobe based on guidelines you give it, 
               and other data like weather.
             </p>
           <h3> Try our Demo User Login and generate an outfit today!!!</h3>
