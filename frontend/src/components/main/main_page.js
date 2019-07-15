@@ -1,18 +1,21 @@
 import React from 'react';
 import './main.css'
+import LoginFormContainer from '../session/login_form_container'
 
 class MainPage extends React.Component {
 
   render() {
     return (
-     <div>
+     <div className="bg">
 
         <div className="splash-ctr-txt">
           <span>
-          <p>The Premiere Outfit</p>
-          <p>Generator Web App</p>
-          <p>That keeps You Looking Sharp</p>
-
+            The <strong>Premier</strong> Outfit
+            <br/>
+            Generator Web App
+            <br />
+            We Keep You Looking <italic>Sharp!!</italic>
+            <br />
           </span>
         </div>
      <div className="splash-container">
@@ -26,11 +29,11 @@ class MainPage extends React.Component {
           <h3> Try our Demo User Login and generate an outfit today!!!</h3>
         </div>
         <div className="splash-right-box">
-
+          <LoginFormContainer/>
         </div>
 
       </div>
-        <footer>
+        <footer className='footer'>
           Copyright &copy; 2019 Outfittr
         </footer>
      </div>

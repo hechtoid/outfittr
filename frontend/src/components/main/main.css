@@ -1,33 +1,60 @@
 
+
+.bg{
+    background-image: url("https://cdn.wallpapersafari.com/85/69/OdWKh6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .splash-container {
     display: flex;
     flex-direction: row;
-   
     justify-content: center;
     margin: 0 auto;
+    margin-bottom: 100px;
 
 }
 
-.splash-ctr-text {
+.splash-ctr-txt {
+display: flex;
+justify-content: center;
 text-align: center;
 margin: 0 auto;
-margin-top:50px;
-margin-left: 0 auto;
+padding-top:50px;
+
+margin-bottom: 50px;
+font-size: 18px;
+color: white;
+box-sizing: border-box;
+
 
 }
 
 .splash-left-box{
 /* display: flex; */
-border: 2px solid black;
-border-radius: 25px;
-width: 400px;
-padding-left: 25px;
+/* border: 2px solid black; */
+border-radius: 15px;
+background-color: transparent;
+width: 350px;
+height: 300px;
+padding: 50px 25px 0px 25px;
+/* background-color: rgba(195, 240, 229, 0.767); */
+color: white;
 
 }
 .splash-right-box {
 display: flex;
-border: 2px solid black;
-border-radius: 25px;
-width: 400px;
+/* border: 2px solid black; */
+border-radius: 15px;
+width: 350px;
+height: 300px;
 margin-left: 50px;
+padding: 50px 25px 0px 25px;
+background-color: white;
+}
+
+.footer {
+    text-align: center;
+    color: white;
 }
