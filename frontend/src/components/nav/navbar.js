@@ -12,10 +12,12 @@ class NavBar extends React.Component {
 
   // handle logout on modal which is opened through nav bar
 
-  // logoutUser(e) {
-  //     e.preventDefault();
-  //     this.props.logout();
-  // }
+  logoutUser(e) {
+      e.preventDefault();
+      this.props.logout();
+  }
+
+
 
   getLinks() {
       if (this.props.loggedIn) {
@@ -26,7 +28,7 @@ class NavBar extends React.Component {
                   <Link to={'/'} id="logo">Outfittr</Link>
                 </div>
                 <div className="right-div">
-                  <div className="profile-icon">
+                  <div className="profile-icon" >
                   </div>
                   {/* prof/user show modal goes here */}
                   {/* contact modal goes here */}
@@ -43,7 +45,7 @@ class NavBar extends React.Component {
             <div className="right-div">
               {/* only here for testing purposes when not logged in <div className="profile-icon">
               </div> */}
-              {/* <Contactus/> */}
+              {/* <Contactus logout={this.props.logout}/> */}
             </div>
           </div>
         );
