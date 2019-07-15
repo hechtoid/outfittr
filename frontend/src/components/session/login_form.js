@@ -78,7 +78,7 @@ class LoginForm extends React.Component {
             <input className="submit-btn" type="submit" value="Submit" />
             {this.renderErrors()}
             <br/>
-              <p>
+              <p className="signup-text">
                 Don't have an account? 
                 <Link className="signup-link" to={'/signup'}>Signup  </Link>
                 here!
