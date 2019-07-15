@@ -12,6 +12,7 @@ import TweetComposeContainer from './tweets/tweet_compose_container';
 
 const App = () => (
   <div>
+    <link href="https://fonts.googleapis.com/css?family=Timmana&display=swap" rel="stylesheet"></link>
     <NavBarContainer />
     <Switch>
       <AuthRoute exact path="/" component={MainPage} />

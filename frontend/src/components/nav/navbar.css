@@ -1,21 +1,23 @@
-.NavBar {
+.bar div{
     display: flex;
+    width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    background-color: #008a2d;
 }
 
-.NavBar button {
-    height: 20px;
+
+.center-div{
+    justify-content: center;
 }
 
-.Links1 {
-    width: 100px;
-    display: flex;
-    justify-content: space-between;
+#logo{
+    font-family: 'Timmana', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
-.Links2 {
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
+.right-div{
+    justify-content: flex-end;
 }
