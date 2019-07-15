@@ -1,0 +1,53 @@
+.login-form-box {
+  display: flex;
+  margin: auto; 
+  background: white;
+  height: 525px;
+  width: 600px;
+  border-radius: 15px;
+  margin-top: 10%;
+}
+
+.login-form {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-evenly; 
+}
+
+.submit-btn {
+  border-radius: 15px;
+  height: 30px;
+  width: 300px;
+  background-color: #008a2d;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background-color:#05da66;
+  color: black;
+}
+
+.signup-link {
+  padding: 0 5px;
+  text-decoration: none;
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+  color: #05da66;
+}
+
+.logo {
+  text-align: center;
+  font-family: 'Timmana', sans-serif;
+  color: #008a2d;
+  font-size: 40px;
+  margin: 0;
+}
