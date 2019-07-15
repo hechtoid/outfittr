@@ -12,16 +12,28 @@ body{
 
 .center-div{
     justify-content: center;
+    align-content: center;
 }
 
 #logo{
     font-family: 'Timmana', sans-serif;
     font-weight: 600;
     font-size: 28px;
+    padding: 15px 0px 10px 0px;
     text-decoration: none;
     color: #ffffff;
 }
 
 .right-div{
     justify-content: flex-end;
+}
+
+.profile-icon{
+    background-image: url('./profileuser.jpg');
+    background-size: contain;
+    max-width: 55px;
+    max-height: 55px;
+    background-position: 2.5px;
+    border-radius: 10px;
+    margin: 10px;
 }

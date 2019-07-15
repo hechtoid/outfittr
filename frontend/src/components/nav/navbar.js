@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-import './navbar.css'
+import { Link } from 'react-router-dom';
+import './navbar.css';
+import Contactus from './../contact_us/contact_us';
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -20,14 +21,13 @@ class NavBar extends React.Component {
       if (this.props.loggedIn) {
         return (
             <div>
-                <div>
-
-                </div>
+                <div></div>
                 <div className="center-div">
                   <Link to={'/'} id="logo">Outfittr</Link>
                 </div>
                 <div className="right-div">
-                  test content
+                  <div className="profile-icon">
+                  </div>
                   {/* prof/user show modal goes here */}
                   {/* contact modal goes here */}
                 </div>
@@ -36,16 +36,15 @@ class NavBar extends React.Component {
       } else {
         return (
           <div>
-            <div>
-              
-            </div>
+            <div></div>
             <div className="center-div">
               <Link to={'/'} id="logo">Outfittr</Link>
             </div>
-              <div className="right-div">
-                test content
-                {/* contact modal goes here */}
-              </div>
+            <div className="right-div">
+              {/* only here for testing purposes when not logged in <div className="profile-icon">
+              </div> */}
+              {/* <Contactus/> */}
+            </div>
           </div>
         );
       }
