@@ -73,3 +73,9 @@ Technical challenges:
 ### July 17
   - Production Readme **Full Team**
   - Polish up CSS
+## Technologies
+
+### Backend
+
+Our Backend utilizes MongoDB on an Express/Node stack. A Schema based database (noSQL) is efficient for our purposes: Loading a user profile, preferences, and a finite 'wardrobe' object.      
+A "POJOs all the way down" philosophy also translates smoothly to our Frontend, the React/Redux cycle, preferring a flattened state. 
