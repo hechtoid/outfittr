@@ -1,0 +1,33 @@
+
+.splash-container {
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.splash-ctr-text {
+text-align: center;
+margin: 0 auto;
+margin-top:50px;
+margin-left: 0 auto;
+
+}
+
+.splash-left-box{
+/* display: flex; */
+border: 2px solid black;
+border-radius: 25px;
+width: 400px;
+padding-left: 25px;
+
+}
+.splash-right-box {
+display: flex;
+border: 2px solid black;
+border-radius: 25px;
+width: 400px;
+margin-left: 50px;
+}
