@@ -1,11 +1,11 @@
 .login-form-box {
   display: flex;
   margin: auto; 
-  background: white;
-  height: 525px;
-  width: 600px;
+  /* background: white; */
+  /* height: 525px;
+  width: 600px; */
   border-radius: 15px;
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
 
 .login-form {
