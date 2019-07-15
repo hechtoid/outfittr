@@ -62,13 +62,13 @@ Modals will be used in the following places:
     * On the splash page for User show and update functionality
 
 Landing page:
-
+![LandingPage](/assets/images/Homepage.png)
 The wireframe above shows the switching Sign Up and Login Form as well as the 
 contact us button which displays a modal centered on the page of the group mates
 info.
 
 Splash Page:
-
+![SplashPage](/assets/images/Homepage_2.png)
 The wardrobe is the component on the right rendering category components which in
 turn hold links to clothing category item components which render CRUD functionality
 in a centered modal on the screen based on the original input action. 
@@ -80,7 +80,7 @@ next wireframe.
 Each clothing item will have a minus button next to it for fast deletion of items
 
 Wardrobe CRUD:
-
+![WardrobeCRUD](/assets/images/Homepage_3.png)
 A user show/edit page will be available as a modal which is opened through an icon 
 in the nav bar, allowing session destroy functionality as well.
 
