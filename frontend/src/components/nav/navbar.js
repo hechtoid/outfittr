@@ -1,43 +1,58 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-import './navbar.css'
+import { Link } from 'react-router-dom';
+import './navbar.css';
+import Contactus from './../contact_us/contact_us';
 
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
-    this.logoutUser = this.logoutUser.bind(this);
+    // this.logoutUser = this.logoutUser.bind(this);
     this.getLinks = this.getLinks.bind(this);
   }
 
-  logoutUser(e) {
-      e.preventDefault();
-      this.props.logout();
-  }
+  // handle logout on modal which is opened through nav bar
+
+  // logoutUser(e) {
+  //     e.preventDefault();
+  //     this.props.logout();
+  // }
 
   getLinks() {
       if (this.props.loggedIn) {
         return (
             <div>
-                <Link to={'/tweets'}>All Tweets</Link>
-                <Link to={'/profile'}>Profile</Link>
-                <Link to={'/new_tweet'}>Write a Tweet</Link>
-                <button onClick={this.logoutUser}>Logout</button>
+                <div></div>
+                <div className="center-div">
+                  <Link to={'/'} id="logo">Outfittr</Link>
+                </div>
+                <div className="right-div">
+                  <div className="profile-icon">
+                  </div>
+                  {/* prof/user show modal goes here */}
+                  {/* contact modal goes here */}
+                </div>
             </div>
         );
       } else {
         return (
-            <div>
-                <Link to={'/signup'}>Signup</Link>
-                <Link to={'/login'}>Login</Link>
+          <div>
+            <div></div>
+            <div className="center-div">
+              <Link to={'/'} id="logo">Outfittr</Link>
             </div>
+            <div className="right-div">
+              {/* only here for testing purposes when not logged in <div className="profile-icon">
+              </div> */}
+              {/* <Contactus/> */}
+            </div>
+          </div>
         );
       }
   }
 
   render() {
       return (
-        <div>
-            <h1>Outfittr</h1>
+        <div className="bar">
             { this.getLinks() }
         </div>
       );
