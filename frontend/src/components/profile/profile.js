@@ -18,11 +18,11 @@ class Profile extends React.Component {
         this.props.fetchUserTops(this.props.currentUser.id);
         this.props.fetchUserPants(this.props.currentUser.id);
     }
-    componentDidUpdate() {
-        console.log(this.props.currentUser.id)
-        this.props.fetchUserTops(this.props.currentUser.id);
-        this.props.fetchUserPants(this.props.currentUser.id);
-    }
+    // shouldComponentUpdate() {
+    //     console.log(this.props.currentUser.id)
+    //     this.props.fetchUserTops(this.props.currentUser.id);
+    //     this.props.fetchUserPants(this.props.currentUser.id);
+    // }
     
     componentWillReceiveProps(newState) {
         this.setState({ 
@@ -33,6 +33,7 @@ class Profile extends React.Component {
     }   
     
     render() {
+  
       if (this.state.tops.length === 0 && this.state.pants.length === 0) {
           return (<div>This user has no Clothes!</div>)
         } else {

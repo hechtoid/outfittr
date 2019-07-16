@@ -25,6 +25,8 @@ const App = () => (
       <ProtectedRoute exact path="/new_tweet" component={TweetComposeContainer} />
       <ProtectedRoute exact path="/new_tops" component={AddTopContainer} />
       <ProtectedRoute exact path="/new_pants" component={AddPantContainer} />
+      <ProtectedRoute component={ProfileContainer} />
+
     </Switch>
   </div>
 );

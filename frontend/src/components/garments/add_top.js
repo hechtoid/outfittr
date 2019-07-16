@@ -7,7 +7,7 @@ class AddTop extends React.Component {
 
       this.state = {
           name: "",
-          color: "",
+          color: "green",
           hot: true,
           formal: false,
           wet: false,
@@ -36,7 +36,6 @@ class AddTop extends React.Component {
     this.props.composeTop(top); 
     this.setState({text: ''});
     this.props.history.push('/profile');
-
   }
 
   updateName() {
@@ -80,11 +79,20 @@ class AddTop extends React.Component {
                         onChange={this.updateName()}
                         placeholder="Name your Cloths"
                     />
-                    <input type="text"
+                    {/* <input type="text"
                         value={this.state.color}
                         onChange={this.updateColor()}
                         placeholder="Pick a color"
-                      />
+                      /> */}
+              <select value={this.state.color} onChange={this.updateColor()}>
+                <option value="red">red</option>
+                <option value="orange">orange</option>
+                <option value="yellow">yellow</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="indigo">indigo</option>
+                <option value="violet">violet</option>
+              </select>
             <label>
               Cold?
                     <input type="checkbox"
