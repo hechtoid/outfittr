@@ -1,10 +1,14 @@
 import React from 'react';
+import './garment_box.css'
+
 
 class GarmentBox extends React.Component {
   render() {
     return (
-        <div>
-        <h3>One {this.props.color} {this.props.type} named {this.props.name}.</h3>
+        <div >
+          <div >
+            <div>{this.props.color} {this.props.type} called {this.props.name}.</div>
+          </div>
         </div>
     );
   }
