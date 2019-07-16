@@ -9,6 +9,8 @@ import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
 import ProfileContainer from './profile/profile_container';
 import TweetComposeContainer from './tweets/tweet_compose_container';
+import AddTopContainer from './garments/add_top_container';
+import AddPantContainer from './garments/add_pant_container';
 
 const App = () => (
   <div>
@@ -21,6 +23,8 @@ const App = () => (
       <ProtectedRoute exact path="/tweets" component={TweetsContainer} />
       <ProtectedRoute exact path="/profile" component={ProfileContainer} />
       <ProtectedRoute exact path="/new_tweet" component={TweetComposeContainer} />
+      <ProtectedRoute exact path="/new_tops" component={AddTopContainer} />
+      <ProtectedRoute exact path="/new_pants" component={AddPantContainer} />
     </Switch>
   </div>
 );

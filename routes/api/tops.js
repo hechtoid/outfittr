@@ -3,7 +3,7 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const passport = require('passport');
 
-const Pant = require('../../models/Pant');
+const Top = require('../../models/Top');
 // const validateTweetInput = require('../../validation/tweets');
 
 // router.get('/', (req, res) => {
@@ -15,11 +15,11 @@ const Pant = require('../../models/Pant');
 
 router.get('/user/:user_id', (req, res) => {
 //	console.log(req);
-    Pant.find({user: req.params.user_id})
+    Top.find({user: req.params.user_id})
         .sort({ date: -1 })
-        .then(pants => res.json(pants))
+        .then(tops => res.json(tops))
         .catch(err =>
-            res.status(404).json({ nopantsfound: 'No Pants found on that user' }
+            res.status(404).json({ notopsfound: 'No Tops found on that user' }
         )
     );
 });
@@ -33,6 +33,7 @@ router.get('/user/:user_id', (req, res) => {
 // });
 
 router.post('/',
+    
     passport.authenticate('jwt', { session: false }),
     (req, res) => {
       // const { errors, isValid } = validateTweetInput(req.body);
@@ -40,8 +41,10 @@ router.post('/',
       // if (!isValid) {
       //   return res.status(400).json(errors);
       // }
-  
-      const newPant = new Pant({
+      
+      // console.log(req)
+      
+      const newTop = new Top({
         name: req.body.name,
         color: req.body.color,
         hot: req.body.hot,
@@ -51,7 +54,7 @@ router.post('/',
         user: req.user.id
       });
   
-      newPant.save().then(pant => res.json(pant));
+      newTop.save().then(top => res.json(top));
     }
   );
 
