@@ -21,6 +21,9 @@ class AddPant extends React.Component {
   componentWillReceiveProps(nextProps) {
       this.setState({newPant: nextProps.newPant.text});
   }
+  componentDidMount() {
+    this.props.fetchUserPants(this.props.currentUser.id);
+  }
 
   handleSubmit(e) {
     e.preventDefault();
@@ -34,9 +37,7 @@ class AddPant extends React.Component {
     };
 
     this.props.composePant(pant); 
-    this.setState({text: ''});
-    this.props.history.push('/profile');
-
+    this.setState({name: ''});
   }
 
   updateName() {
@@ -81,11 +82,6 @@ class AddPant extends React.Component {
                         onChange={this.updateName()}
                         placeholder="Name your Cloths"
                     />
-                    {/* <input type="text"
-                        value={this.state.color}
-                        onChange={this.updateColor()}
-                        placeholder="Pick a color"
-                      /> */}
             <select value={this.state.color} onChange={this.updateColor()}>
               <option value="white">white</option> 
               <option value="red">red</option>
@@ -134,7 +130,20 @@ class AddPant extends React.Component {
                 </div>
             </form>
             <br />
-        <GarmentBox name={this.state.name} color={this.state.color} type="pant" />
+        <GarmentBox 
+        name={this.state.name} 
+        color={this.state.color} 
+        type="pant" 
+        />
+        <br />
+        {this.props.pants.map(pant => (
+          <GarmentBox
+            key={pant._id}
+            name={pant.name}
+            color={pant.color}
+            type="pant"
+          />
+        ))}
         </div>
     )
   }
