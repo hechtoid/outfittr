@@ -42,13 +42,23 @@ class Profile extends React.Component {
               <div>
                 <h3>Tops</h3>
               {this.state.tops.map(top => (
-                <GarmentBox key={top._id} name={top.name} color={top.color} type="top" />
+                <GarmentBox 
+                  key={top._id} 
+                  name={top.name} 
+                  color={top.color} 
+                  type="top"
+                />
                 ))}
               </div>
               <div>
                 <h3>Pants</h3>
               {this.state.pants.map(pant => (
-                <GarmentBox key={pant._id} name={pant.name} color={pant.color} type="pant" />
+                <GarmentBox 
+                  key={pant._id} 
+                  name={pant.name} 
+                  color={pant.color} 
+                  type="pant" 
+                />
               ))}
               </div>
               {/* {this.state.tweets.map(tweet => (
