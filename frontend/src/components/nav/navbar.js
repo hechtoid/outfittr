@@ -1,16 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
-import ContactusContainer from './../contact_us/contact_us_container';
+// import ContactUsModal from './../contact_us/contact_us';
 
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.getLinks = this.getLinks.bind(this);
     this.openUModal = this.openUModal.bind(this);
+    this.openCModal = this.openCModal.bind(this);
   }
 
   // handle logout on modal which is opened through nav bar
+
+  openCModal() {
+    this.props.openContactModal();
+  }
 
   openUModal(){
     this.props.openUserModal();
@@ -29,6 +34,11 @@ class NavBar extends React.Component {
                   <Link to={'/'} id="logo">Outfittr</Link>
                 </div>
                 <div className="right-div">
+                  <div className="contact-us-box">
+                    <div className="contact-us" onClick={this.openCModal}>
+                      Contact Us!
+                    </div>
+                  </div>
                   <div className="profile-icon" onClick={this.openUModal} >
                   </div>
                   {/* prof/user show modal goes here */}
@@ -46,6 +56,11 @@ class NavBar extends React.Component {
             <div className="right-div">
               {/* only here for testing purposes when not logged in <div className="profile-icon">
               </div> */}
+              <div className="contact-us-box">
+                <div className="contact-us" onClick={this.openCModal}>
+                  Contact Us!
+                </div>
+              </div>
               {/* <Contactus logout={this.props.logout}/> */}
             </div>
           </div>

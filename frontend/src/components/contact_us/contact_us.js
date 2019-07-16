@@ -1,46 +1,64 @@
-// import React from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
+import { closeContactModal } from './../../actions/ui_actions';
+import './contactusmodal.css';
 
-// class ContactUsModal extends React.Component {
 
-//     constructor(props) {
-//         super(props)
-//         this.logoutUser = this.logoutUser.bind(this);
-//         this.showModal = this.showModal.bind(this);
-//         this.switchModal = this.showModal.bind(this);
-//     }
+const msp = state => ({
+    loggedIn: state.session.isAuthenticated,
+    contactUsModalOpen: state.ui.contactUsModalOpen,
+})
 
-//     componentWillUnmount() {
-//         this.props.closeUserModal();
-//     }
+const mdp = dispatch => {
+    return {
+        closeContactUsModal: () => dispatch(closeContactModal()),
+    }
+}
 
-//     switchModal() {
-//         console.log(this.props.openUserModal)
-//         if (this.props.openUserModal) {
-//             return (this.showModal())
-//         }
-//         return (<div></div>)
-//     }
+function ContactUsModal({ contactUsModalOpen, closeContactUsModal }) {
+    if (contactUsModalOpen) {
+        return (
+            <div className="modal-background" onClick={closeContactUsModal}>
+                <div className="modal-child" onClick={e => e.stopPropagation()}>
+                    <div className="modal-box">
+                        <div className="modal-title">
+                            <div className="modal-title-box">
+                                Contact Us!
+                            </div>
+                            <div className="close-modal">
+                                <button className="close-modal-button" onClick={closeContactUsModal}>X</button>
+                            </div>
+                        </div>
+                        <div className="modal-body">
+                            <div className="group-member">
+                                <div id="Sam">
+                                    
+                                </div>
+                            </div>
+                            <div className="group-member">
+                                <div id="Nick">
 
-//     logoutUser(e) {
-//         e.preventDefault();
-//         this.props.closeUserModal();
-//         this.props.logout();
-//     }
+                                </div>
+                            </div>
+                            <div className="group-member">
+                                <div id="Marshall">
 
-//     showModal() {
-//         return (
-//             <button onClick={this.logoutUser}>logout</button>
-//         )
-//     }
+                                </div>
+                            </div>
+                            <div className="group-member">
+                                <div id="Ian">
 
-//     render() {
-//         return (
-//             <div className="modal">
-//                 {this.switchModal()}
-//             </div>
-//         )
-//     }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    } else {
+        return null;
+    }
+}
 
-// }
 
-// export default ContactUsModal;
+export default connect(msp, mdp)(ContactUsModal);

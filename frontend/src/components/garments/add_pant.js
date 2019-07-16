@@ -1,5 +1,6 @@
 import React from 'react';
 import GarmentBox from './garment_box';
+import './add_pant.css'
 
 class AddPant extends React.Component {
   constructor(props) {
@@ -74,15 +75,17 @@ class AddPant extends React.Component {
 
   render() {
     return (
-        <div>
+        <div className="create-page">
+          <div className="create-form">
             <form onSubmit={this.handleSubmit}>
                 <div>
                     <input type="text"
+                      className="garment-checkbox"
                         value={this.state.name}
                         onChange={this.updateName()}
                         placeholder="Name your Cloths"
                     />
-            <select value={this.state.color} onChange={this.updateColor()}>
+            <select className="garment-checkbox" value={this.state.color} onChange={this.updateColor()}>
               <option value="white">white</option> 
               <option value="red">red</option>
               <option value="orange">orange</option>
@@ -92,9 +95,9 @@ class AddPant extends React.Component {
               <option value="indigo">indigo</option>
               <option value="violet">violet</option>
               <option value="black">black</option>
-	    </select>
+	          </select>
                 <label>
-                  Cold?
+                  Hot?
                     <input type="checkbox"
                     className="garment-checkbox"
                     onChange={this.updateCold()}
@@ -128,22 +131,25 @@ class AddPant extends React.Component {
               
                     <input type="submit" value="Submit" />
                 </div>
-            </form>
+              </form>
+            </div>
+          <br />
+            <div>
+              <GarmentBox 
+                name={this.state.name} 
+                color={this.state.color} 
+                type="pant" 
+              />
             <br />
-        <GarmentBox 
-        name={this.state.name} 
-        color={this.state.color} 
-        type="pant" 
-        />
-        <br />
-        {this.props.pants.map(pant => (
-          <GarmentBox
-            key={pant._id}
-            name={pant.name}
-            color={pant.color}
-            type="pant"
-          />
-        ))}
+              {this.props.pants.map(pant => (
+              <GarmentBox
+                key={pant._id}
+                name={pant.name}
+                color={pant.color}
+                type="pant"
+              />
+            ))}
+          </div>
         </div>
     )
   }
