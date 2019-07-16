@@ -10,11 +10,11 @@ class MainPage extends React.Component {
 
         <div className="splash-ctr-txt">
           <span>
-            The <strong>Premier</strong> Outfit
+            The <strong>Premier</strong> 
             <br/>
-            Generator Web App
+            Outfit Generating Web App
             <br />
-            We Keep You Looking <italic>Sharp!!</italic>
+            We Keep You Looking <i>Sharp!!</i>
             <br />
           </span>
         </div>

@@ -37,9 +37,11 @@
   text-decoration: none;
   color: darkgreen;
   font-weight: bold;
+
+
 }
 
-.login-link:hover {
+.signup-link:hover {
   text-decoration: underline;
   color: #05da66;
 }
@@ -53,6 +55,7 @@
 }
 
 .signup-text {
-  color: white;
-  font-weight:bold;
+  /* color: white; */
+  font-weight: bold;
+
 }
