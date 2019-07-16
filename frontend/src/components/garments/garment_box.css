@@ -3,18 +3,24 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+}
+
+.flex-profile-page {
+  display: flex;
 }
 
 .garment-box-page {
   display: flex;
   flex-wrap: wrap;
+  width: 49vw;
 }
 
 .garment-display-item {
-  flex: 1 0 21%; /* explanation below */
+  flex: 1 0 25%; /* explanation below */
   margin: 30px;
   height: 300px;
-  max-width: 21%;
+  max-width: 27%;
   background-color: white;
   border-radius: 15px;
   text-align: center;
@@ -33,4 +39,12 @@
   font-family: 'Timmana', sans-serif;
   color: #008a2d;
   font-size: 30px;
+}
+
+.pants {
+  border-left: .5px solid white;
+}
+
+.shirts {
+  border-right: .5px solid white;
 }
