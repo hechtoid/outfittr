@@ -1,0 +1,36 @@
+.profile-page {
+  background-image: url("https://cdn.wallpapersafari.com/85/69/OdWKh6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.garment-box-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.garment-display-item {
+  flex: 1 0 21%; /* explanation below */
+  margin: 30px;
+  height: 300px;
+  max-width: 21%;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.wardrobe {
+  margin-left: 30px;
+  font-family: 'Timmana', sans-serif;
+  color:  #0893cc;
+  font-size: 40px;
+}
+
+.tops-n-bottoms {
+  margin-top: 95px;
+  text-align: center;
+  font-family: 'Timmana', sans-serif;
+  color: #008a2d;
+  font-size: 30px;
+}
