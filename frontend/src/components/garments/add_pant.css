@@ -1,0 +1,32 @@
+.create-page {
+  background-image: url("https://cdn.wallpapersafari.com/85/69/OdWKh6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-form {
+  text-align: center;
+  border: 2px solid black;
+  height: 100vw;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.198);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.garment-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20% auto;
+}
+
+label {
+  color: #0893cc;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Timmana', sans-serif;
+}

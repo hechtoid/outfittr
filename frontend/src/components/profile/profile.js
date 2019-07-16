@@ -38,37 +38,41 @@ class Profile extends React.Component {
           return (<div>This user has no Clothes!</div>)
         } else {
           return (
-            <div className="profile-page">
-              <br/>
-              <h2 className="wardrobe">Your Wardrobe</h2>
-              <div>
-                <h3 className="tops-n-bottoms">Tops</h3>
-                  <div className="garment-box-page">
-              {this.state.tops.map(top => (
-                <div className="garment-display-item">
-                    <GarmentBox 
-                    key={top._id} 
-                    name={top.name} 
-                    color={top.color} 
-                    type="top"
+            <div>
+              <div className="profile-page">
+                <br/>
+                <h2 className="wardrobe">Your Wardrobe</h2>
+                <div className="tops">
+                  <h3 className="tops-n-bottoms">Tops</h3>
+                    <div className="garment-box-page">
+                  {this.state.tops.map(top => (
+                    <div className="garment-display-item">
+                      <GarmentBox 
+                      key={top._id} 
+                      name={top.name} 
+                      color={top.color} 
+                      type="top"
+                      />
+                    </div>
+                  ))}
+                    </div>
+                  </div>
+                <div >
+              </div>
+                <div>
+                  <h3 className="tops-n-bottoms">Pants</h3>
+                    <div className="garment-box-page">
+                {this.state.pants.map(pant => (
+                  <div className="garment-display-item">
+                      <GarmentBox 
+                      key={pant._id} 
+                      name={pant.name} 
+                      color={pant.color} 
+                      type="pant" 
                     />
                   </div>
-                ))}
+                  ))}
                   </div>
-                </div>
-              <div >
-                <h3 className="tops-n-bottoms">Pants</h3>
-                  <div className="garment-box-page">
-              {this.state.pants.map(pant => (
-                <div className="garment-display-item">
-                    <GarmentBox 
-                    key={pant._id} 
-                    name={pant.name} 
-                    color={pant.color} 
-                    type="pant" 
-                  />
-                </div>
-                ))}
                 </div>
               </div>
               {/* {this.state.tweets.map(tweet => (

@@ -1,5 +1,5 @@
 .profile-page {
-  background-image: url("https://bankkita.com/images/closet-clipart-empty-closet-8.jpg");
+  background-image: url("https://cdn.wallpapersafari.com/85/69/OdWKh6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -14,6 +14,7 @@
   flex: 1 0 21%; /* explanation below */
   margin: 30px;
   height: 300px;
+  max-width: 21%;
   background-color: white;
   border-radius: 15px;
   text-align: center;
