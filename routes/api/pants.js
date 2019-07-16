@@ -13,7 +13,7 @@ const Pant = require('../../models/Pant');
 //         .catch(err => res.status(404).json({ notweetsfound: 'No tweets found' }));
 // });
 
-router.get('/pant/user/:user_id', (req, res) => {
+router.get('/user/:user_id', (req, res) => {
     Pant.find({user: req.params.user_id})
         .sort({ date: -1 })
         .then(pants => res.json(pants))
