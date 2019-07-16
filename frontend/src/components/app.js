@@ -10,6 +10,7 @@ import SignupFormContainer from './session/signup_form_container';
 import ProfileContainer from './profile/profile_container';
 import TweetComposeContainer from './tweets/tweet_compose_container';
 import UserModal from './user/user';
+import ContactUsModal from './contact_us/contact_us';
 import AddTopContainer from './garments/add_top_container';
 import AddPantContainer from './garments/add_pant_container';
 
@@ -18,7 +19,7 @@ const App = () => (
     <link href="https://fonts.googleapis.com/css?family=Timmana&display=swap" rel="stylesheet"></link>
     <NavBarContainer />
     <UserModal/>
-    {/* <ContactUsModal/> */}
+    <ContactUsModal/>
     <Switch>
       <AuthRoute exact path="/" component={MainPage} />
       <AuthRoute exact path="/signup" component={SignupFormContainer} />

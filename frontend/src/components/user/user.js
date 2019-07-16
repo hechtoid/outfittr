@@ -8,7 +8,7 @@ import './usermodal.css';
 const msp = state => ({
     loggedIn: state.session.isAuthenticated,
     userModalOpen: state.ui.userModalOpen,
-    // handle: state.session.user.handle
+    handle: (state.session.user ? state.session.user.handle : 'guest')
 })
 
 const mdp = dispatch => {
