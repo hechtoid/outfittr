@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-// export const getPants = () => {
-//   return axios.get('/api/pants')
-// };
+export const getPants = () => {
+  return axios.get('/api/pants')
+};
 
 export const getUserPants = id => {
   return axios.get(`/api/pants/user/${id}`)

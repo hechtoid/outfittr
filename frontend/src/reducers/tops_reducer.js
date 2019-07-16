@@ -1,6 +1,6 @@
 import { RECEIVE_TWEETS, RECEIVE_USER_TWEETS, RECEIVE_NEW_TWEET } from '../actions/tweet_actions';
   
-  const TweetsReducer = (state = { all: {}, user: {}, new: undefined }, action) => {
+  const TopsReducer = (state = { all: {}, user: {}, new: undefined }, action) => {
     Object.freeze(state);
     let newState = Object.assign({}, state);
     switch(action.type) {
@@ -18,4 +18,4 @@ import { RECEIVE_TWEETS, RECEIVE_USER_TWEETS, RECEIVE_NEW_TWEET } from '../actio
     }
   };
   
-  export default TweetsReducer;
+  export default TopsReducer;
