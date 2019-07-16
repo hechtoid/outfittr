@@ -20,7 +20,7 @@ class AddPant extends React.Component {
   } 
 
   componentWillReceiveProps(nextProps) {
-      this.setState({newPant: nextProps.newPant.text});
+    this.setState({newPant: nextProps.newPant.text, pants: nextProps.pants});
   }
   componentDidMount() {
     this.props.fetchUserPants(this.props.currentUser.id);
@@ -36,8 +36,7 @@ class AddPant extends React.Component {
       wet: this.state.wet,
       athleisure: this.state.athleisure
     };
-
-    this.props.composePant(pant); 
+    this.props.composePant(pant);
     this.setState({name: ''});
   }
 
