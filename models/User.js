@@ -14,10 +14,6 @@ const UserSchema = new Schema({
     type: String,
     required: true
   },
-  date: {
-    type: Date,
-    default: Date.now
-  },
   dob: {
     type: Date,
     default: Date.now
@@ -48,6 +44,10 @@ const UserSchema = new Schema({
   wardrobe: {
     pant: [],
     top: []
+  },
+  date: {
+    type: Date,
+    default: Date.now
   }
 })
 
