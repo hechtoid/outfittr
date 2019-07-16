@@ -21,6 +21,10 @@ class NavBar extends React.Component {
         return (
             <div>
                 <div></div>
+                <div className="left-div">
+                <Link to={'/new_pants'} id="Pants">add pant</Link>
+                <Link to={'/new_tops'} id="Shirts">add top</Link>
+                </div>
                 <div className="center-div">
                   <Link to={'/'} id="logo">Outfittr</Link>
                 </div>

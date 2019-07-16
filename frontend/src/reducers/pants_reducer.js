@@ -1,6 +1,6 @@
 import { RECEIVE_PANTS, RECEIVE_USER_PANTS, RECEIVE_NEW_PANT } from '../actions/pant_actions';
   
-  const PantsReducer = (state = { all: {}, user: {}, new: undefined }, action) => {
+  const PantsReducer = (state = { all: {}, user: {}, new: {} }, action) => {
     Object.freeze(state);
     let newState = Object.assign({}, state);
     switch(action.type) {
