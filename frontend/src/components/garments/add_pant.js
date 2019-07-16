@@ -20,7 +20,7 @@ class AddPant extends React.Component {
   } 
 
   componentWillReceiveProps(nextProps) {
-      this.setState({newPant: nextProps.newPant.text});
+    this.setState({newPant: nextProps.newPant.text, pants: nextProps.pants});
   }
   componentDidMount() {
     this.props.fetchUserPants(this.props.currentUser.id);
@@ -36,8 +36,7 @@ class AddPant extends React.Component {
       wet: this.state.wet,
       athleisure: this.state.athleisure
     };
-
-    this.props.composePant(pant); 
+    this.props.composePant(pant);
     this.setState({name: ''});
   }
 
@@ -134,20 +133,24 @@ class AddPant extends React.Component {
               </form>
             </div>
           <br />
-            <div>
-              <GarmentBox 
-                name={this.state.name} 
-                color={this.state.color} 
-                type="pant" 
-              />
+            <div className="garment-container">
+              <div className="demo-item">
+                <GarmentBox 
+                  name={this.state.name} 
+                  color={this.state.color} 
+                  type="pant" 
+                />
+              </div>
             <br />
               {this.props.pants.map(pant => (
-              <GarmentBox
-                key={pant._id}
-                name={pant.name}
-                color={pant.color}
-                type="pant"
-              />
+                <div className="garment-item">  
+                  <GarmentBox
+                  key={pant._id}
+                  name={pant.name}
+                  color={pant.color}
+                  type="pant"
+                  />
+                </div>  
             ))}
           </div>
         </div>
