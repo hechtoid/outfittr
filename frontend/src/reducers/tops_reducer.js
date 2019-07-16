@@ -1,6 +1,6 @@
 import { RECEIVE_TOPS, RECEIVE_USER_TOPS, RECEIVE_NEW_TOP } from '../actions/top_actions';
   
-  const TopsReducer = (state = { all: {}, user: {}, new: undefined }, action) => {
+  const TopsReducer = (state = { all: {}, user: {}, new: {} }, action) => {
     Object.freeze(state);
     let newState = Object.assign({}, state);
     switch(action.type) {

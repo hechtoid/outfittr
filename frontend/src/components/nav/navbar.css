@@ -9,7 +9,10 @@ body{
     background-color: #008a2d;
 }
 
-
+.left-div{
+    justify-content: space-between;
+    /* margin-right: 50px; */
+}
 .center-div{
     justify-content: center;
     align-content: center;
