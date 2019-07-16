@@ -69,8 +69,16 @@
     max-width: 50px;
 }
 
+.github:hover{
+    opacity: 0.85;
+}
+
 .linkedin{
     max-width: 50px;
+}
+
+.linkedin:hover{
+    opacity: 0.85;
 }
 
 .group-member{
@@ -95,6 +103,8 @@ div.names{
 .icons{
     margin-left: px;
 }
+
+
 
 #Sam{
     margin: auto auto;

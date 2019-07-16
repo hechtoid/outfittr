@@ -35,8 +35,12 @@ function ContactUsModal({ contactUsModalOpen, closeContactUsModal }) {
                                 <div className="group-member">
                                     <div className="names">Samuel Hecht</div>
                                     <div className="icons">
-                                        <a href="https://github.com/hechtoid" ><img src={github} className="github" alt="githubicon"></img></a>
-                                        <a href="" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                        <span className="github">
+                                            <a href="https://github.com/hechtoid" ><img src={github} className="github" alt="githubicon"></img></a>
+                                        </span>
+                                        <span className="linkedin">
+                                            <a href="" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -44,8 +48,12 @@ function ContactUsModal({ contactUsModalOpen, closeContactUsModal }) {
                                 <div className="group-member">
                                     <div className="names">Nicolas Piper</div>
                                     <div className="icons">
-                                        <a href="https://github.com/nicolaspiper" ><img src={github} className="github" alt="githubicon"></img></a>
-                                        <a href="https://www.linkedin.com/in/nicolaspiper/" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                        <span className="github">
+                                            <a href="https://github.com/nicolaspiper" ><img src={github} className="github" alt="githubicon"></img></a>
+                                        </span>
+                                        <span className="linkedin">
+                                            <a href="https://www.linkedin.com/in/nicolaspiper/" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -53,8 +61,12 @@ function ContactUsModal({ contactUsModalOpen, closeContactUsModal }) {
                                 <div className="group-member">
                                     <div className="names">Marshall Randolph</div>
                                     <div className="icons">
-                                        <a href="https://github.com/Msheezi" ><img src={github} className="github" alt="githubicon"></img></a>
-                                        <a href="https://www.linkedin.com/in/mrandolph/" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                        <span className="github">
+                                            <a href="https://github.com/Msheezi" ><img src={github} className="github" alt="githubicon"></img></a>
+                                        </span>
+                                        <span className="linkedin">
+                                            <a href="https://www.linkedin.com/in/mrandolph/" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -62,8 +74,12 @@ function ContactUsModal({ contactUsModalOpen, closeContactUsModal }) {
                                 <div className="group-member">
                                     <div className="names">Ian Ellison</div>
                                     <div className="icons">
-                                        <a href="https://github.com/ianellison87" ><img src={github} className="github" alt="githubicon"></img></a>
-                                        <a href="" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                        <span className="github">
+                                            <a href="https://github.com/ianellison87" ><img src={github} className="github" alt="githubicon"></img></a>
+                                        </span>
+                                        <span className="linkedin">
+                                            <a href="" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                        </span>
                                     </div>
                                 </div>
                             </div>

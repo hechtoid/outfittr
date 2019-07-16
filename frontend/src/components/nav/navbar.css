@@ -41,6 +41,10 @@ body{
     margin: 15px;
 }
 
+.profile-icon:hover{
+    cursor: pointer;
+}
+
 .contact-us-box{
     display: flex;
 }
@@ -55,4 +59,8 @@ body{
     text-decoration: none;
     color: #ffffff;
     margin: 10px 25px;
+}
+
+.contact-us span:hover{
+    cursor: pointer;
 }
