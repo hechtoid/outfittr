@@ -38,7 +38,7 @@ class AddTop extends React.Component {
 
     this.props.composeTop(top); 
     this.setState({name: ''});
-    window.location.reload();
+    // window.location.reload();
   }
 
   updateName() {
