@@ -10,8 +10,10 @@ body{
 }
 
 .left-div{
-    justify-content: space-between;
+    justify-content: flex-start;
+    padding: 15px 0px 0px 15px;
     /* margin-right: 50px; */
+    
 }
 .center-div{
     justify-content: center;
@@ -55,4 +57,36 @@ body{
     text-decoration: none;
     color: #ffffff;
     margin: 10px 25px;
+}
+
+#Pants {
+    text-decoration: none;
+    margin-right: 15px;
+    
+}
+
+#Shirts {
+    text-decoration: none;
+}
+
+#Pants img {
+    margin-top: 10px;
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+}
+
+#Shirts img {
+    margin-top: 10px;
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+}
+
+#Pants:hover {
+    color: lightgrey;
+}
+
+#Shirts:hover {
+    color: lightgrey;
 }

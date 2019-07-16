@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
+import pant from './pant_icon.png'
+import shirt from './shirt_icon.png'
 // import ContactUsModal from './../contact_us/contact_us';
 
 class NavBar extends React.Component {
@@ -25,10 +27,14 @@ class NavBar extends React.Component {
       if (this.props.loggedIn) {
         return (
             <div>
-                <div></div>
+                
                 <div className="left-div">
-                <Link to={'/new_pants'} id="Pants">add pant</Link>
-                <Link to={'/new_tops'} id="Shirts">add top</Link>
+              <Link to={'/new_pants'} id="Pants"><img alt="pants" src={pant} />
+              <br/>
+              Add Pants</Link>
+                <Link to={'/new_tops'} id="Shirts"><img alt="shirt" src={shirt}/>
+                <br />
+                Add Tops</Link>
                 </div>
                 <div className="center-div">
                   <Link to={'/'} id="logo">Outfittr</Link>
