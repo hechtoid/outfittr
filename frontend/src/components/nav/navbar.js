@@ -41,8 +41,10 @@ class NavBar extends React.Component {
                 </div>
                 <div className="right-div">
                   <div className="contact-us-box">
-                    <div className="contact-us" onClick={this.openCModal}>
-                      Contact Us!
+                    <div className="contact-us" >
+                      <span onClick={this.openCModal}>
+                        Contact Us!
+                      </span>
                     </div>
                   </div>
                   <div className="profile-icon" onClick={this.openUModal} >

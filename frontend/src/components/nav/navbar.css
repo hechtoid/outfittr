@@ -1,5 +1,5 @@
 body{
-	margin: 0;
+    margin: 0;
 }
 
 .bar div{
@@ -43,6 +43,10 @@ body{
     margin: 15px;
 }
 
+.profile-icon:hover{
+    cursor: pointer;
+}
+
 .contact-us-box{
     display: flex;
 }
@@ -59,6 +63,7 @@ body{
     margin: 10px 25px;
 }
 
+<<<<<<< HEAD
 #Pants {
     text-decoration: none;
     margin-right: 15px;
@@ -89,4 +94,8 @@ body{
 
 #Shirts:hover {
     color: lightgrey;
+=======
+.contact-us span:hover{
+    cursor: pointer;
+>>>>>>> master
 }

@@ -2,7 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { closeContactModal } from './../../actions/ui_actions';
 import './contactusmodal.css';
-
+import github from './GitHub-Mark-120px-plus.png';
+import linkedin from './LI-In-Bug.png';
 
 const msp = state => ({
     loggedIn: state.session.isAuthenticated,
@@ -30,24 +31,56 @@ function ContactUsModal({ contactUsModalOpen, closeContactUsModal }) {
                             </div>
                         </div>
                         <div className="modal-body">
-                            <div className="group-member">
-                                <div id="Sam">
-                                    
+                            <div id="Sam">
+                                <div className="group-member">
+                                    <div className="names">Samuel Hecht</div>
+                                    <div className="icons">
+                                        <span className="github">
+                                            <a href="https://github.com/hechtoid" ><img src={github} className="github" alt="githubicon"></img></a>
+                                        </span>
+                                        <span className="linkedin">
+                                            <a href="" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="group-member">
-                                <div id="Nick">
-
+                            <div id="Nick">
+                                <div className="group-member">
+                                    <div className="names">Nicolas Piper</div>
+                                    <div className="icons">
+                                        <span className="github">
+                                            <a href="https://github.com/nicolaspiper" ><img src={github} className="github" alt="githubicon"></img></a>
+                                        </span>
+                                        <span className="linkedin">
+                                            <a href="https://www.linkedin.com/in/nicolaspiper/" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="group-member">
-                                <div id="Marshall">
-
+                            <div id="Marshall">
+                                <div className="group-member">
+                                    <div className="names">Marshall Randolph</div>
+                                    <div className="icons">
+                                        <span className="github">
+                                            <a href="https://github.com/Msheezi" ><img src={github} className="github" alt="githubicon"></img></a>
+                                        </span>
+                                        <span className="linkedin">
+                                            <a href="https://www.linkedin.com/in/mrandolph/" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="group-member">
-                                <div id="Ian">
-
+                            <div id="Ian">
+                                <div className="group-member">
+                                    <div className="names">Ian Ellison</div>
+                                    <div className="icons">
+                                        <span className="github">
+                                            <a href="https://github.com/ianellison87" ><img src={github} className="github" alt="githubicon"></img></a>
+                                        </span>
+                                        <span className="linkedin">
+                                            <a href="" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
