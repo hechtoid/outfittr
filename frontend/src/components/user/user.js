@@ -36,8 +36,8 @@ function UserModal({ handle, loggedIn, userModalOpen, closeUserModal, logout }) 
                                 <button className="close-modal-button" onClick={ closeUserModal }>X</button>
                             </div>
                         </div>
-                        <div className="modal-body">
-                            <button onClick={ logout }>logout</button>
+                        <div className="modal-body-logout">
+                            <button className="logout-button" onClick={ logout }>logout</button>
                         </div>
                     </div>
                 </div>

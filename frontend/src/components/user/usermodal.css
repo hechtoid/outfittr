@@ -42,13 +42,13 @@
     
 }
 
-.modal-body{
+.modal-body-logout{
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
-.modal-body button{
+.logout-button{
   border-radius: 15px;
   height: 30px;
   width: 300px;
@@ -56,7 +56,9 @@
   margin-top: 20px;
   color: white;
   font-weight: bold;
-
+}
+.logout-button:hover{
+  cursor:pointer;
 }
 
 .close-modal-button{
@@ -66,5 +68,7 @@
   background-color: #008a2d;
   color: white;
   font-weight: bold;
-
+}
+.close-modal-button:hover{
+  cursor:pointer;
 }
