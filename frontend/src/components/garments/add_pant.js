@@ -8,7 +8,7 @@ class AddPant extends React.Component {
 
       this.state = {
           name: "",
-          color: "green",
+          color: "white",
           hot: true,
           formal: false,
           wet: false,

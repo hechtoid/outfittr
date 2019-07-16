@@ -7,7 +7,7 @@ class AddTop extends React.Component {
 
       this.state = {
           name: "",
-          color: "green",
+          color: "white",
           hot: true,
           formal: false,
           wet: false,
@@ -19,8 +19,7 @@ class AddTop extends React.Component {
   } 
 
   componentWillReceiveProps(nextProps) {
-    this.setState({ newTop: nextProps.newTop.text, tops: nextProps.tops});
-
+      this.setState({newTop: nextProps.newTop.text});
   }
   componentDidMount(){
     this.props.fetchUserTops(this.props.currentUser.id);
@@ -39,6 +38,7 @@ class AddTop extends React.Component {
 
     this.props.composeTop(top); 
     this.setState({name: ''});
+    // window.location.reload();
   }
 
   updateName() {
@@ -74,16 +74,18 @@ class AddTop extends React.Component {
 
   render() {
     return (
-        <div>
-            <form onSubmit={this.handleSubmit}>
-                <div>
-                    <input type="text"
-                        value={this.state.name}
-                        onChange={this.updateName()}
-                        placeholder="Name your Cloths"
-                    />
-              <select value={this.state.color} onChange={this.updateColor()}>
-                <option value="white">white</option> 
+      <div className="create-page">
+        <div className="create-form">
+          <form onSubmit={this.handleSubmit}>
+            <div>
+              <input type="text"
+                className="garment-checkbox"
+                value={this.state.name}
+                onChange={this.updateName()}
+                placeholder="Name your Cloths"
+              />
+              <select className="garment-checkbox" value={this.state.color} onChange={this.updateColor()}>
+                <option value="white">white</option>
                 <option value="red">red</option>
                 <option value="orange">orange</option>
                 <option value="yellow">yellow</option>
@@ -93,59 +95,65 @@ class AddTop extends React.Component {
                 <option value="violet">violet</option>
                 <option value="black">black</option>
               </select>
-            <label>
-              Cold?
+              <label>
+                Hot?
                     <input type="checkbox"
-                className="garment-checkbox"
-                onChange={this.updateCold()}
-                checked={!this.state.hot}
-              />
-            </label>
-            <label>
-              Formal?
+                  className="garment-checkbox"
+                  onChange={this.updateCold()}
+                  checked={!this.state.hot}
+                />
+              </label>
+              <label>
+                Formal?
                   <input type="checkbox"
-                className="garment-checkbox"
-                onChange={this.updateFormal()}
-                checked={this.state.formal}
-              />
-            </label>
-            <label>
-              Wet?
+                  className="garment-checkbox"
+                  onChange={this.updateFormal()}
+                  checked={this.state.formal}
+                />
+              </label>
+              <label>
+                Wet?
                   <input type="checkbox"
-                className="garment-checkbox"
-                onChange={this.updateWet()}
-                checked={this.state.wet}
-              />
-            </label>
-            <label>
-              Athleisure?
+                  className="garment-checkbox"
+                  onChange={this.updateWet()}
+                  checked={this.state.wet}
+                />
+              </label>
+              <label>
+                Athleisure?
                   <input type="checkbox"
-                className="garment-checkbox"
-                onChange={this.updateAthleisure()}
-                checked={this.state.athleisure}
-              />
-            </label>
+                  className="garment-checkbox"
+                  onChange={this.updateAthleisure()}
+                  checked={this.state.athleisure}
+                />
+              </label>
 
-                    <input type="submit" value="Submit" />
-                </div>
-            </form>
-            <br />
-        <GarmentBox 
-        name={this.state.name} 
-        color={this.state.color} 
-        type="top" 
-        />
-            <br />
-        {this.props.tops.map(top => (
-          <GarmentBox
-            key={top._id}
-            name={top.name}
-            color={top.color}
-            type="top"
-          />
-        ))}
-
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
         </div>
+        <br />
+        <div className="garment-container">
+          <div className="demo-item">
+            <GarmentBox
+              name={this.state.name}
+              color={this.state.color}
+              type="top"
+            />
+          </div>
+          <br />
+          {this.props.tops.map(top => (
+            <div className="garment-item">
+              <GarmentBox
+                key={top._id}
+                name={top.name}
+                color={top.color}
+                type="top"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     )
   }
 }
