@@ -26,6 +26,22 @@
 
 }
 
+.demo-user-btn {
+  border-radius: 15px;
+  height: 30px;
+  width: 300px;
+  background-color: #0893cc;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.demo-user-btn:hover {
+  cursor: pointer;
+  background-color:#4ccffd;
+  color: black;
+}
+
 .submit-btn:hover {
   cursor: pointer;
   background-color:#05da66;
