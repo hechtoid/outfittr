@@ -19,7 +19,8 @@ class AddTop extends React.Component {
   } 
 
   componentWillReceiveProps(nextProps) {
-      this.setState({newTop: nextProps.newTop.text});
+    this.setState({ newTop: nextProps.newTop.text, tops: nextProps.tops});
+
   }
   componentDidMount(){
     this.props.fetchUserTops(this.props.currentUser.id);
@@ -38,7 +39,6 @@ class AddTop extends React.Component {
 
     this.props.composeTop(top); 
     this.setState({name: ''});
-    // window.location.reload();
   }
 
   updateName() {
@@ -144,8 +144,7 @@ class AddTop extends React.Component {
             type="top"
           />
         ))}
-        
-        
+
         </div>
     )
   }
