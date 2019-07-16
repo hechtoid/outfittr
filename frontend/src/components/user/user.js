@@ -25,7 +25,20 @@ function UserModal({ loggedIn, userModalOpen, closeUserModal, logout }) {
         return (
             <div className="modal-background" onClick={closeUserModal}>
                 <div className="modal-child" onClick={e => e.stopPropagation()}>
-                    <button onClick={ logout }>logout</button>
+                    <div className="modal-box">
+                        <div className="modal-title">
+                            <div className="modal-title-box">
+                                Profile Settings
+                                {/* want to render username maybe "{name} Settings" */}
+                            </div>
+                            <div className="close-modal">
+                                <button className="close-modal-button" onClick={ closeUserModal }>X</button>
+                            </div>
+                        </div>
+                        <div className="modal-body">
+                            <button onClick={ logout }>logout</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
