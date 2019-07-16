@@ -26,7 +26,7 @@ class NavBar extends React.Component {
   getLinks() {
       if (this.props.loggedIn) {
         return (
-            <div>
+            <div className="navbar">
                 
                 <div className="left-div">
               <Link to={'/new_pants'} id="Pants"><img alt="pants" src={pant} />
