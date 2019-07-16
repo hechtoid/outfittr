@@ -85,6 +85,7 @@ class AddTop extends React.Component {
                         placeholder="Pick a color"
                       /> */}
               <select value={this.state.color} onChange={this.updateColor()}>
+                <option value="white">white</option> 
                 <option value="red">red</option>
                 <option value="orange">orange</option>
                 <option value="yellow">yellow</option>
@@ -92,6 +93,7 @@ class AddTop extends React.Component {
                 <option value="blue">blue</option>
                 <option value="indigo">indigo</option>
                 <option value="violet">violet</option>
+                <option value="black">black</option>
               </select>
             <label>
               Cold?
