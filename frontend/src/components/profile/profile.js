@@ -38,10 +38,10 @@ class Profile extends React.Component {
           return (<div>This user has no Clothes!</div>)
         } else {
           return (
-            <div>
-              <div className="profile-page">
-                <br/>
-                <h2 className="wardrobe">Your Wardrobe</h2>
+            <div className="profile-page">
+              <br/>
+              <h2 className="wardrobe">Your Wardrobe</h2>
+              <div className="flex-profile-page">
                 <div className="tops">
                   <h3 className="tops-n-bottoms">Tops</h3>
                     <div className="garment-box-page">
@@ -56,10 +56,10 @@ class Profile extends React.Component {
                     </div>
                   ))}
                     </div>
-                  </div>
-                <div >
-              </div>
-                <div>
+                </div>
+              <div >
+            </div>
+                <div className="pants">
                   <h3 className="tops-n-bottoms">Pants</h3>
                     <div className="garment-box-page">
                 {this.state.pants.map(pant => (

@@ -134,20 +134,24 @@ class AddPant extends React.Component {
               </form>
             </div>
           <br />
-            <div>
-              <GarmentBox 
-                name={this.state.name} 
-                color={this.state.color} 
-                type="pant" 
-              />
+            <div className="garment-container">
+              <div className="demo-item">
+                <GarmentBox 
+                  name={this.state.name} 
+                  color={this.state.color} 
+                  type="pant" 
+                />
+              </div>
             <br />
               {this.props.pants.map(pant => (
-              <GarmentBox
-                key={pant._id}
-                name={pant.name}
-                color={pant.color}
-                type="pant"
-              />
+                <div className="garment-item">  
+                  <GarmentBox
+                  key={pant._id}
+                  name={pant.name}
+                  color={pant.color}
+                  type="pant"
+                  />
+                </div>  
             ))}
           </div>
         </div>
