@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 import ContactusContainer from './../contact_us/contact_us_container';
-import UserContainer from './../user/user_container';
 
 class NavBar extends React.Component {
   constructor(props) {
