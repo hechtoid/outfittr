@@ -8,6 +8,7 @@ import './usermodal.css';
 const msp = state => ({
     loggedIn: state.session.isAuthenticated,
     userModalOpen: state.ui.userModalOpen,
+    // handle: state.session.user.handle
 })
 
 const mdp = dispatch => {
@@ -17,7 +18,7 @@ const mdp = dispatch => {
     }
 }
 
-function UserModal({ loggedIn, userModalOpen, closeUserModal, logout }) {
+function UserModal({ handle, loggedIn, userModalOpen, closeUserModal, logout }) {
     if (!userModalOpen || !loggedIn) {
         closeUserModal()
         return null;
@@ -28,7 +29,7 @@ function UserModal({ loggedIn, userModalOpen, closeUserModal, logout }) {
                     <div className="modal-box">
                         <div className="modal-title">
                             <div className="modal-title-box">
-                                Profile Settings
+                                {handle}'s Profile Settings
                                 {/* want to render username maybe "{name} Settings" */}
                             </div>
                             <div className="close-modal">
