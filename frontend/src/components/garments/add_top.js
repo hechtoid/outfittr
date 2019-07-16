@@ -21,6 +21,9 @@ class AddTop extends React.Component {
   componentWillReceiveProps(nextProps) {
       this.setState({newTop: nextProps.newTop.text});
   }
+  componentDidMount(){
+    this.props.fetchUserTops(this.props.currentUser.id);
+  }
 
   handleSubmit(e) {
     e.preventDefault();
@@ -34,8 +37,8 @@ class AddTop extends React.Component {
     };
 
     this.props.composeTop(top); 
-    this.setState({text: ''});
-    this.props.history.push('/profile');
+    this.setState({name: ''});
+    window.location.reload();
   }
 
   updateName() {
@@ -79,11 +82,6 @@ class AddTop extends React.Component {
                         onChange={this.updateName()}
                         placeholder="Name your Cloths"
                     />
-                    {/* <input type="text"
-                        value={this.state.color}
-                        onChange={this.updateColor()}
-                        placeholder="Pick a color"
-                      /> */}
               <select value={this.state.color} onChange={this.updateColor()}>
                 <option value="white">white</option> 
                 <option value="red">red</option>
@@ -132,7 +130,22 @@ class AddTop extends React.Component {
                 </div>
             </form>
             <br />
-        <GarmentBox name={this.state.name} color={this.state.color} type="top" />
+        <GarmentBox 
+        name={this.state.name} 
+        color={this.state.color} 
+        type="top" 
+        />
+            <br />
+        {this.props.tops.map(top => (
+          <GarmentBox
+            key={top._id}
+            name={top.name}
+            color={top.color}
+            type="top"
+          />
+        ))}
+        
+        
         </div>
     )
   }
