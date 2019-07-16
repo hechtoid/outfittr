@@ -14,6 +14,7 @@ const Pant = require('../../models/Pant');
 // });
 
 router.get('/user/:user_id', (req, res) => {
+//	console.log(req);
     Pant.find({user: req.params.user_id})
         .sort({ date: -1 })
         .then(pants => res.json(pants))
