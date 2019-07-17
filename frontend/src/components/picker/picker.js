@@ -1,6 +1,6 @@
 import React from 'react';
 import ShowBox from './show_box';
-
+import './picker.css'
 class Picker extends React.Component {
   constructor(props) {
       super(props);
@@ -8,10 +8,10 @@ class Picker extends React.Component {
       this.state = {
           // name: "",
           // color: "white",
-          // hot: true,
-          // formal: false,
-          // wet: false,
-          // athleisure: false  ,
+          hot: false,
+          formal: false,
+          wet: false,
+          athleisure: false,
           top: {name: 'shirt', color: 'white'},
           pant: { name: 'bottom', color: 'white'}
       }
@@ -23,6 +23,7 @@ class Picker extends React.Component {
     this.props.fetchUserTops(this.props.currentUser.id);
     this.props.fetchUserPants(this.props.currentUser.id);
   }
+
   handleSubmit(e) {
     e.preventDefault();
     let fit = {
@@ -51,33 +52,115 @@ class Picker extends React.Component {
     });
   }
 
+  updateHot() {
+    return e => this.setState({
+      hot: e.currentTarget.checked
+    });
+  }
+  updateFormal() {
+    return e => this.setState({
+      formal: e.currentTarget.checked
+    });
+  }
+  updateWet() {
+    return e => this.setState({
+      wet: e.currentTarget.checked
+    });
+  }
+  updateAthleisure() {
+    return e => this.setState({
+      athleisure: e.currentTarget.checked
+    });
+  }
+
   render() {
+    
     let tops=this.props.tops
     let pants=this.props.pants
-    // let pants=this.props.pants.filter((ele)=>
-    //   ele.wet
-    // )
-    //run .filters here!!!!
+    if (this.state.formal){
+        pants=pants.filter((ele)=>
+        ele.formal)
+        tops=tops.filter((ele)=>
+        ele.formal)
+    }
+    if (this.state.wet) {
+        pants = pants.filter((ele) =>
+        ele.wet)
+        tops = tops.filter((ele) =>
+        ele.wet)
+    }
+    if (this.state.hot){
+        pants=pants.filter((ele)=>
+        ele.hot)
+        tops=tops.filter((ele)=>
+        ele.hot)
+    }
+    
+    if (this.state.athleisure){
+        pants=pants.filter((ele)=>
+        ele.athleisure)
+        tops=tops.filter((ele)=>
+        ele.athleisure)
+    }
     return (
       <div className="picker-page">
+        <div className="picker-radios">
+            <label>
+              Hot?
+                <input type="checkbox"
+                className="picker-checkbox"
+                onChange={this.updateHot()}
+                checked={this.state.hot}
+              />
+            </label>
+            <label>
+              Formal?
+                <input type="checkbox"
+                className="picker-checkbox"
+                onChange={this.updateFormal()}
+                checked={this.state.formal}
+              />
+            </label>
+            <label>
+              Athleisure?
+                  <input type="checkbox"
+                className="picker-checkbox"
+                onChange={this.updateAthleisure()}
+                checked={this.state.athleisure}
+              />
+            </label>
+            <label>
+              Rain?
+                  <input type="checkbox"
+                className="pickr-checkbox"
+                onChange={this.updateWet()}
+                checked={this.state.wet}
+              />
+            </label>
+         
+        </div>
         <div className="picker-picker">
         <label>
-        <h3>Choose a Shirt</h3>
+        <h3>Top:</h3>
         <select className="picker-menu" 
         // value={this.state.top.name}
         onChange={this.updateTop()}
+        size={tops.length+1}
         >
+        <option disabled selected value>Select Shirts </option>
           {tops.map((top,index) => (
             <option value={index}>{top.name}</option>
             ))}
         </select>
         </label>
         <label>
-          <h3>Choose Pants</h3>
+          <h3>Bottom:</h3>
           <select className="picker-menu"
-            // value={this.state.pant.name}
+            // value='1'
             onChange={this.updatePant()}
+            size={pants.length + 1}
           >
+            <option disabled selected value>Pick Pants</option>
             {pants.map((pant, index) => (
               <option value={index}>{pant.name}</option>
             ))}

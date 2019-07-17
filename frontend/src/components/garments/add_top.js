@@ -37,7 +37,14 @@ class AddTop extends React.Component {
     };
 
     this.props.composeTop(top); 
-    this.setState({name: ''});
+    this.setState({
+      name: '', 
+      color: "white",
+      hot: false,
+      formal: false,
+      wet: false,
+      athleisure: false,
+      newPant: ""});
     // window.location.reload();
   }
 

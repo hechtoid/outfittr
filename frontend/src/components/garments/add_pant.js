@@ -37,7 +37,14 @@ class AddPant extends React.Component {
       athleisure: this.state.athleisure
     };
     this.props.composePant(pant);
-    this.setState({name: ''});
+    this.setState({
+      name: '',
+      color: "white",
+      hot: false,
+      formal: false,
+      wet: false,
+      athleisure: false,
+      newPant: ""});
   }
 
   updateName() {
