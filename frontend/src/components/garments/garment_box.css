@@ -56,12 +56,13 @@
 
 .show-container{
   display: flex;
+  margin-left: 100px;
 }
 .picker-picker{
   display: flex;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 .picker-menu{
   padding: 30px;
-  margin: 40px;
+  margin-right: 50px;
 }

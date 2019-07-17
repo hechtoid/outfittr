@@ -12,8 +12,8 @@ class Picker extends React.Component {
           // formal: false,
           // wet: false,
           // athleisure: false  ,
-          top: {name: 'choose a shirt'},
-          pant: {name: 'choose pants'}
+          top: {name: 'shirt', color: 'white'},
+        pant: { name: 'bottom', color: 'white'}
       }
       document.title = 'pickr @ outfittr'
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -32,8 +32,8 @@ class Picker extends React.Component {
       // formal: this.state.formal,
       // wet: this.state.wet,
       // athleisure: this.state.athleisure,
-      top: {color:'white'},
-      pant: { color: 'white'}
+      top: {},
+      pant: {}
     };
 
     // this.props.composeFit(fit); 
