@@ -88,7 +88,7 @@ class AddTop extends React.Component {
               className="clothing-input"
               value={this.state.name}
               onChange={this.updateName()}
-              placeholder="Name your Cloths"
+              placeholder="Name your Clothes"
             />
             <select className="garment-checkbox" className="color-btn" value={this.state.color} onChange={this.updateColor()}>
               <option value="white">white</option>
