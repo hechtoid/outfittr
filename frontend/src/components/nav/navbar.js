@@ -38,7 +38,8 @@ class NavBar extends React.Component {
                 </div>
                 <div className="center-div">
                   <Link to={'/'} id="logo">Outfittr</Link>
-                  <Link to={'/pickr'} id="logo-pickr">/pickr</Link>
+                  outfit icon here
+                  <Link to={'/pickr'} id="logo-pickr">pickr</Link>
 
                 </div>
                 <div className="right-div">
