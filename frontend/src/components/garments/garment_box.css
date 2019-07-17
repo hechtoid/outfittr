@@ -48,3 +48,8 @@
 .shirts {
   border-right: .5px solid white;
 }
+
+.garment-img{
+  width: 50%;
+  height: 50%;
+}

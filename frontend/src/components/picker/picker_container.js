@@ -1,9 +1,8 @@
 import { connect } from 'react-redux';
-import { fetchUserPants } from '../../actions/pant_actions';
 import { fetchUserTops } from '../../actions/top_actions';
-import { fetchUserOutfits } from '../../actions/outfit_actions';
-
-import Profile from './profile';
+import { fetchUserPants } from '../../actions/pant_actions';
+import { composeOutfit, fetchUserOutfits } from '../../actions/outfit_actions'
+import Picker from './picker';
 
 const mapStateToProps = (state) => {
   return {
@@ -18,8 +17,9 @@ const mapDispatchToProps = dispatch => {
   return {
     fetchUserPants: id => dispatch(fetchUserPants(id)),
     fetchUserTops: id => dispatch(fetchUserTops(id)),
-    fetchUserOutfits: id => dispatch(fetchUserOutfits(id))
+    fetchUserOutfits: id => dispatch(fetchUserOutfits(id)),
+    composeOutfit: data => dispatch(composeOutfit(data))
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Profile);
+export default connect(mapStateToProps, mapDispatchToProps)(Picker);

@@ -1,25 +1,25 @@
 import React from 'react';
-import './garment_box.css';
-import black_pant from './black_pant.png'
-import blue_pant from './blue_pant.png'
-import green_pant from './green_pant.png'
-import orange_pant from './orange_pant.png'
-import indigo_pant from './indigo_pant.png'
-import red_pant from './red_pant.png'
-import violet_pant from './violet_pant.png'
-import white_pant from './white_pant.png'
-import yellow_pant from './yellow_pant.png'
-import black_top from './black_top.png'
-import blue_top from './blue_top.png'
-import green_top from './green_top.png'
-import orange_top from './orange_top.png'
-import indigo_top from './indigo_top.png'
-import red_top from './red_top.png'
-import violet_top from './violet_top.png'
-import white_top from './white_top.png'
-import yellow_top from './yellow_top.png'
+import '../garments/garment_box.css';
+import black_pant from '../garments/black_pant.png'
+import blue_pant from '../garments/blue_pant.png'
+import green_pant from '../garments/green_pant.png'
+import orange_pant from '../garments/orange_pant.png'
+import indigo_pant from '../garments/indigo_pant.png'
+import red_pant from '../garments/red_pant.png'
+import violet_pant from '../garments/violet_pant.png'
+import white_pant from '../garments/white_pant.png'
+import yellow_pant from '../garments/yellow_pant.png'
+import black_top from '../garments/black_top.png'
+import blue_top from '../garments/blue_top.png'
+import green_top from '../garments/green_top.png'
+import orange_top from '../garments/orange_top.png'
+import indigo_top from '../garments/indigo_top.png'
+import red_top from '../garments/red_top.png'
+import violet_top from '../garments/violet_top.png'
+import white_top from '../garments/white_top.png'
+import yellow_top from '../garments/yellow_top.png'
 
-class GarmentBox extends React.Component {
+class ShowBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -129,11 +129,12 @@ switcher(){
     }
 }
 componentWillReceiveProps(nextProps) {
-    this.setState({
+  if (nextProps.color !== this.state.color) {this.setState({
       imageName: `${nextProps.color}_${nextProps.type}`,
       color: `${this.props.color}`})
     this.switcher()
   }
+}
 
   componentDidUpdate(){
     if (this.props.color !== this.state.color){
@@ -145,15 +146,14 @@ componentWillReceiveProps(nextProps) {
 componentDidMount(){
   this.switcher()
   }
-
   render() {
     return (
       <div className={this.state.cssClass}>
-        <div > A {this.props.type} called {this.props.name}.
+        <div > <h2>A {this.props.type} called {this.props.name}.</h2>
         </div>
         <img className="garment-img" src={this.state.image} alt={this.props.color}></img>
         </div>
     );
   }
 }
-export default GarmentBox;
+export default ShowBox;

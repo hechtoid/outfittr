@@ -6,29 +6,26 @@ class Profile extends React.Component {
         super(props);
 
         this.state = {
-            tweets: [],
             tops: [],
-            pants: []
+            pants: [],
+            outfits: []
         }
+      document.title = 'outfittr wardrobe'
+
     }
     
     componentWillMount() {
         console.log(this.props.currentUser.id)
-        this.props.fetchUserTweets(this.props.currentUser.id);
         this.props.fetchUserTops(this.props.currentUser.id);
         this.props.fetchUserPants(this.props.currentUser.id);
+      this.props.fetchUserOutfits(this.props.currentUser.id);
     }
-    // shouldComponentUpdate() {
-    //     console.log(this.props.currentUser.id)
-    //     this.props.fetchUserTops(this.props.currentUser.id);
-    //     this.props.fetchUserPants(this.props.currentUser.id);
-    // }
     
     componentWillReceiveProps(newState) {
         this.setState({ 
-          tweets: newState.tweets,
           tops: newState.tops,
-          pants: newState.pants
+          pants: newState.pants,
+          outfits: newState.outfits
          });
     }   
     
@@ -75,9 +72,6 @@ class Profile extends React.Component {
                   </div>
                 </div>
               </div>
-              {/* {this.state.tweets.map(tweet => (
-                <TweetBox key={tweet._id} text={tweet.text} />
-              ))} */}
             </div>
           );
         }

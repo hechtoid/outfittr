@@ -6,9 +6,9 @@ placeholder for heroku link
 
 ## Background and Overview
 
-Outfittr is a Web App designed to take the guesswork out of choosing one's outfit
-for the day. This project will pull together some challenges to create a finished
-product. These challenges include:
+Outfittr is a Web App designed to take the guesswork out of choosing your outfit
+for the day. This project will pull together a diverse sampling of the skills we've learned.    
+Here are some challenges we foresee overcoming on our way to a finished product:
 
 * Software Engineering: Implementation of the MERN tech stack to develop a fully
 functional web app and associated logic for outfit selection.
@@ -29,15 +29,13 @@ custom and less interchangeable nature of women's clothing.
 1. User Auth
     * functional Sign up and Login forms that switch on the landing page
 2. Seeded Wardrobe
-    * Wardrobe items and categories are seeded and functional in order to generate
-    a random outfit.
-3. Outfit generation
+    * Wardrobe items and categories are seeded and functional in order to generate a random outfit.    
+3. Wardrobe Item CRUD
+    * Full create, show, edit, update, and delete functionality of all wardrobe items.
+4. Outfit generation
     * Generate an outfit randomly at first
-    * "Smartly" generate a new outfits based on user restrictions and inputs
-4. Wardrobe Item CRUD
-    * Full create, show, edit, update, and delete functionality of all wardrobe 
-    items.
-
+    * Automagically generate a new outfits based on user restrictions and inputs
+    
 ### Backend
 
 Our Backend utilizes MongoDB on an Express/Node stack. A Schema based database (noSQL) is efficient for our purposes: Loading a user profile, preferences, and a finite 'wardrobe' object.      
@@ -95,7 +93,7 @@ in the nav bar, allowing session destroy functionality as well.
 
 ### July 13 and 14
   - User Auth -  **Full Team**
-  - Decide on MVP's and app overview - **Nick**
+  - Decide on MVPs and app overview - **Nick**
   - Proposal - **Full Team**  
 
 ### July 15 - Continue and complete the basic work from Sunday - **All**

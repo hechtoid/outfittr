@@ -13,6 +13,7 @@ import UserModal from './user/user';
 import ContactUsModal from './contact_us/contact_us';
 import AddTopContainer from './garments/add_top_container';
 import AddPantContainer from './garments/add_pant_container';
+import PickerContainer from './picker/picker_container'
 import './app.css';
 
 const App = () => (
@@ -25,12 +26,11 @@ const App = () => (
       <Switch>
         <AuthRoute exact path="/" component={MainPage} />
         <AuthRoute exact path="/signup" component={SignupFormContainer} />
-
-        <ProtectedRoute exact path="/tweets" component={TweetsContainer} />
-        <ProtectedRoute exact path="/profile" component={ProfileContainer} />
+        <ProtectedRoute exact path="/wardrobe" component={ProfileContainer} />
         <ProtectedRoute exact path="/new_tweet" component={TweetComposeContainer} />
         <ProtectedRoute exact path="/new_tops" component={AddTopContainer} />
         <ProtectedRoute exact path="/new_pants" component={AddPantContainer} />
+        <ProtectedRoute exact path="/pickr" component={PickerContainer} />
         <ProtectedRoute component={ProfileContainer} />
 
       </Switch>

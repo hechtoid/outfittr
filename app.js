@@ -7,6 +7,7 @@ const passport = require('passport');
 
 const users = require("./routes/api/users");
 const tweets = require("./routes/api/tweets");
+const outfits = require("./routes/api/outfits");
 const pants = require("./routes/api/pants");
 const tops = require("./routes/api/tops");
 
@@ -25,6 +26,7 @@ app.use(bodyParser.json());
 
 app.use("/api/users", users);
 app.use("/api/tweets", tweets);
+app.use("/api/outfits", outfits);
 app.use("/api/pants", pants);
 app.use("/api/tops", tops);
 

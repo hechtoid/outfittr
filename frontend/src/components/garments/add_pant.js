@@ -9,13 +9,13 @@ class AddPant extends React.Component {
       this.state = {
           name: "",
           color: "white",
-          hot: true,
+          hot: false,
           formal: false,
           wet: false,
           athleisure: false,
           newPant: ""
       }
-
+      document.title = 'new pants! outfittr'
       this.handleSubmit = this.handleSubmit.bind(this);
   } 
 
@@ -37,7 +37,14 @@ class AddPant extends React.Component {
       athleisure: this.state.athleisure
     };
     this.props.composePant(pant);
-    this.setState({name: ''});
+    this.setState({
+      name: '',
+      color: "white",
+      hot: false,
+      formal: false,
+      wet: false,
+      athleisure: false,
+      newPant: ""});
   }
 
   updateName() {
@@ -51,9 +58,9 @@ class AddPant extends React.Component {
     });
   }
 
-  updateCold() {
+  updateHot() {
     return e =>this.setState({
-      hot: !e.currentTarget.checked
+      hot: e.currentTarget.checked
     });
 }
   updateFormal() {
@@ -77,14 +84,13 @@ class AddPant extends React.Component {
         <div className="create-page">
           <div className="create-form">
             <form onSubmit={this.handleSubmit}>
-                <div>
                     <input type="text"
-                      className="garment-checkbox"
-                        value={this.state.name}
-                        onChange={this.updateName()}
-                        placeholder="Name your Cloths"
-                    />
-            <select className="garment-checkbox" value={this.state.color} onChange={this.updateColor()}>
+                      className="clothing-input"
+                      value={this.state.name}
+                      onChange={this.updateName()}
+                      placeholder="Name your Cloths"
+                      />
+            <select className="garment-checkbox" className="color-btn" value={this.state.color} onChange={this.updateColor()}>
               <option value="white">white</option> 
               <option value="red">red</option>
               <option value="orange">orange</option>
@@ -95,41 +101,45 @@ class AddPant extends React.Component {
               <option value="violet">violet</option>
               <option value="black">black</option>
 	          </select>
+            <div className="radios">
+              <div className="form-left">
                 <label>
                   Hot?
                     <input type="checkbox"
                     className="garment-checkbox"
-                    onChange={this.updateCold()}
-                    checked={!this.state.hot}
+                    onChange={this.updateHot()}
+                    checked={this.state.hot}
                   />
                 </label>
                 <label>
-                  Formal? 
+                  Formal?
                   <input type="checkbox"
                     className="garment-checkbox"
                     onChange={this.updateFormal()}
                     checked={this.state.formal}
                   />
                 </label>
+              </div>
+              <div className="form-right">
                 <label>
-                  Wet? 
-                  <input type="checkbox"
-                    className="garment-checkbox"
-                    onChange={this.updateWet()}
-                    checked={this.state.wet}
-                  />
-                </label>
-                <label>
-                  Athleisure? 
+                  Athleisure?
                   <input type="checkbox"
                     className="garment-checkbox"
                     onChange={this.updateAthleisure()}
                     checked={this.state.athleisure}
                   />
                 </label>
-              
-                    <input type="submit" value="Submit" />
+                <label>
+                  Rain?
+                  <input type="checkbox"
+                    className="garment-checkbox"
+                    onChange={this.updateWet()}
+                    checked={this.state.wet}
+                  />
+                </label>
+              </div>
                 </div>
+                    <input className="submit-btn" type="submit" value="Submit" />
               </form>
             </div>
           <br />

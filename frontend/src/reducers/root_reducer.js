@@ -5,6 +5,7 @@ import tweets from './tweets_reducer';
 import ui from './ui_reducer';
 import pants from './pants_reducer';
 import tops from './tops_reducer';
+import outfits from './outfits_reducer'
 
 const RootReducer = combineReducers({
   errors,
@@ -12,6 +13,7 @@ const RootReducer = combineReducers({
   ui,
   tweets,
   pants,
+  outfits,
   tops
 });
 

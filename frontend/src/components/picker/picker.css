@@ -1,0 +1,24 @@
+
+.show-container{
+  display: flex;
+  margin-left: 100px;
+}
+.picker-radios{
+    text-align: center;
+}
+.picker-radios > label{
+      padding-right: 50px;
+
+}
+.picker-picker{
+  display: flex;
+  margin-left: 100px;
+  padding-right: 100px;
+}
+.picker-menu{
+  padding: 30px;
+  margin-right: 300px;
+}
+select{
+    overflow:auto;
+}
