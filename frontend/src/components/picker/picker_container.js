@@ -1,20 +1,23 @@
 import { connect } from 'react-redux';
 import { fetchUserTops } from '../../actions/top_actions';
 import { fetchUserPants } from '../../actions/pant_actions';
+import { composeOutfit } from '../../actions/outfit_actions'
 import Picker from './picker';
 
 const mapStateToProps = (state) => {
   return {
     currentUser: state.session.user,
     tops: Object.values(state.tops.user),
-    pants: Object.values(state.pants.user)
+    pants: Object.values(state.pants.user),
+    outfits: Object.values(state.outfits.user)
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
     fetchUserPants: id => dispatch(fetchUserPants(id)),
-    fetchUserTops: id => dispatch(fetchUserTops(id))
+    fetchUserTops: id => dispatch(fetchUserTops(id)),
+    composeOutfit: data => dispatch(composeOutfit(data))
   };
 };
 

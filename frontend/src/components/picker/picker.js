@@ -6,7 +6,7 @@ class Picker extends React.Component {
       super(props);
 
       this.state = {
-          // name: "",
+          name: "my outfitt",
           // color: "white",
           hot: false,
           formal: false,
@@ -26,25 +26,25 @@ class Picker extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    let fit = {
-      // name: this.state.name,
-      // color: this.state.color,
-      // hot: this.state.hot,
-      // formal: this.state.formal,
-      // wet: this.state.wet,
-      // athleisure: this.state.athleisure,
-      top: {},
-      pant: {}
-    };
-
-    // this.props.composeFit(fit); 
-    // this.setState({name: ''});
-    // window.location.reload();
+    let outfit = {
+      name: this.state.name,
+      top: this.state.top,
+      pant: this.state.pant
+      }
+      this.props.composeOutfit(outfit);
+      
+      this.setState({
+        name: "new outfitt",
+        hot: false,
+        formal: false,
+        wet: false,
+        athleisure: false,
+        top: { name: 'shirt', color: 'white' },
+        pant: { name: 'bottom', color: 'white' }
+      })
   }
   updateTop() {
     return e => this.setState({
-      // top: this.props.tops.filter((top)=>
-      //   top._id===[e.target.value])[0]
       top: this.props.tops[e.target.value]
     });
   }
@@ -72,6 +72,11 @@ class Picker extends React.Component {
   updateAthleisure() {
     return e => this.setState({
       athleisure: e.currentTarget.checked
+    });
+  } 
+  updateName() {
+    return e => this.setState({
+      name: e.currentTarget.value
     });
   }
 
@@ -146,6 +151,18 @@ class Picker extends React.Component {
             </label>
          
         </div>
+        <div>
+          <form onSubmit={this.handleSubmit}>
+            <div>
+              <input type="text"
+                value={this.state.name}
+                onChange={this.updateName}
+                placeholder="Name your New Outfit!"
+              />
+              <input type="submit" value="Save it!" />
+            </div>
+          </form>
+          </div>
         <div className="picker-picker">
         <label>
         <h3>Top:</h3>
