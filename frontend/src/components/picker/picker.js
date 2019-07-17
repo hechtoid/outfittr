@@ -83,15 +83,15 @@ class Picker extends React.Component {
   }
 
   render() {
-    
-    let tops=this.props.tops.map((top, index)=>(
+    let tops = this.props.tops.map(a=> Object.assign({}, a))
+    let pants = this.props.pants.map(a=> Object.assign({}, a))
+    let topsI = tops.map((top, index) => (
       top.index = index
     ))
-    let pants=this.props.pants.map((pant, index)=>(
+    let pantsI = pants.map((pant, index) => (
       pant.index = index
     ))
-    tops=this.props.tops
-    pants=this.props.pants
+    
     if (this.state.formal){
         pants=pants.filter((ele)=>
         ele.formal)
