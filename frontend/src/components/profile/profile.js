@@ -6,7 +6,6 @@ class Profile extends React.Component {
         super(props);
 
         this.state = {
-            tweets: [],
             tops: [],
             pants: []
         }
@@ -14,19 +13,12 @@ class Profile extends React.Component {
     
     componentWillMount() {
         console.log(this.props.currentUser.id)
-        this.props.fetchUserTweets(this.props.currentUser.id);
         this.props.fetchUserTops(this.props.currentUser.id);
         this.props.fetchUserPants(this.props.currentUser.id);
     }
-    // shouldComponentUpdate() {
-    //     console.log(this.props.currentUser.id)
-    //     this.props.fetchUserTops(this.props.currentUser.id);
-    //     this.props.fetchUserPants(this.props.currentUser.id);
-    // }
     
     componentWillReceiveProps(newState) {
         this.setState({ 
-          tweets: newState.tweets,
           tops: newState.tops,
           pants: newState.pants
          });
@@ -75,9 +67,6 @@ class Profile extends React.Component {
                   </div>
                 </div>
               </div>
-              {/* {this.state.tweets.map(tweet => (
-                <TweetBox key={tweet._id} text={tweet.text} />
-              ))} */}
             </div>
           );
         }
