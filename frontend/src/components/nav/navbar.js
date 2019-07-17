@@ -48,6 +48,7 @@ class NavBar extends React.Component {
               <Link to={'/pickr'} id="logo-pickr">
                Pickr
                 </Link>
+                  
 
                 </div>
                 <div className="right-div">
