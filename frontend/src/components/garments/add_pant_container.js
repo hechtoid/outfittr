@@ -15,7 +15,6 @@ const mapDispatchToProps = dispatch => {
   return {
     composePant: data => dispatch(composePant(data)),
     fetchUserPants: id => dispatch(fetchUserPants(id))
-
   };
 };
 

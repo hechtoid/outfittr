@@ -25,15 +25,13 @@ class GarmentBox extends React.Component {
     this.state = {
       cssClass: '',
       image: '',
+      color: this.props.color,
       imageName: `${this.props.color}_${this.props.type}`
     }
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.setState({
-      imageName: `${nextProps.color}_${nextProps.type}`
-    })
-    switch (this.state.imageName) {
+switcher(){
+  switch (this.state.imageName) {
       case 'white_top':
         this.setState({
           image: `${white_top}`
@@ -129,113 +127,24 @@ class GarmentBox extends React.Component {
           image: `${white_top}`
         })
     }
+}
+componentWillReceiveProps(nextProps) {
+    this.setState({
+      imageName: `${nextProps.color}_${nextProps.type}`,
+      color: `${this.props.color}`})
+    this.switcher()
   }
 
-  componentDidMount(){
-  switch(this.state.imageName) {
-      case 'white_top':
-    this.setState({
-      image: `${white_top}`
-    })
-    break;
-      case 'red_top':
-    this.setState({
-      image: `${red_top}`
-    })
-    break;
-      case 'orange_top':
-    this.setState({
-      image: `${orange_top}`
-    })
-    break;
-      case 'yellow_top':
-    this.setState({
-      image: `${yellow_top}`
-    })
-    break;
-      case 'green_top':
-    this.setState({
-      image: `${green_top}`
-    })
-    break;
-      case 'blue_top':
-    this.setState({
-      image: `${blue_top}`
-    })
-    break;
-      case 'indigo_top':
-    this.setState({
-      image: `${indigo_top}`
-    })
-    break;
-      case 'violet_top':
-    this.setState({
-      image: `${violet_top}`
-    })
-    break;
-      case 'black_top':
-    this.setState({
-      image: `${black_top}`
-    })
-    break;
-      case 'white_pant':
-    this.setState({
-      image: `${white_pant}`
-    })
-    break;
-      case 'red_pant':
-    this.setState({
-      image: `${red_pant}`
-    })
-    break;
-      case 'orange_pant':
-    this.setState({
-      image: `${orange_pant}`
-    })
-    break;
-      case 'yellow_pant':
-    this.setState({
-      image: `${yellow_pant}`
-    })
-    break;
-      case 'green_pant':
-    this.setState({
-      image: `${green_pant}`
-    })
-    break;
-      case 'blue_pant':
-    this.setState({
-      image: `${blue_pant}`
-    })
-    break;
-      case 'indigo_pant':
-    this.setState({
-      image: `${indigo_pant}`
-    })
-    break;
-      case 'violet_pant':
-    this.setState({
-      image: `${violet_pant}`
-    })
-    break;
-      case 'black_pant':
-    this.setState({
-      image: `${black_pant}`
-    })
-    break;
-      default:
-    this.setState({
-      image: `${white_top}`
-      })   
+  componentDidUpdate(){
+    if (this.props.color !== this.state.color){
+      this.setState({ imageName: `${this.props.color}_${this.props.type}`, color: `${this.props.color}` })
+      this.switcher()
     }
   }
- 
-    
-    // this.setState({
-    // cssClass: `${this.props.color}-${this.props.type}`,
-    // // image: `${this.props.color}_${this.props.type}`
-    // // image: `${green_top}`
-    // })
+
+componentDidMount(){
+  this.switcher()
+  }
 
   render() {
     return (
