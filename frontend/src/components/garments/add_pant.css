@@ -23,13 +23,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 10% auto;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 label {
   color: #0893cc;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
+  letter-spacing: 2px;
   font-family: 'Timmana', sans-serif;
 }
 
@@ -56,4 +59,46 @@ label {
   border-radius: 15px;
   margin: 30px;
   text-align: center;
+}
+
+.radios {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 25% auto;
+}
+
+.form-left {
+
+}
+
+.form-right {
+
+}
+
+.color-btn {
+  border-radius: 15px;
+  height: 30px;
+  width: 200px;
+  background-color: #0893cc;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  text-indent: 40%;
+  font-size: 20px;
+}
+
+.color-btn:hover {
+  
+}
+
+.clothing-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 25% auto;
+  height: 30px;
+  width: 200px;
+  border-radius: 15px;
+  text-indent: 10%;
+  font-size: 20px;
 }
