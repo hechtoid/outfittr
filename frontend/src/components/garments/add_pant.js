@@ -9,7 +9,7 @@ class AddPant extends React.Component {
       this.state = {
           name: "",
           color: "white",
-          hot: true,
+          hot: false,
           formal: false,
           wet: false,
           athleisure: false,
@@ -51,9 +51,9 @@ class AddPant extends React.Component {
     });
   }
 
-  updateCold() {
+  updateHot() {
     return e =>this.setState({
-      hot: !e.currentTarget.checked
+      hot: e.currentTarget.checked
     });
 }
   updateFormal() {
@@ -100,8 +100,8 @@ class AddPant extends React.Component {
                   Hot?
                     <input type="checkbox"
                     className="garment-checkbox"
-                    onChange={this.updateCold()}
-                    checked={!this.state.hot}
+                    onChange={this.updateHot()}
+                    checked={this.state.hot}
                   />
                 </label>
                 <label>

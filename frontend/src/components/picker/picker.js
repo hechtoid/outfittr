@@ -13,7 +13,7 @@ class Picker extends React.Component {
           // wet: false,
           // athleisure: false  ,
           top: {name: 'shirt', color: 'white'},
-        pant: { name: 'bottom', color: 'white'}
+          pant: { name: 'bottom', color: 'white'}
       }
       document.title = 'pickr @ outfittr'
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -54,6 +54,9 @@ class Picker extends React.Component {
   render() {
     let tops=this.props.tops
     let pants=this.props.pants
+    // let pants=this.props.pants.filter((ele)=>
+    //   ele.wet
+    // )
     //run .filters here!!!!
     return (
       <div className="picker-page">
