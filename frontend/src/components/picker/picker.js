@@ -7,7 +7,7 @@ class Picker extends React.Component {
       super(props);
 
       this.state = {
-          name: "my outfitt",
+          name: "",
           // color: "white",
           hot: false,
           formal: false,
@@ -36,7 +36,7 @@ class Picker extends React.Component {
       this.props.composeOutfit(outfit);
       
       this.setState({
-        name: "new outfitt",
+        name: "",
         hot: false,
         formal: false,
         wet: false,
@@ -146,69 +146,75 @@ class Picker extends React.Component {
             <label>
               Rain?
                   <input type="checkbox"
-                className="pickr-checkbox"
+                className="picker-checkbox"
                 onChange={this.updateWet()}
                 checked={this.state.wet}
               />
             </label>
-         
-        </div>
         <div>
           <form onSubmit={this.handleSubmit}>
             <div>
               <input type="text"
+              className="outfit-input"
                 value={this.state.name}
                 onChange={this.updateName()}
                 placeholder="Name your New Outfit!"
               />
-              <input type="submit" value="Save it!" />
+              <br/>
+              <input className="outfit-save-btn" type="submit" value="Save it!" />
             </div>
           </form>
-          </div>
-        <div className="picker-picker">
-        <label>
-        <h3>Top:</h3>
-        <select className="picker-menu" 
-        // value={this.state.top.name}
-        onChange={this.updateTop()}
-        size={tops.length+1}
-        >
-        <option disabled selected value>Select Shirts </option>
-          {tops.map((top) => (
-            <option value={top.index}>{top.name}</option>
-            ))}
-        </select>
-        </label>
-        <label>
-          <h3>Bottom:</h3>
-          <select className="picker-menu"
-            // value='1'
-            onChange={this.updatePant()}
-            size={pants.length + 1}
-          >
-            <option disabled selected value>Pick Pants</option>
-            {pants.map((pant) => (
-              <option value={pant.index}>{pant.name}</option>
-            ))}
-          </select>
-        </label>
+         </div>
         </div>
-        <div className="show-container">
-          <span className="show-item">
-            <ShowBox
-              name={this.state.top.name}
-              color={this.state.top.color}
-              type="top"
-            />
-          </span>
-          <span className="show-item">
-            <ShowBox
-              name={this.state.pant.name}
-              color={this.state.pant.color}
-              type="pant"
-            />
-          </span>
-          
+         
+      <div className="outfit-generator-container">
+        <div>
+        <label>
+          <h3>Top:</h3>
+          </label>
+          <select className="picker-menu" 
+          // value={this.state.top.name}
+          onChange={this.updateTop()}
+          size={tops.length+1}
+          >
+          <option disabled selected value>Select Shirts </option>
+            {tops.map((top) => (
+              <option value={top.index}>{top.name}</option>
+              ))}
+          </select>
+            <span className="top-item">
+              <ShowBox
+                name={this.state.top.name}
+                color={this.state.top.color}
+                type="top"
+                />
+            </span>
+          </div>
+          <div>
+            <label>
+            <h3>Bottom:</h3>
+              <select className="picker-menu"
+                // value='1'
+                onChange={this.updatePant()}
+                size={pants.length + 1}
+              >
+              <option disabled selected value>Pick Pants</option>
+              {pants.map((pant) => (
+                <option value={pant.index}>{pant.name}</option>
+              ))}
+            </select>
+            <span className="bottom-item">
+              <ShowBox
+                name={this.state.pant.name}
+                color={this.state.pant.color}
+                type="pant"
+              />
+            </span>
+          </label>
+          </div>
+          {/* <div className="show-container"> */}
+            
+          {/* </div> */}
         </div>
       </div>
     )
