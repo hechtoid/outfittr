@@ -7,7 +7,8 @@ class Profile extends React.Component {
 
         this.state = {
             tops: [],
-            pants: []
+            pants: [],
+            outfits: []
         }
       document.title = 'outfittr wardrobe'
 
@@ -17,12 +18,14 @@ class Profile extends React.Component {
         console.log(this.props.currentUser.id)
         this.props.fetchUserTops(this.props.currentUser.id);
         this.props.fetchUserPants(this.props.currentUser.id);
+      this.props.fetchUserOutfits(this.props.currentUser.id);
     }
     
     componentWillReceiveProps(newState) {
         this.setState({ 
           tops: newState.tops,
-          pants: newState.pants
+          pants: newState.pants,
+          outfits: newState.outfits
          });
     }   
     

@@ -21,6 +21,7 @@ router.post('/',
       const newOutfit = new Outfit({
         top: req.body.top,
         pant: req.body.pant,
+        name: req.body.name,
         user: req.user.id
       });
   

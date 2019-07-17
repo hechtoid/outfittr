@@ -1,6 +1,7 @@
 import React from 'react';
 import ShowBox from './show_box';
 import './picker.css'
+
 class Picker extends React.Component {
   constructor(props) {
       super(props);
@@ -22,6 +23,7 @@ class Picker extends React.Component {
   componentDidMount(){
     this.props.fetchUserTops(this.props.currentUser.id);
     this.props.fetchUserPants(this.props.currentUser.id);
+    this.props.fetchUserOutfits(this.props.currentUser.id);
   }
 
   handleSubmit(e) {
@@ -156,7 +158,7 @@ class Picker extends React.Component {
             <div>
               <input type="text"
                 value={this.state.name}
-                onChange={this.updateName}
+                onChange={this.updateName()}
                 placeholder="Name your New Outfit!"
               />
               <input type="submit" value="Save it!" />

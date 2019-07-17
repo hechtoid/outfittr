@@ -14,6 +14,9 @@ const OutfitSchema = new Schema({
     type: {},
     required: true
   },
+  name: {
+    type: String,
+  },
   date: {
     type: Date,
     default: Date.now
