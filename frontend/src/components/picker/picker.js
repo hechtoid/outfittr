@@ -1,7 +1,7 @@
 import React from 'react';
 import ShowBox from './show_box';
 
-class AddTop extends React.Component {
+class Picker extends React.Component {
   constructor(props) {
       super(props);
 
@@ -12,8 +12,8 @@ class AddTop extends React.Component {
           // formal: false,
           // wet: false,
           // athleisure: false  ,
-          top: {},
-          pant: {}
+          top: {name: 'choose a shirt'},
+          pant: {name: 'choose pants'}
       }
       document.title = 'pickr @ outfittr'
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -32,8 +32,8 @@ class AddTop extends React.Component {
       // formal: this.state.formal,
       // wet: this.state.wet,
       // athleisure: this.state.athleisure,
-      top: {},
-      pant: {}
+      top: {color:'white'},
+      pant: { color: 'white'}
     };
 
     // this.props.composeFit(fit); 
@@ -45,59 +45,62 @@ class AddTop extends React.Component {
       top: this.props.tops[e.target.value]
     });
   }
+  updatePant() {
+    return e => this.setState({
+      pant: this.props.pants[e.target.value]
+    });
+  }
 
   render() {
-    // const topChoices = {for (let index = 0; index < this.props.tops.length; index++) {
-    //   return(`<option value="${index}">${this.props.tops[index].name}</option>`)
-    // }}
-    // // {topChoices}
     let tops=this.props.tops
+    let pants=this.props.pants
+    //run .filters here!!!!
     return (
       <div className="picker-page">
+        <div className="picker-picker">
+        <label>
+        <h3>Choose a Shirt</h3>
         <select className="picker-menu" 
-        value={this.state.top}
+        // value={this.state.top.name}
         onChange={this.updateTop()}
         >
           {tops.map((top,index) => (
-
-            // <div className="garment-item">
-            //   <GarmentBox
-            //     key={top._id}
-            //     name={top.name}
-            //     color={top.color}
-            //     type="top"
-            //   />
-            // </div>
-          <option value={index}>{top.name}</option>
-          ))}
+            <option value={index}>{top.name}</option>
+            ))}
         </select>
-
-        name={this.state.top.name}
-        color={this.state.top.color}
-        <div className="garment-container">
-          <div className="demo-item">
+        </label>
+        <label>
+          <h3>Choose Pants</h3>
+          <select className="picker-menu"
+            // value={this.state.pant.name}
+            onChange={this.updatePant()}
+          >
+            {pants.map((pant, index) => (
+              <option value={index}>{pant.name}</option>
+            ))}
+          </select>
+        </label>
+        </div>
+        <div className="show-container">
+          <span className="show-item">
             <ShowBox
               name={this.state.top.name}
               color={this.state.top.color}
               type="top"
             />
-            
-          </div>
-          <br/>
-          {/* {this.props.tops.map(top => (
-            <div className="garment-item">
-              <GarmentBox
-                key={top._id}
-                name={top.name}
-                color={top.color}
-                type="top"
-              />
-            </div>
-          ))} */}
+          </span>
+          <span className="show-item">
+            <ShowBox
+              name={this.state.pant.name}
+              color={this.state.pant.color}
+              type="pant"
+            />
+          </span>
+          
         </div>
       </div>
     )
   }
 }
 
-export default AddTop;
+export default Picker;

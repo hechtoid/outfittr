@@ -129,27 +129,27 @@ switcher(){
     }
 }
 componentWillReceiveProps(nextProps) {
-    this.setState({
+  if (nextProps.color !== this.state.color) {this.setState({
       imageName: `${nextProps.color}_${nextProps.type}`,
       color: `${this.props.color}`})
     this.switcher()
   }
+}
 
-  // componentDidUpdate(){
-  //   if (this.props.color !== this.state.color){
-  //     this.setState({ imageName: `${this.props.color}_${this.props.type}`, color: `${this.props.color}` })
-  //     this.switcher()
-  //   }
-  // }
+  componentDidUpdate(){
+    if (this.props.color !== this.state.color){
+      this.setState({ imageName: `${this.props.color}_${this.props.type}`, color: `${this.props.color}` })
+      this.switcher()
+    }
+  }
 
 componentDidMount(){
   this.switcher()
   }
-
   render() {
     return (
       <div className={this.state.cssClass}>
-        <div > {this.props.color} {this.props.type} called {this.props.name}.
+        <div > <h2>A {this.props.type} called {this.props.name}.</h2>
         </div>
         <img className="garment-img" src={this.state.image} alt={this.props.color}></img>
         </div>

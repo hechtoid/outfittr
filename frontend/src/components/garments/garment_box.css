@@ -53,3 +53,15 @@
   width: 50%;
   height: 50%;
 }
+
+.show-container{
+  display: flex;
+}
+.picker-picker{
+  display: flex;
+  margin-left: 50px;
+}
+.picker-menu{
+  padding: 30px;
+  margin: 40px;
+}
