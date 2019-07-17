@@ -27,10 +27,12 @@
 }
 
 .wardrobe {
-  margin-left: 30px;
-  font-family: 'Timmana', sans-serif;
-  color:  #0893cc;
-  font-size: 40px;
+      justify-content: center;
+    margin-left: 30px;
+    font-family: 'Timmana', sans-serif;
+    color: #008a2d;
+    font-size: 40px;
+    display: flex;
 }
 
 .tops-n-bottoms {
