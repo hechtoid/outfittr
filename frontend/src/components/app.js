@@ -13,6 +13,7 @@ import UserModal from './user/user';
 import ContactUsModal from './contact_us/contact_us';
 import AddTopContainer from './garments/add_top_container';
 import AddPantContainer from './garments/add_pant_container';
+import './app.css';
 
 const App = () => (
   <div>
@@ -20,18 +21,20 @@ const App = () => (
     <NavBarContainer />
     <UserModal/>
     <ContactUsModal/>
-    <Switch>
-      <AuthRoute exact path="/" component={MainPage} />
-      <AuthRoute exact path="/signup" component={SignupFormContainer} />
+    <main className="main" >
+      <Switch>
+        <AuthRoute exact path="/" component={MainPage} />
+        <AuthRoute exact path="/signup" component={SignupFormContainer} />
 
-      <ProtectedRoute exact path="/tweets" component={TweetsContainer} />
-      <ProtectedRoute exact path="/profile" component={ProfileContainer} />
-      <ProtectedRoute exact path="/new_tweet" component={TweetComposeContainer} />
-      <ProtectedRoute exact path="/new_tops" component={AddTopContainer} />
-      <ProtectedRoute exact path="/new_pants" component={AddPantContainer} />
-      <ProtectedRoute component={ProfileContainer} />
+        <ProtectedRoute exact path="/tweets" component={TweetsContainer} />
+        <ProtectedRoute exact path="/profile" component={ProfileContainer} />
+        <ProtectedRoute exact path="/new_tweet" component={TweetComposeContainer} />
+        <ProtectedRoute exact path="/new_tops" component={AddTopContainer} />
+        <ProtectedRoute exact path="/new_pants" component={AddPantContainer} />
+        <ProtectedRoute component={ProfileContainer} />
 
-    </Switch>
+      </Switch>
+    </main>
   </div>
 );
 
