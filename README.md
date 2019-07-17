@@ -2,7 +2,7 @@
 
 An outfit generator that responds to your daily needs. 
 
-placeholder for heroku link
+outfittr.herokuapp.com
 
 ## Background and Overview
 
