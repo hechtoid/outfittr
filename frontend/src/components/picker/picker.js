@@ -43,6 +43,8 @@ class Picker extends React.Component {
   }
   updateTop() {
     return e => this.setState({
+      // top: this.props.tops.filter((top)=>
+      //   top._id===[e.target.value])[0]
       top: this.props.tops[e.target.value]
     });
   }
@@ -75,8 +77,14 @@ class Picker extends React.Component {
 
   render() {
     
-    let tops=this.props.tops
-    let pants=this.props.pants
+    let tops=this.props.tops.map((top, index)=>(
+      top.index = index
+    ))
+    let pants=this.props.pants.map((pant, index)=>(
+      pant.index = index
+    ))
+    tops=this.props.tops
+    pants=this.props.pants
     if (this.state.formal){
         pants=pants.filter((ele)=>
         ele.formal)
@@ -95,7 +103,6 @@ class Picker extends React.Component {
         tops=tops.filter((ele)=>
         ele.hot)
     }
-    
     if (this.state.athleisure){
         pants=pants.filter((ele)=>
         ele.athleisure)
@@ -148,8 +155,8 @@ class Picker extends React.Component {
         size={tops.length+1}
         >
         <option disabled selected value>Select Shirts </option>
-          {tops.map((top,index) => (
-            <option value={index}>{top.name}</option>
+          {tops.map((top) => (
+            <option value={top.index}>{top.name}</option>
             ))}
         </select>
         </label>
@@ -161,8 +168,8 @@ class Picker extends React.Component {
             size={pants.length + 1}
           >
             <option disabled selected value>Pick Pants</option>
-            {pants.map((pant, index) => (
-              <option value={index}>{pant.name}</option>
+            {pants.map((pant) => (
+              <option value={pant.index}>{pant.name}</option>
             ))}
           </select>
         </label>
