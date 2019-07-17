@@ -9,6 +9,8 @@ class Profile extends React.Component {
             tops: [],
             pants: []
         }
+      document.title = 'outfittr wardrobe'
+
     }
     
     componentWillMount() {
