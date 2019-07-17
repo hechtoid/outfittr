@@ -119,3 +119,26 @@ body{
    top:0;
    height: 91px;;
 }
+
+#picker {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-around;
+}
+
+#Shirts-img {
+    align-self: center;
+    margin-top: 10px;
+    height: 25px;
+    width: 20px;
+    margin-left: 20px;
+}
+
+#Pants-img {
+    /* margin-top: 10px; */
+    align-self: center;
+    height: 20px;
+    width: 28px;
+    margin-left: 20px;
+}

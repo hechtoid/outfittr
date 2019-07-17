@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import './navbar.css';
 import pant from './pant_icon.png'
 import shirt from './shirt_icon.png'
+import bluepant from '../garments/blue_pant.png'
+import blacktop from '../garments/black_top.png'
 // import ContactUsModal from './../contact_us/contact_us';
 
 class NavBar extends React.Component {
@@ -38,7 +40,14 @@ class NavBar extends React.Component {
                 </div>
                 <div className="center-div">
                   <Link to={'/'} id="logo">Outfittr</Link>
-                  <Link to={'/pickr'} id="logo-pickr">/pickr</Link>
+              <span id="picker">
+                <img alt="shirt" id="Shirts-img" src={blacktop} />
+                <img alt="pants" id="Pants-img" src={bluepant} />
+                </span>
+                <br/>
+              <Link to={'/pickr'} id="logo-pickr">
+               Pickr
+                </Link>
 
                 </div>
                 <div className="right-div">
