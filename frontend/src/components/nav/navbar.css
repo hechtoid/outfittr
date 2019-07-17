@@ -63,6 +63,13 @@ body{
     margin: 10px 25px;
 }
 
+
+.contact-us span:hover{
+    justify-content: flex-end;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
 #Pants {
     text-decoration: none;
     margin-right: 15px;
@@ -93,9 +100,6 @@ body{
 
 #Shirts:hover {
     color: lightgrey;
-}
-.contact-us span:hover{
-    cursor: pointer;
 }
 
 .navbar{

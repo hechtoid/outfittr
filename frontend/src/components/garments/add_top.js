@@ -77,59 +77,62 @@ class AddTop extends React.Component {
       <div className="create-page">
         <div className="create-form">
           <form onSubmit={this.handleSubmit}>
-            <div>
-              <input type="text"
-                className="garment-checkbox"
-                value={this.state.name}
-                onChange={this.updateName()}
-                placeholder="Name your Cloths"
-              />
-              <select className="garment-checkbox" value={this.state.color} onChange={this.updateColor()}>
-                <option value="white">white</option>
-                <option value="red">red</option>
-                <option value="orange">orange</option>
-                <option value="yellow">yellow</option>
-                <option value="green">green</option>
-                <option value="blue">blue</option>
-                <option value="indigo">indigo</option>
-                <option value="violet">violet</option>
-                <option value="black">black</option>
-              </select>
-              <label>
-                Hot?
+            <input type="text"
+              className="clothing-input"
+              value={this.state.name}
+              onChange={this.updateName()}
+              placeholder="Name your Cloths"
+            />
+            <select className="garment-checkbox" className="color-btn" value={this.state.color} onChange={this.updateColor()}>
+              <option value="white">white</option>
+              <option value="red">red</option>
+              <option value="orange">orange</option>
+              <option value="yellow">yellow</option>
+              <option value="green">green</option>
+              <option value="blue">blue</option>
+              <option value="indigo">indigo</option>
+              <option value="violet">violet</option>
+              <option value="black">black</option>
+            </select>
+            <div className="radios">
+              <div className="form-left">
+                <label>
+                  Hot?
                     <input type="checkbox"
-                  className="garment-checkbox"
-                  onChange={this.updateCold()}
-                  checked={!this.state.hot}
-                />
-              </label>
-              <label>
-                Formal?
+                    className="garment-checkbox"
+                    onChange={this.updateCold()}
+                    checked={!this.state.hot}
+                  />
+                </label>
+                <label>
+                  Formal?
                   <input type="checkbox"
-                  className="garment-checkbox"
-                  onChange={this.updateFormal()}
-                  checked={this.state.formal}
-                />
-              </label>
-              <label>
-                Wet?
+                    className="garment-checkbox"
+                    onChange={this.updateFormal()}
+                    checked={this.state.formal}
+                  />
+                </label>
+              </div>
+              <div className="form-right">
+                <label>
+                  Athleisure?
                   <input type="checkbox"
-                  className="garment-checkbox"
-                  onChange={this.updateWet()}
-                  checked={this.state.wet}
-                />
-              </label>
-              <label>
-                Athleisure?
+                    className="garment-checkbox"
+                    onChange={this.updateAthleisure()}
+                    checked={this.state.athleisure}
+                  />
+                </label>
+                <label>
+                  Rain?
                   <input type="checkbox"
-                  className="garment-checkbox"
-                  onChange={this.updateAthleisure()}
-                  checked={this.state.athleisure}
-                />
-              </label>
-
-              <input type="submit" value="Submit" />
+                    className="garment-checkbox"
+                    onChange={this.updateWet()}
+                    checked={this.state.wet}
+                  />
+                </label>
+              </div>
             </div>
+            <input className="submit-btn" type="submit" value="Submit" />
           </form>
         </div>
         <br />
@@ -141,7 +144,7 @@ class AddTop extends React.Component {
               type="top"
             />
           </div>
-          <br />
+          <br/>
           {this.props.tops.map(top => (
             <div className="garment-item">
               <GarmentBox

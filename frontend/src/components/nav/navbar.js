@@ -65,8 +65,10 @@ class NavBar extends React.Component {
               {/* only here for testing purposes when not logged in <div className="profile-icon">
               </div> */}
               <div className="contact-us-box">
-                <div className="contact-us" onClick={this.openCModal}>
-                  Contact Us!
+                <div className="contact-us">
+                  <span onClick={this.openCModal}>
+                    Contact Us!
+                  </span>
                 </div>
               </div>
               {/* <Contactus logout={this.props.logout}/> */}
