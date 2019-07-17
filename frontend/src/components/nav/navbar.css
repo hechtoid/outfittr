@@ -28,16 +28,26 @@ body{
     text-decoration: none;
     color: #ffffff;
 }
+
+
+#logo:hover {
+    color: lightgray;
+}
+
 #logo-pickr{
     font-family: 'Timmana', sans-serif;
     font-weight: 600;
-    font-size: 30px;
-    padding: 15px 20px 10px 0px;
+    font-size: 40px;
+    padding: 15px 0px 10px 0px;
     text-decoration: none;
     color: #ffffff;
-    margin-left: 50px;
-    top: 15px;
-    position: relative;
+    margin-left: 25px;
+    /* top: 15px; */
+    /* position: relative; */
+}
+
+#logo-pickr:hover{
+    color: lightgray;
 }
 
 .right-div{
@@ -84,11 +94,13 @@ body{
 #Pants {
     text-decoration: none;
     margin-right: 15px;
+    color: #ffffff;
     
 }
 
 #Shirts {
     text-decoration: none;
+     color: #ffffff;
 }
 
 #Pants img {
@@ -118,4 +130,50 @@ body{
    overflow:hidden;
    top:0;
    height: 91px;;
+}
+
+#picker {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-around;
+}
+
+#Shirts-img {
+    align-self: center;
+    margin-top: 12px;
+    height: 25px;
+    width: 20px;
+    margin-left: 20px;
+}
+
+#Pants-img {
+    /* margin-top: 10px; */
+    align-self: center;
+    height: 25px;
+    width: 28px;
+    margin-left: 20px;
+}
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #008a2d;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-family: 'Timmana', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  margin-top: 7px;
 }
