@@ -63,6 +63,10 @@ body{
     margin: 10px 25px;
 }
 
+.contact-us:hover{
+    cursor: pointer;
+}
+
 #Pants {
     text-decoration: none;
     margin-right: 15px;
