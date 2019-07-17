@@ -33,7 +33,7 @@
 
 
 .wardrobe {
-      justify-content: center;
+    justify-content: center;
     margin-left: 30px;
     font-family: 'Timmana', sans-serif;
     color: #008a2d;
@@ -60,6 +60,8 @@
 .garment-img{
   width: 50%;
   height: 50%;
+  min-width: 30%;
+  min-height: 30%;
   margin: 0 auto;
   transition: 0.075s;
 }
@@ -77,6 +79,10 @@
 
 .wardrobe-item-text {
   margin: 20px;
-  color: #0893cc;
-  font-weight: bold;
+  font-family: 'Timmana', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+   
+  text-shadow: 2px 2px black;
 }
