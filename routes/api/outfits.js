@@ -25,7 +25,7 @@ router.post('/',
         user: req.user.id
       });
   
-      newOutfit.save().then(top => res.json(outfit));
+      newOutfit.save().then(outfit => res.json(outfit));
     }
   );
 
