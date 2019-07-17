@@ -5,6 +5,7 @@ import pant from './pant_icon.png'
 import shirt from './shirt_icon.png'
 import bluepant from '../garments/blue_pant.png'
 import blacktop from '../garments/black_top.png'
+import blackpant from '../garments/black_pant.png'
 // import ContactUsModal from './../contact_us/contact_us';
 
 class NavBar extends React.Component {
@@ -31,10 +32,10 @@ class NavBar extends React.Component {
             <div className="navbar">
                 
                 <div className="left-div">
-              <Link to={'/new_pants'} id="Pants"><img alt="pants" src={pant} />
+              <Link to={'/new_pants'} id="Pants"><img alt="pants" src={bluepant} />
               <br/>
               Add Pants</Link>
-                <Link to={'/new_tops'} id="Shirts"><img alt="shirt" src={shirt}/>
+                <Link to={'/new_tops'} id="Shirts"><img alt="shirt" src={blacktop}/>
                 <br />
                 Add Tops</Link>
                 </div>
@@ -46,7 +47,10 @@ class NavBar extends React.Component {
                 </span>
                 <br/>
               <Link to={'/pickr'} id="logo-pickr">
-               Pickr
+               
+               <div className="tooltip"> Pickr
+               <span className="tooltiptext">Create Your Outfit!</span>
+               </div>
                 </Link>
                   
 
