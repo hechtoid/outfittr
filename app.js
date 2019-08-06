@@ -4,12 +4,19 @@ const db = require('./config/keys').mongoURI;
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const passport = require('passport');
-
+const path = require('path');
 const users = require("./routes/api/users");
 const tweets = require("./routes/api/tweets");
 const outfits = require("./routes/api/outfits");
 const pants = require("./routes/api/pants");
 const tops = require("./routes/api/tops");
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('frontend/build'));
+  app.get('/', (req, res) => {
+      res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+    })
+}
 
 mongoose
   .connect(db, { useNewUrlParser: true })

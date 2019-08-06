@@ -148,12 +148,12 @@ componentDidMount(){
   }
   render() {
     return (
-      <div className={this.state.cssClass}>
-        <div > <h2>A {this.props.type} called {this.props.name}.</h2>
+      // <div className={this.state.cssClass}>
+        <div className="asshole-div">  <h2>A {this.props.type} called {this.props.name}.</h2>
+          <img className="show-img" src={this.state.image} alt={this.props.color}></img>
         </div>
-        <img className="garment-img" src={this.state.image} alt={this.props.color}></img>
-        </div>
+        // </div>
     );
   }
 }
-export default ShowBox;
+  export default ShowBox;

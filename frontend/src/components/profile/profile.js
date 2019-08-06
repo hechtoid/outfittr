@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import GarmentBox from '../garments/garment_box';
+import './profile.css';
 
 class Profile extends React.Component {
     constructor(props) {
@@ -36,8 +38,12 @@ class Profile extends React.Component {
         } else {
           return (
             <div className="profile-page">
-              <br/>
               <h2 className="wardrobe">Your Wardrobe</h2>
+              <div className="wardrobe-picker-link">
+              <Link to={'/pickr'} id="logo-pickr">
+                Visit Pickr to Combine and Save OutFits!
+              </Link>
+              </div>
               <div className="flex-profile-page">
                 <div className="tops">
                   <h3 className="tops-n-bottoms">Tops</h3>
