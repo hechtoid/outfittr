@@ -39,7 +39,7 @@ function ContactUsModal({ contactUsModalOpen, closeContactUsModal }) {
                                             <a href="https://github.com/hechtoid" ><img src={github} className="github" alt="githubicon"></img></a>
                                         </span>
                                         <span className="linkedin">
-                                            <a href="https://www.linkedin.com/in/samuel-h-6b1b4665" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                            <a href="https://www.linkedin.com/in/samuel-p-h" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
                                         </span>
                                     </div>
                                 </div>
