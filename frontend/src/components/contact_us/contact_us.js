@@ -39,7 +39,7 @@ function ContactUsModal({ contactUsModalOpen, closeContactUsModal }) {
                                             <a href="https://github.com/hechtoid" ><img src={github} className="github" alt="githubicon"></img></a>
                                         </span>
                                         <span className="linkedin">
-                                            <a href="#" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                            <a href="https://www.linkedin.com/in/samuel-p-h" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
                                         </span>
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@ function ContactUsModal({ contactUsModalOpen, closeContactUsModal }) {
                                             <a href="https://github.com/ianellison87" ><img src={github} className="github" alt="githubicon"></img></a>
                                         </span>
                                         <span className="linkedin">
-                                            <a href="#" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
+                                            <a href="https://www.linkedin.com/in/ian-ellison-69786518b" ><img src={linkedin} className="linkedin" alt="linkedin"></img></a>
                                         </span>
                                     </div>
                                 </div>
