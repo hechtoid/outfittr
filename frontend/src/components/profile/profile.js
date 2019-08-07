@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import GarmentBox from '../garments/garment_box';
 import './profile.css';
+import { openItemModal } from './../../actions/ui_actions';
 
 class Profile extends React.Component {
     constructor(props) {
@@ -30,9 +31,10 @@ class Profile extends React.Component {
          });
     }   
     
-    openItemModal() {
-      console.log("DO IT");
+    itemModalHandler(pant) {
       console.log(this);
+      console.log(this.props.openItemModal(pant));
+      // dispatch(openItemModal(this));
     }
 
     render() {
@@ -53,7 +55,7 @@ class Profile extends React.Component {
                   <h3 className="tops-n-bottoms">Tops</h3>
                     <div className="garment-box-page">
                   {this.state.tops.map(top => (
-                    <div className="garment-display-item" onClick={this.openItemModal.bind(top)}>
+                    <div className="garment-display-item" onClick={this.itemModalHandler.bind(this, top)}>
                       <GarmentBox 
                       key={top._id} 
                       name={top.name} 
@@ -70,7 +72,7 @@ class Profile extends React.Component {
                   <h3 className="tops-n-bottoms">Pants</h3>
                     <div className="garment-box-page">
                 {this.state.pants.map(pant => (
-                  <div className="garment-display-item" onClick={this.openItemModal.bind(pant)}>
+                  <div className="garment-display-item" onClick={this.itemModalHandler.bind(this, pant)}>
                       <GarmentBox 
                       key={pant._id} 
                       name={pant.name} 

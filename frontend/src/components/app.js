@@ -10,6 +10,7 @@ import SignupFormContainer from './session/signup_form_container';
 import ProfileContainer from './profile/profile_container';
 import TweetComposeContainer from './tweets/tweet_compose_container';
 import UserModal from './user/user';
+import ShowItemModal from "./show_wardrobe_item/item_modal";
 import ContactUsModal from './contact_us/contact_us';
 import AddTopContainer from './garments/add_top_container';
 import AddPantContainer from './garments/add_pant_container';
@@ -22,6 +23,7 @@ const App = () => (
     <NavBarContainer />
     <UserModal/>
     <ContactUsModal/>
+    <ShowItemModal/>
     <main className="main" >
       <Switch>
         <AuthRoute exact path="/" component={MainPage} />

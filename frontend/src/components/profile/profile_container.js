@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import { fetchUserPants } from '../../actions/pant_actions';
 import { fetchUserTops } from '../../actions/top_actions';
 import { fetchUserOutfits } from '../../actions/outfit_actions';
+import { openItemModal } from './../../actions/ui_actions';
 
 import Profile from './profile';
 
@@ -18,7 +19,8 @@ const mapDispatchToProps = dispatch => {
   return {
     fetchUserPants: id => dispatch(fetchUserPants(id)),
     fetchUserTops: id => dispatch(fetchUserTops(id)),
-    fetchUserOutfits: id => dispatch(fetchUserOutfits(id))
+    fetchUserOutfits: id => dispatch(fetchUserOutfits(id)),
+    openItemModal: item => dispatch(openItemModal(item))
   };
 };
 
