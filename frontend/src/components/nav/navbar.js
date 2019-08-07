@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom';
 import './navbar.css';
 import pant from './pant_icon.png'
 import shirt from './shirt_icon.png'
-import bluepant from '../garments/blue_pant.png'
-import blacktop from '../garments/black_top.png'
 import blackpant from '../garments/black_pant.png'
+import whitetop from '../garments/white_top.png'
 // import ContactUsModal from './../contact_us/contact_us';
 
 class NavBar extends React.Component {
@@ -32,18 +31,18 @@ class NavBar extends React.Component {
             <div className="navbar">
                 
                 <div className="left-div">
-              <Link to={'/new_pants'} id="Pants"><img alt="pants" src={bluepant} />
+              <Link to={'/new_pants'} id="Pants"><img alt="pants" src={blackpant} />
               <br/>
               Add Pants</Link>
-                <Link to={'/new_tops'} id="Shirts"><img alt="shirt" src={blacktop}/>
+                <Link to={'/new_tops'} id="Shirts"><img alt="shirt" src={whitetop}/>
                 <br />
                 Add Tops</Link>
                 </div>
                 <div className="center-div">
                   <Link to={'/'} id="logo">Outfittr</Link>
               <span id="picker">
-                <img alt="shirt" id="Shirts-img" src={blacktop} />
-                <img alt="pants" id="Pants-img" src={bluepant} />
+                <img alt="shirt" id="Shirts-img" src={whitetop} />
+                <img alt="pants" id="Pants-img" src={blackpant} />
                 </span>
                 <br/>
               <Link to={'/pickr'} id="logo-pickr">
