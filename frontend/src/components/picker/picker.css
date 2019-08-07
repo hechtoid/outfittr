@@ -1,11 +1,26 @@
 .picker-page {
-  background-image: url("https://cdn.wallpapersafari.com/85/69/OdWKh6.jpg");
+  background-image: url("./closet-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
-  height: 1200px;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+  top:0;
+  bottom:0;
+  z-index: -10;
 }
+
+.picker-page-overlay{
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  top:0;
+  bottom:0;
+  height: 100%;
+  width: 100%;
+  z-index: -5;
+}
+
 
 .picker-radios {
   padding-top: 250px;

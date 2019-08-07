@@ -118,7 +118,9 @@ class Picker extends React.Component {
         ele.athleisure)
     }
     return (
+    
       <div className="picker-page">
+        <div className="picker-page-overlay"></div>
         <div className="picker-radios">
             <label>
               Hot?
@@ -222,7 +224,7 @@ class Picker extends React.Component {
           </div>
           
         </div>
-      
+       
     )
   }
 }
