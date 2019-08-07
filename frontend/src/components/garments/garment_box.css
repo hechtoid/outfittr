@@ -28,6 +28,13 @@
   flex-direction: column;
   justify-content: space-evenly;
   overflow: hidden;
+  border: 1px solid black;
+}
+
+.garment-display-item:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.1s;
 }
 
 

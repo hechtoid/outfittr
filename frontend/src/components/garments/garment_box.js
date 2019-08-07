@@ -149,7 +149,7 @@ componentDidMount(){
   render() {
     return (
       <div className="image-box">
-        <div className="wardrobe-item-text"> {this.props.type} called {this.props.name}.</div>
+        <div className="wardrobe-item-text"> {this.props.name}</div>
         <div><img className="garment-img" src={this.state.image} alt={this.props.color}></img>
         </div>
       </div>

@@ -13,7 +13,6 @@ class Profile extends React.Component {
             outfits: []
         }
       document.title = 'outfittr wardrobe'
-
     }
     
     componentWillMount() {
@@ -31,10 +30,15 @@ class Profile extends React.Component {
          });
     }   
     
+    openItemModal() {
+      console.log("DO IT");
+      console.log(this);
+    }
+
     render() {
   
       if (this.state.tops.length === 0 && this.state.pants.length === 0) {
-          return (<div>This user has no Clothes!</div>)
+          return (<div>This user has no Clothes!</div>) // let's put a loading screen/placeholder
         } else {
           return (
             <div className="profile-page">
@@ -49,7 +53,7 @@ class Profile extends React.Component {
                   <h3 className="tops-n-bottoms">Tops</h3>
                     <div className="garment-box-page">
                   {this.state.tops.map(top => (
-                    <div className="garment-display-item">
+                    <div className="garment-display-item" onClick={this.openItemModal.bind(top)}>
                       <GarmentBox 
                       key={top._id} 
                       name={top.name} 
@@ -66,7 +70,7 @@ class Profile extends React.Component {
                   <h3 className="tops-n-bottoms">Pants</h3>
                     <div className="garment-box-page">
                 {this.state.pants.map(pant => (
-                  <div className="garment-display-item">
+                  <div className="garment-display-item" onClick={this.openItemModal.bind(pant)}>
                       <GarmentBox 
                       key={pant._id} 
                       name={pant.name} 
