@@ -4,7 +4,7 @@ import black_pant from './black_pant.png'
 import blue_pant from './blue_pant.png'
 import green_pant from './green_pant.png'
 import orange_pant from './orange_pant.png'
-import indigo_pant from './indigo_pant.png'
+import pink_pant from './pink_pant.png'
 import red_pant from './red_pant.png'
 import violet_pant from './violet_pant.png'
 import white_pant from './white_pant.png'
@@ -13,7 +13,7 @@ import black_top from './black_top.png'
 import blue_top from './blue_top.png'
 import green_top from './green_top.png'
 import orange_top from './orange_top.png'
-import indigo_top from './indigo_top.png'
+import pink_top from './pink_top.png'
 import red_top from './red_top.png'
 import violet_top from './violet_top.png'
 import white_top from './white_top.png'
@@ -62,9 +62,9 @@ switcher(){
           image: `${blue_top}`
         })
         break;
-      case 'indigo_top':
+      case 'pink_top':
         this.setState({
-          image: `${indigo_top}`
+          image: `${pink_top}`
         })
         break;
       case 'violet_top':
@@ -107,9 +107,9 @@ switcher(){
           image: `${blue_pant}`
         })
         break;
-      case 'indigo_pant':
+      case 'pink_pant':
         this.setState({
-          image: `${indigo_pant}`
+          image: `${pink_pant}`
         })
         break;
       case 'violet_pant':

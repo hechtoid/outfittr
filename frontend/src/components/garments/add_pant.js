@@ -97,7 +97,7 @@ class AddPant extends React.Component {
               <option value="yellow">yellow</option>
               <option value="green">green</option>
               <option value="blue">blue</option>
-              <option value="indigo">indigo</option>
+              <option value="pink">pink</option>
               <option value="violet">violet</option>
               <option value="black">black</option>
 	          </select>
