@@ -82,7 +82,8 @@ class Picker extends React.Component {
     });
   }
 
-  render() {
+  render()  {
+    
     let tops = this.props.tops.map(a=> Object.assign({}, a))
     let pants = this.props.pants.map(a=> Object.assign({}, a))
     let topsI = tops.map((top, index) => (
@@ -168,55 +169,60 @@ class Picker extends React.Component {
         </div>
          
       <div className="outfit-generator-container">
-        <div>
-        <label>
-          <h3>Top:</h3>
-          </label>
-          <select className="picker-menu" 
-          // value={this.state.top.name}
-          onChange={this.updateTop()}
-          size={tops.length+1}
-          >
-          <option disabled selected value>Select Shirts </option>
-            {tops.map((top) => (
-              <option value={top.index}>{top.name}</option>
-              ))}
-          </select>
-            <span className="top-item">
-              <ShowBox
-                name={this.state.top.name}
-                color={this.state.top.color}
-                type="top"
-                />
-            </span>
+          <div className="outfit-selector-top-bot">
+                <label>
+                  <h3>Top:</h3>
+                  </label>
+                  <select className="picker-menu" 
+                  // value={this.state.top.name}
+                  onChange={this.updateTop()}
+                  size={tops.length+1}>
+
+                  <option disabled selected value>Select Shirts </option>
+                    {tops.map((top) => (
+                      <option value={top.index}>{top.name}</option>
+                      ))}
+                  </select>
+                              
+                  <label>
+                    <h3>Bottom:</h3>
+                    </label>
+                    <select className="picker-menu"
+                      // value='1'
+                      onChange={this.updatePant()}
+                      size={pants.length + 1} >
+                      <option disabled selected value>Pick Pants</option>
+                      {pants.map((pant) => (
+                        <option value={pant.index}>{pant.name}</option>
+                      ))}
+                    </select>
+                    </div>
+
+          <div className='outfit-selector-outfits'>
+                  <span className="top-item">
+                    <ShowBox
+                      name={this.state.top.name}
+                      color={this.state.top.color}
+                      type="top"
+                    />
+                  </span>
+                  <span className="bottom-item">
+                    <ShowBox
+                      name={this.state.pant.name}
+                      color={this.state.pant.color}
+                      type="pant"
+                    />
+                  </span>
           </div>
-          <div>
-            <label>
-            <h3>Bottom:</h3>
-              <select className="picker-menu"
-                // value='1'
-                onChange={this.updatePant()}
-                size={pants.length + 1}
-              >
-              <option disabled selected value>Pick Pants</option>
-              {pants.map((pant) => (
-                <option value={pant.index}>{pant.name}</option>
-              ))}
-            </select>
-            <span className="bottom-item">
-              <ShowBox
-                name={this.state.pant.name}
-                color={this.state.pant.color}
-                type="pant"
-              />
-            </span>
-          </label>
+          <div className='outfit-selector-attributes'>
+                        <h3>Attributes</h3>
+                    <p>{this.props.tops.formal}</p>
           </div>
-          {/* <div className="show-container"> */}
             
-          {/* </div> */}
+          </div>
+          
         </div>
-      </div>
+      
     )
   }
 }
