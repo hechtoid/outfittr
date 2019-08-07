@@ -149,7 +149,7 @@ componentDidMount(){
   render() {
     return (
       // <div className={this.state.cssClass}>
-        <div className="asshole-div">  <h2>A {this.props.type} called {this.props.name}.</h2>
+        <div className="show-div">  <h2>{this.props.type}: {this.props.name}.</h2>
           <img className="show-img" src={this.state.image} alt={this.props.color}></img>
         </div>
         // </div>
