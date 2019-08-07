@@ -1,5 +1,5 @@
 .picker-page {
-  background-image: url("./closet-2.jpg");
+  background-image: url("./closet-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -8,18 +8,19 @@
   position: relative;
   top:0;
   bottom:0;
-  z-index: -10;
+  
 }
 
-.picker-page-overlay{
+/* .picker-page-overlay{
   position: absolute;
   background-color: rgba(20, 20, 20, 0.8);
   top:0;
   bottom:0;
   height: 100%;
   width: 100%;
-  z-index: -5;
-}
+  pointer-events:none;
+  z-index: 5;
+} */
 
 
 .picker-radios {
