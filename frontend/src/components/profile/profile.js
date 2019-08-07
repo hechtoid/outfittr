@@ -31,10 +31,9 @@ class Profile extends React.Component {
          });
     }   
     
-    itemModalHandler(pant) {
+    itemModalHandler(item) {
       console.log(this);
-      console.log(this.props.openItemModal(pant));
-      // dispatch(openItemModal(this));
+      this.props.openItemModal(item)
     }
 
     render() {
