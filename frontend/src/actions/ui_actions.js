@@ -22,9 +22,10 @@ export const closeUserModal = () => ({
     type: CLOSE_USER_MODAL,
 })
 
-export const openItemModal = (data) => ({
+export const openItemModal = (data, clothingtype) => ({
     type: OPEN_ITEM_MODAL,
-    data
+    data,
+    clothingtype
 })
 
 export const closeItemModal = () => ({

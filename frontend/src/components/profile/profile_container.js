@@ -20,7 +20,7 @@ const mapDispatchToProps = dispatch => {
     fetchUserPants: id => dispatch(fetchUserPants(id)),
     fetchUserTops: id => dispatch(fetchUserTops(id)),
     fetchUserOutfits: id => dispatch(fetchUserOutfits(id)),
-    openItemModal: item => dispatch(openItemModal(item))
+    openItemModal: (item, type) => dispatch(openItemModal(item, type))
   };
 };
 

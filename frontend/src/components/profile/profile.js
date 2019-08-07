@@ -31,9 +31,8 @@ class Profile extends React.Component {
          });
     }   
     
-    itemModalHandler(item) {
-      console.log(this);
-      this.props.openItemModal(item)
+    itemModalHandler(item, type) {
+      this.props.openItemModal(item, type)
     }
 
     render() {
@@ -54,7 +53,7 @@ class Profile extends React.Component {
                   <h3 className="tops-n-bottoms">Tops</h3>
                     <div className="garment-box-page">
                   {this.state.tops.map(top => (
-                    <div className="garment-display-item" onClick={this.itemModalHandler.bind(this, top)}>
+                    <div className="garment-display-item" onClick={this.itemModalHandler.bind(this, top, "top")}>
                       <GarmentBox 
                       key={top._id} 
                       name={top.name} 
@@ -71,7 +70,7 @@ class Profile extends React.Component {
                   <h3 className="tops-n-bottoms">Pants</h3>
                     <div className="garment-box-page">
                 {this.state.pants.map(pant => (
-                  <div className="garment-display-item" onClick={this.itemModalHandler.bind(this, pant)}>
+                  <div className="garment-display-item" onClick={this.itemModalHandler.bind(this, pant, "pant")}>
                       <GarmentBox 
                       key={pant._id} 
                       name={pant.name} 

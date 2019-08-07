@@ -10,7 +10,7 @@ import {
 const preloadedState = {
     userModalOpen: false,
     contactUsModalOpen: false,
-    itemModal: { open: false, data: null},
+    itemModal: { open: false, data: null, clothingtype: null},
 };
 
 const SessionErrorsReducer = (state = preloadedState, action) => {
@@ -25,9 +25,9 @@ const SessionErrorsReducer = (state = preloadedState, action) => {
         case OPEN_USER_MODAL:
             return Object.assign({},state, {userModalOpen: true});
         case CLOSE_ITEM_MODAL:
-            return Object.assign({},state, {itemModal: {open: false, data: null} });
+            return Object.assign({},state, {itemModal: {open: false, data: null, clothingtype: null} });
         case OPEN_ITEM_MODAL:
-            return Object.assign({},state, {itemModal: {open: true, data: action.data}});
+            return Object.assign({},state, {itemModal: {open: true, data: action.data, clothingtype: action.clothingtype}});
         default:
             return state;
     }

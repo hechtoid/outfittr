@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { closeItemModal } from './../../actions/ui_actions';
 import './item_modal.css';
-
+import ShowBox from './../picker/show_box'
 
 const msp = state => ({
     loggedIn: state.session.isAuthenticated,
@@ -30,7 +30,13 @@ function ShowItemModal({ itemModal, closeItemModal }) {
                             </div>
                         </div>
                         <div className="modal-body-logout">
-
+                            {itemModal.data.color}_{itemModal.clothingtype}
+                            {}
+                            <ShowBox 
+                                name={`${itemModal.data.color}_${itemModal.clothingtype}`}
+                                color={itemModal.data.color}
+                                type={itemModal.clothingtype}
+                            />
                         </div>
                     </div>
                 </div>
