@@ -106,13 +106,14 @@ height: 100vh;
 }
 
 .top-item{
-  align-self: center
-
+  align-self: center;
+  margin-left: -50px;
 }
 
 .bottom-item{
   align-self: center;
   margin-left:30px;
+  margin-top: 60px;
 }
 
 .outfit-selector-attributes{
@@ -144,10 +145,10 @@ height: 100vh;
   padding-right: 100px;
 } */
 
-.asshole-div {
+/* .asshole-div {
   margin: 0;
   padding: 0;
-}
+} */
 /* .picker-menu{
   padding: 30px;
   margin-right: 300px;
