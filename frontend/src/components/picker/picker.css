@@ -13,7 +13,7 @@
 
 .picker-page-overlay{
   position: absolute;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(20, 20, 20, 0.8);
   top:0;
   bottom:0;
   height: 100%;
