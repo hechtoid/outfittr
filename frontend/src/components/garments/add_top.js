@@ -1,6 +1,6 @@
 import React from 'react';
 import GarmentBox from './garment_box';
-
+import './add_pant.css';
 class AddTop extends React.Component {
   constructor(props) {
       super(props);
@@ -139,7 +139,7 @@ class AddTop extends React.Component {
                 </label>
               </div>
             </div>
-            <input className="submit-btn" type="submit" value="Submit" />
+            <input className="add-submit-btn" type="submit" value="Submit" />
           </form>
         </div>
         <br />

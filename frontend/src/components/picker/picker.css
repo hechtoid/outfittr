@@ -79,6 +79,9 @@
   font-weight: bold;
   font-family: 'Timmana', sans-serif;
 }
+.outfit-save-btn:hover{
+  cursor: pointer;
+}
 
 /* Pickr main box styling */
 .outfit-generator-container {
