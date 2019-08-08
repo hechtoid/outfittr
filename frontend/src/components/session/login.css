@@ -1,11 +1,7 @@
 .login-form-box {
   display: flex;
-  margin: auto; 
-  /* background: white; */
-  /* height: 525px;
-  width: 600px; */
+  margin: auto;  
   border-radius: 15px;
-  /* margin-top: 10%; */
 }
 
 .login-form {
@@ -19,7 +15,7 @@
   border-radius: 15px;
   height: 30px;
   width: 300px;
-  background-color: #008a2d;
+  background-color: #212527;
   margin-top: 20px;
   color: white;
   font-weight: bold;
@@ -44,8 +40,8 @@
 
 .submit-btn:hover {
   cursor: pointer;
-  background-color:#05da66;
-  color: black;
+  background-color:#272c2e;
+  color: white;
 }
 
 .signup-link {
