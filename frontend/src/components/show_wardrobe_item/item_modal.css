@@ -15,9 +15,11 @@
   transform: translate(-50%, -50%);
 }
 
-.modal-box{
-    width: 380px;
-    height: 400px;
+.item-modal-box{
+    flex-direction: column;
+    flex-grow: 1;
+    width: 600px;
+    padding: 10px;
     border-radius: 30px;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -44,6 +46,8 @@
 
 .modal-body-logout{
     display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     align-content: center;
     justify-content: center;
 }

@@ -18,6 +18,7 @@
 .modal-box{
     width: 380px;
     height: 400px;
+    padding: 10px;
     border-radius: 30px;
     background-color: #ffffff;
     box-sizing: border-box;

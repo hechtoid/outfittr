@@ -73,12 +73,6 @@
   transition: 0.075s;
 }
 
-.garment-img:hover {
-  width: 120%;
-  height: 120%;
-  transition: 0.075s;
-}
-
 .image-box {
   height: 200px;  
 }

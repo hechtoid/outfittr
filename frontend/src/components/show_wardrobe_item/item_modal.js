@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { closeItemModal } from './../../actions/ui_actions';
 import './item_modal.css';
-import ShowBox from './../picker/show_box'
+import ShowItemBox from './show_item'
 
 const msp = state => ({
     loggedIn: state.session.isAuthenticated,
@@ -20,7 +20,7 @@ function ShowItemModal({ itemModal, closeItemModal }) {
         return (
             <div className="modal-background" onClick={closeItemModal}>
                 <div className="modal-child" onClick={e => e.stopPropagation()}>
-                    <div className="modal-box">
+                    <div className="item-modal-box">
                         <div className="modal-title">
                             <div className="modal-title-box">
                                 {itemModal.data.name}
@@ -30,12 +30,11 @@ function ShowItemModal({ itemModal, closeItemModal }) {
                             </div>
                         </div>
                         <div className="modal-body-logout">
-                            {itemModal.data.color}_{itemModal.clothingtype}
-                            {}
-                            <ShowBox 
-                                name={`${itemModal.data.color}_${itemModal.clothingtype}`}
+                            <ShowItemBox 
+                                name={`${itemModal.data.name}`}
                                 color={itemModal.data.color}
                                 type={itemModal.clothingtype}
+                                item={itemModal.data}
                             />
                         </div>
                     </div>
