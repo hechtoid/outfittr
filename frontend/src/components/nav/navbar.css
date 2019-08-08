@@ -95,12 +95,13 @@ body{
     text-decoration: none;
     margin-right: 15px;
     color: #ffffff;
-    
+    font-family: 'Timmana', sans-serif;
 }
 
 #Shirts {
+    font-family: 'Timmana', sans-serif;
     text-decoration: none;
-     color: #ffffff;
+    color: #ffffff;
 }
 
 #Pants img {

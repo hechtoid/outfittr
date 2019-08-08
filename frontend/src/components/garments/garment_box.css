@@ -14,6 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 49vw;
+  justify-content: center;
 }
 
 .garment-display-item {
@@ -22,6 +23,7 @@
   margin: 30px;
   height: 300px;
   max-width: 27%;
+  min-width: 200px;
   background-color: rgba(255, 255, 255, 0.198);
   border-radius: 15px;
   text-align: center;
@@ -43,17 +45,19 @@
     justify-content: center;
     margin-left: 30px;
     font-family: 'Timmana', sans-serif;
-    color: #008a2d;
+    color: white;
     font-size: 40px;
     display: flex;
+    text-shadow: 2px 2px #212527;
 }
 
 .tops-n-bottoms {
   margin-top: 95px;
   text-align: center;
   font-family: 'Timmana', sans-serif;
-  color: #008a2d;
+  color: white;
   font-size: 40px;
+  text-shadow: 2px 2px #212527;
 }
 
 .pants {

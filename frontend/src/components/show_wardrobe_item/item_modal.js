@@ -29,7 +29,7 @@ function ShowItemModal({ itemModal, closeItemModal }) {
                                 <button className="close-modal-button" onClick={closeItemModal}>X</button>
                             </div>
                         </div>
-                        <div className="modal-body-logout">
+                        <div className="item-modal-image">
                             <ShowItemBox 
                                 name={`${itemModal.data.name}`}
                                 color={itemModal.data.color}
