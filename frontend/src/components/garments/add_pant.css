@@ -1,9 +1,14 @@
 .create-page {
-  background-image: url("https://cdn.wallpapersafari.com/85/69/OdWKh6.jpg");
-  /* background-size: cover; */
+  background-image:
+    linear-gradient(black, black),
+    
+    url('background_image.jpg');
+    /* filter: blur(1px); */
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  background-blend-mode: saturation;
   display: flex;
   justify-content: space-between;
 }

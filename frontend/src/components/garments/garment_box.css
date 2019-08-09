@@ -1,10 +1,31 @@
 .profile-page {
-  background-image: url("https://cdn.wallpapersafari.com/85/69/OdWKh6.jpg");
-  /* background-size: cover; */
+  background-image:
+    linear-gradient(black, black),
+    
+    url('background_image.jpg');
+    /* filter: blur(1px); */
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  background-blend-mode: saturation;
 }
+
+/* .background-image {
+  
+  background-image:
+    linear-gradient(black, black),
+    
+    url('background_image.jpg');
+    filter: blur(1px);
+  height: 1200px;
+  width: auto;
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: saturation;
+} */
 
 .flex-profile-page {
   display: flex;
@@ -24,7 +45,8 @@
   height: 300px;
   max-width: 27%;
   min-width: 200px;
-  background-color: rgba(255, 255, 255, 0.198);
+  /* background-color: rgba(255, 255, 255, 0.198); */
+  background-color: #737563;
   border-radius: 15px;
   text-align: center;
   flex-direction: column;
