@@ -15,8 +15,8 @@ import ContactUsModal from './contact_us/contact_us';
 import AddTopContainer from './garments/add_top_container';
 import AddPantContainer from './garments/add_pant_container';
 import PickerContainer from './picker/picker_container'
-import OutfitContainer from './oufits/outfit_container';
 import './app.css';
+import OutfitContainer from './outfits/outfit_container';
 
 const App = () => (
   <div>

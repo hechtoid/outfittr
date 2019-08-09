@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { fetchUserPants } from '../../actions/pant_actions';
 import { fetchUserTops } from '../../actions/top_actions';
 import { fetchUserOutfits } from '../../actions/outfit_actions';
-// import { openOutfitModal } from './../../actions/ui_actions';
+import { openItemModal } from './../../actions/ui_actions';
 
 import Outfits from './outfits';
 
@@ -24,4 +24,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Oufits);
+export default connect(mapStateToProps, mapDispatchToProps)(Outfits);

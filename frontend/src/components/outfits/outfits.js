@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GarmentBox from '../garments/garment_box';
+import OutfitBox from '../garments/outfit_box';
 import './outfits.css';
 
 class Outfits extends React.Component {
@@ -12,11 +12,11 @@ class Outfits extends React.Component {
             pants: [],
             outfits: []
         }
-        document.title = 'outfittr wardrobe'
+        document.title = 'outfittr outfits'
     }
 
     componentWillMount() {
-        console.log(this.props.currentUser.id)
+        console.log(this)
         this.props.fetchUserTops(this.props.currentUser.id);
         this.props.fetchUserPants(this.props.currentUser.id);
         this.props.fetchUserOutfits(this.props.currentUser.id);
@@ -28,6 +28,7 @@ class Outfits extends React.Component {
             pants: newState.pants,
             outfits: newState.outfits
         });
+        console.log(this.state)
     }
 
     itemModalHandler(item, type) {
@@ -36,45 +37,24 @@ class Outfits extends React.Component {
 
     render() {
 
-        if (this.state.tops.length === 0 && this.state.pants.length === 0) {
+        if (this.state.outfits.length === 0) {
             return (<div>This user has no Clothes!</div>) // let's put a loading screen/placeholder
         } else {
             return (
                 <div className="profile-page">
-                    <h2 className="wardrobe">Your Wardrobe</h2>
+                    <h2 className="wardrobe">Your Outfits</h2>
                     <div className="flex-profile-page">
-                        <div className="tops">
-                            <h3 className="tops-n-bottoms">Tops</h3>
-                            <div className="garment-box-page">
-                                {this.state.tops.map(top => (
-                                    <div className="garment-display-item" onClick={this.itemModalHandler.bind(this, top, "top")}>
-                                        <GarmentBox
-                                            key={top._id}
-                                            name={top.name}
-                                            color={top.color}
-                                            type="top"
+                                {this.state.outfits.map(outfit => (
+                                    <div className="outfit-garment-display-item" onClick={this.itemModalHandler.bind(this, outfit, "outift")}>
+                                        <OutfitBox
+                                            key={outfit._id}
+                                            name={outfit.name}
+                                            pants={outfit.pant}
+                                            top = {outfit.top}
+                                            type="outfit"
                                         />
                                     </div>
                                 ))}
-                            </div>
-                        </div>
-                        <div >
-                        </div>
-                        <div className="pants">
-                            <h3 className="tops-n-bottoms">Pants</h3>
-                            <div className="garment-box-page">
-                                {this.state.pants.map(pant => (
-                                    <div className="garment-display-item" onClick={this.itemModalHandler.bind(this, pant, "pant")}>
-                                        <GarmentBox
-                                            key={pant._id}
-                                            name={pant.name}
-                                            color={pant.color}
-                                            type="pant"
-                                        />
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
                     </div>
                 </div>
             );
