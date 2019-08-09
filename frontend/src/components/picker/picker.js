@@ -1,5 +1,6 @@
 import React from 'react';
 import ShowBox from './show_box';
+import { Link } from 'react-router-dom';
 import './picker.css'
 
 class Picker extends React.Component {
@@ -126,6 +127,9 @@ class Picker extends React.Component {
       <div className="picker-page">
         <div className="picker-page-overlay"></div>
         <div className="picker-radios">
+          <div className="link-to-outfits">
+            <Link to="/outfits" id="link-to-outfits">Outfits</Link>
+          </div>
             <label>
               Hot?
                 <input type="checkbox"
