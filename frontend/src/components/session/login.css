@@ -26,7 +26,7 @@
   border-radius: 15px;
   height: 30px;
   width: 300px;
-  background-color: #0893cc;
+  background-color: #2a1f11;
   margin-top: 20px;
   color: white;
   font-weight: bold;
@@ -34,13 +34,13 @@
 
 .demo-user-btn:hover {
   cursor: pointer;
-  background-color:#4ccffd;
+  background-color:#786f65;
   color: black;
 }
 
 .submit-btn:hover {
   cursor: pointer;
-  background-color:#41484c;
+  background-color:#786f65;
   color: white;
 }
 
