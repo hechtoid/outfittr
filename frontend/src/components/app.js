@@ -15,6 +15,7 @@ import ContactUsModal from './contact_us/contact_us';
 import AddTopContainer from './garments/add_top_container';
 import AddPantContainer from './garments/add_pant_container';
 import PickerContainer from './picker/picker_container'
+import OutfitContainer from './oufits/outfit_container';
 import './app.css';
 
 const App = () => (
@@ -33,6 +34,7 @@ const App = () => (
         <ProtectedRoute exact path="/new_tops" component={AddTopContainer} />
         <ProtectedRoute exact path="/new_pants" component={AddPantContainer} />
         <ProtectedRoute exact path="/pickr" component={PickerContainer} />
+        <ProtectedRoute exact path="/outfits" component={OutfitContainer} />
         <ProtectedRoute component={ProfileContainer} />
 
       </Switch>
