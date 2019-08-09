@@ -46,7 +46,7 @@
   max-width: 27%;
   min-width: 200px;
   /* background-color: rgba(255, 255, 255, 0.198); */
-  background-color: #737563;
+  background-color: #64665657;
   border-radius: 15px;
   text-align: center;
   flex-direction: column;
@@ -57,8 +57,9 @@
 
 .garment-display-item:hover {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 1.0;
   transition: 0.1s;
+  background-color: #646656;
 }
 
 
