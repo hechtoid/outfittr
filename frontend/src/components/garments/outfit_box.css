@@ -7,15 +7,13 @@
 
 .outfit-garment-display-item{
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    max-width: 27%;
-  min-width: 200px;
+    flex-shrink: 1;
+  min-width: 210px;
   background-color: rgba(255, 255, 255, 0.198);
   border-radius: 15px;
   text-align: center;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-bewtween;
   overflow: hidden;
   border: 1px solid black;
   margin: 30px;
@@ -42,5 +40,4 @@
 .outfit-image-box div{
     box-sizing: border-box;
     min-width: 23%;
-    max-height: 800px;
 }
