@@ -22,25 +22,9 @@
   z-index: 5;
 } */
 
-#link-to-outfits:hover{
-  cursor: pointer;
-  color: lightgray;
-}
-#link-to-outfits{
-  color:white;
-  text-decoration: none;
-  text-decoration-line: none;
-}
 
-.link-to-outfits{
-  font-weight: bold;
-  font-family: 'Timmana', sans-serif;
-  font-size: 36px;
-  text-decoration-line: none;
-  margin-bottom: 50px;
-}
 .picker-radios {
-  padding-top: 160px;
+  padding-top: 250px;
   text-align: center;
   border: 2px solid black;
   height: 100vh;

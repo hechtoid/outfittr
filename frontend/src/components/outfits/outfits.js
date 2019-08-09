@@ -45,8 +45,7 @@ class Outfits extends React.Component {
                     <h2 className="wardrobe">Your Outfits</h2>
                     <div className="flex-profile-page">
                                 {this.state.outfits.map(outfit => (
-                                    // onClick={this.itemModalHandler.bind(this, outfit, "outift")} add this in div below once modal is fixed, nick signing off for now
-                                    <div className="outfit-garment-display-item" > 
+                                    <div className="outfit-garment-display-item" onClick={this.itemModalHandler.bind(this, outfit, "outift")}>
                                         <OutfitBox
                                             key={outfit._id}
                                             name={outfit.name}
