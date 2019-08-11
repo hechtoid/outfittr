@@ -1,5 +1,8 @@
 .picker-page {
-  background-image: url("./closet-3.jpg");
+  background-image:
+    /* linear-gradient(black, black),
+     */
+    url('../garments/background_image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -8,6 +11,8 @@
   position: relative;
   top:0;
   bottom:0;
+  background-blend-mode: saturation;
+
   
 }
 
@@ -29,7 +34,7 @@
   border: 2px solid black;
   height: 100vh;
   width: 300px;
-  background-color: rgba(255, 255, 255, 0.198);
+  background-color: #64665657;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: fixed;
@@ -72,7 +77,7 @@
   border-radius: 15px;
   height: 30px;
   width: 50%;
-  background-color: #212527;
+  background-color: #3b3c32;
   padding: 7px;
   margin-top: 10px;
   color: white;
@@ -81,6 +86,7 @@
 }
 .outfit-save-btn:hover{
   cursor: pointer;
+  background-color: #262911;
 }
 
 /* Pickr main box styling */
@@ -128,7 +134,7 @@ height: 100vh;
 }
 
 .outfit-selector-attributes h3 {
-  color: #0893cc;
+  color: #282a1a;
   font-family: 'Timmana', sans-serif;
   font-size: 29px;
   letter-spacing: 2px;
@@ -165,7 +171,7 @@ select{
 }  */
 
 h2 {
-  color: white;
+  color: #282a1a;
   font-size: 20px;
   font-family: 'Timmana', sans-serif;
 }

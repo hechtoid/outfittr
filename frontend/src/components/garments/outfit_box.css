@@ -1,0 +1,46 @@
+.flex-profile-page {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: center;
+}
+
+.outfit-garment-display-item{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 27%;
+  min-width: 200px;
+  background-color: rgba(255, 255, 255, 0.198);
+  border-radius: 15px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+  border: 1px solid black;
+  margin: 30px;
+}
+
+.outfit-image-box{
+    display: flex;
+    flex-direction: column;
+    max-width: 210px;
+    max-height: 480px;
+}
+
+.outfit-garment-img{
+  width: 100%;
+  max-height: 200px;
+  max-width: 200px;
+  height: 100%;
+  min-width: 30%;
+  min-height: 30%;
+  margin: 0 auto;
+  transition: 0.075s;
+}
+
+.outfit-image-box div{
+    box-sizing: border-box;
+    min-width: 23%;
+    max-height: 800px;
+}

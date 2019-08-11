@@ -16,6 +16,7 @@ import AddTopContainer from './garments/add_top_container';
 import AddPantContainer from './garments/add_pant_container';
 import PickerContainer from './picker/picker_container'
 import './app.css';
+import OutfitContainer from './outfits/outfit_container';
 
 const App = () => (
   <div>
@@ -33,6 +34,7 @@ const App = () => (
         <ProtectedRoute exact path="/new_tops" component={AddTopContainer} />
         <ProtectedRoute exact path="/new_pants" component={AddPantContainer} />
         <ProtectedRoute exact path="/pickr" component={PickerContainer} />
+        <ProtectedRoute exact path="/outfits" component={OutfitContainer} />
         <ProtectedRoute component={ProfileContainer} />
 
       </Switch>
