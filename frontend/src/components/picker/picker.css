@@ -133,8 +133,9 @@ height: 100vh;
   font-size: 29px;
   letter-spacing: 2px;
 }
-
-
+.outfit-selector-attributes p{
+  color: white;
+}
 
  /* .show-container{
   display: flex;

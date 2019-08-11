@@ -50,10 +50,11 @@ class Picker extends React.Component {
       top: this.props.tops[e.target.value]
     });
   }
+
   updatePant() {
     return e => this.setState({
       pant: this.props.pants[e.target.value]
-    });
+    })
   }
 
   updateHot() {
@@ -83,7 +84,8 @@ class Picker extends React.Component {
   }
 
   render()  {
-    
+    // let topm = this.state.top.hot
+    // debugger
     let tops = this.props.tops.map(a=> Object.assign({}, a))
     let pants = this.props.pants.map(a=> Object.assign({}, a))
     let topsI = tops.map((top, index) => (
@@ -93,6 +95,8 @@ class Picker extends React.Component {
       pant.index = index
     ))
     
+      
+
     if (this.state.formal){
         pants=pants.filter((ele)=>
         ele.formal)
@@ -205,6 +209,7 @@ class Picker extends React.Component {
                     <ShowBox
                       name={this.state.top.name}
                       color={this.state.top.color}
+                      formal={this.state.top.formal}
                       type="top"
                     />
                   </span>
@@ -218,7 +223,16 @@ class Picker extends React.Component {
           </div>
           <div className='outfit-selector-attributes'>
                         <h3>Attributes</h3>
-                    <p>{this.props.tops.formal}</p>
+            <h3>Top</h3>
+                    <p>Hot: {this.state.top.hot +''}</p>
+                    <p>Formal: {this.state.top.formal +''}</p>
+                    <p>Athleisure: {this.state.top.athleisure +''}</p>
+                    <p>Wet: {this.state.top.wet +''}</p>
+            <h3>Pant</h3>
+                    <p>Hot: {this.state.pant.hot +''}</p>
+                    <p>Formal: {this.state.pant.hot +''}</p>
+                    <p>Athleisure: {this.state.pant.hot +''}</p>
+                    <p>Wet: {this.state.pant.hot +''}</p>
           </div>
             
           </div>
