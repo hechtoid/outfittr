@@ -227,13 +227,13 @@ class Picker extends React.Component {
                     <p>Hot: {this.state.top.hot ? this.state.top.hot +'' : 'false'}</p>
                     <p>Formal: {this.state.top.formal ? this.state.top.hot + '' : 'false'}</p>
                     <p>Athleisure: {this.state.top.athleisure ? this.state.top.hot + '' : 'false'}</p>
-                    <p>Wet: {this.state.top.wet ? this.state.top.hot + '' : 'false'}</p>
+                    <p>Rain: {this.state.top.wet ? this.state.top.hot + '' : 'false'}</p>
               
             <h3>Pant</h3>
                     <p>Hot: {this.state.top.hot ? this.state.top.hot + '' : 'false'}</p>
                     <p>Formal: {this.state.top.formal ? this.state.top.hot + '' : 'false'}</p>
                     <p>Athleisure: {this.state.top.athleisure ? this.state.top.hot + '' : 'false'}</p>
-                    <p>Wet: {this.state.top.wet ? this.state.top.hot + '' : 'false'}</p>
+                    <p>Rain: {this.state.top.wet ? this.state.top.hot + '' : 'false'}</p>
           </div>
             
           </div>
