@@ -131,6 +131,8 @@
 .outfit-selector-attributes{
 height: 100vh;
   width: 33%;
+  
+  
 }
 
 .outfit-selector-attributes h3 {
@@ -140,7 +142,11 @@ height: 100vh;
   letter-spacing: 2px;
 }
 .outfit-selector-attributes p{
-  color: white;
+  color: blue;
+ text-align: left;
+   font-family: 'Timmana', sans-serif;
+   font-size: 18px;
+  letter-spacing: 2px;
 }
 
  /* .show-container{

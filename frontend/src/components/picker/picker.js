@@ -224,15 +224,16 @@ class Picker extends React.Component {
           <div className='outfit-selector-attributes'>
                         <h3>Attributes</h3>
             <h3>Top</h3>
-                    <p>Hot: {this.state.top.hot +''}</p>
-                    <p>Formal: {this.state.top.formal +''}</p>
-                    <p>Athleisure: {this.state.top.athleisure +''}</p>
-                    <p>Wet: {this.state.top.wet +''}</p>
+                    <p>Hot: {this.state.top.hot ? this.state.top.hot +'' : 'false'}</p>
+                    <p>Formal: {this.state.top.formal ? this.state.top.hot + '' : 'false'}</p>
+                    <p>Athleisure: {this.state.top.athleisure ? this.state.top.hot + '' : 'false'}</p>
+                    <p>Wet: {this.state.top.wet ? this.state.top.hot + '' : 'false'}</p>
+              
             <h3>Pant</h3>
-                    <p>Hot: {this.state.pant.hot +''}</p>
-                    <p>Formal: {this.state.pant.hot +''}</p>
-                    <p>Athleisure: {this.state.pant.hot +''}</p>
-                    <p>Wet: {this.state.pant.hot +''}</p>
+                    <p>Hot: {this.state.top.hot ? this.state.top.hot + '' : 'false'}</p>
+                    <p>Formal: {this.state.top.formal ? this.state.top.hot + '' : 'false'}</p>
+                    <p>Athleisure: {this.state.top.athleisure ? this.state.top.hot + '' : 'false'}</p>
+                    <p>Wet: {this.state.top.wet ? this.state.top.hot + '' : 'false'}</p>
           </div>
             
           </div>
