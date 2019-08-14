@@ -180,6 +180,17 @@ class Picker extends React.Component {
          
       <div className="outfit-generator-container">
           <div className="outfit-selector-top-bot">
+            <div class="menu">
+              <div class="title" onclick="f()">John Doe <span class="fa fa-bars"></span>
+                <div class="arrow"></div>
+              </div>
+              <div class="dropdown">
+                <p>Inbox <span class="fa fa-inbox"></span></p>
+                <p>Settings <span class="fa fa-gear"></span></p>
+                <p>Sign Out <span class="fa fa-sign-out"></span></p>
+              </div>
+            </div>
+                
                 <label>
                   <h3>Top:</h3>
                   </label>
