@@ -187,7 +187,7 @@ class Picker extends React.Component {
                   // value={this.state.top.name}
                   onChange={this.updateTop()}
                   size={tops.length+1}>
-
+        
                   <option disabled selected value>Select Shirts </option>
                     {tops.map((top) => (
                       <option value={top.index}>{top.name}</option>

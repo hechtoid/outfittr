@@ -115,7 +115,6 @@
 .outfit-selector-top-bot{
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 33%;
   text-align: -webkit-center;
 }
@@ -130,7 +129,6 @@
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  height: 100vh;
   width: 33%;
   margin: 0 auto;
 }
