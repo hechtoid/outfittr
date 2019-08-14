@@ -1,8 +1,17 @@
 .wardrobe{
     padding-top: 25px;
-    padding-bottom: 0px;
+    /* margin-bottom: -50px; */
 }
 .flex-profile-page{
     position: relative;
-    top: -40px;
+    top: -100px;
+}
+.tops {
+  margin-top: -25px;
+}
+.pants {
+  margin-top: -25px;
+}
+.pants > .garment-box-page {
+  border-left: 3px solid white;
 }

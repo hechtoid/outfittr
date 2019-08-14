@@ -41,7 +41,7 @@ class Profile extends React.Component {
         } else {
           return (
             <div className="profile-page">
-              <h2 className="wardrobe">Your Wardrobe</h2>
+              <h2 className="wardrobe">Your Wardrobe:</h2>
               <div className="flex-profile-page">
                 <div className="tops">
                   <h3 className="tops-n-bottoms">Tops</h3>
