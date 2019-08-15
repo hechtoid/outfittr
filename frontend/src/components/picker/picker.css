@@ -133,7 +133,7 @@
   background-color: #646656c4
 }
 
-option {
+ .picker-menu option {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: white;
