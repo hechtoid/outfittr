@@ -142,6 +142,7 @@ class Picker extends React.Component {
           <div className="link-to-outfits">
             <Link to="/outfits" id="link-to-outfits">Outfits</Link>
           </div>
+          
             <label>
               Hot?
                 <input type="checkbox"
