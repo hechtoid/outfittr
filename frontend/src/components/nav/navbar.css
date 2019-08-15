@@ -180,3 +180,19 @@ body{
   visibility: visible;
   margin-top: 7px;
 }
+
+.pickr-text{
+    font-size: 14px;
+    margin: 0;
+}
+
+.tooltip {
+    font-size: 20px;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+.mouse {
+    height: 30px;
+    width: 30px;
+}

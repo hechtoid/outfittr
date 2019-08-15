@@ -1,3 +1,8 @@
+* {
+    outline: none; 
+} 
+
+
 .picker-page {
   background-image:
     /* linear-gradient(black, black),
@@ -114,22 +119,32 @@
 .outfit-selector-top-bot{
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 33%;
   text-align: -webkit-center;
 }
 
  .picker-menu{
-  width: 100px;
+  width: 140px;
   height: 250px;
+  /* background-color: transparent; */
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  background-color: #646656c4
 }
 
+option {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid;
+}
 
 .outfit-selector-outfits{
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  height: 100vh;
   width: 33%;
   margin: 0 auto;
 }
@@ -207,4 +222,38 @@ h2 {
   font-size: 20px;
   font-family: 'Timmana', sans-serif;
   text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3c3c32; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3c3c32ea; 
+}
+
+.top-attributes {
+  margin: 42px auto;
+}
+
+.pant-attributes {
+  margin: 150px auto;
+}
+
+.pickr-title {
+  font-weight: 600;
+  font-size: 20px;
 }

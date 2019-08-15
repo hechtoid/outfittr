@@ -83,6 +83,18 @@ class Picker extends React.Component {
       name: e.currentTarget.value
     });
   }
+  
+  f() {
+  document.getElementsByClassName('dropdown')[0].classList.toggle('down');
+  document.getElementsByClassName('arrow')[0].classList.toggle('gone');
+  if (document.getElementsByClassName('dropdown')[0].classList.contains('down')) {
+    setTimeout(function () {
+      document.getElementsByClassName('dropdown')[0].style.overflow = 'visible'
+    }, 500)
+  } else {
+    document.getElementsByClassName('dropdown')[0].style.overflow = 'hidden'
+  }
+}
 
   render()  {
     // let topm = this.state.top.hot
@@ -180,6 +192,8 @@ class Picker extends React.Component {
          
       <div className="outfit-generator-container">
           <div className="outfit-selector-top-bot">
+
+                
                 <label>
                   <h3>Top:</h3>
                   </label>
@@ -187,8 +201,8 @@ class Picker extends React.Component {
                   // value={this.state.top.name}
                   onChange={this.updateTop()}
                   size={tops.length+1}>
-
-                  <option disabled selected value>Select Shirts </option>
+        
+                  <option className="pickr-title" disabled selected value>Select Shirts </option>
                     {tops.map((top) => (
                       <option value={top.index}>{top.name}</option>
                       ))}
@@ -201,7 +215,7 @@ class Picker extends React.Component {
                       // value='1'
                       onChange={this.updatePant()}
                       size={pants.length + 1} >
-                      <option disabled selected value>Pick Pants</option>
+                      <option className="pickr-title" disabled selected value>Pick Pants</option>
                       {pants.map((pant) => (
                         <option value={pant.index}>{pant.name}</option>
                       ))}
@@ -226,18 +240,18 @@ class Picker extends React.Component {
                   </span>
           </div>
           <div className='outfit-selector-attributes'>
-                        <h3>Attributes</h3>
-            <h3>Top</h3>
+                  <div className="top-attributes"> 
                     <p>Hot: {this.state.top.hot ? this.state.top.hot +'' : 'false'}</p>
                     <p>Formal: {this.state.top.formal ? this.state.top.hot + '' : 'false'}</p>
                     <p>Athleisure: {this.state.top.athleisure ? this.state.top.hot + '' : 'false'}</p>
                     <p>Rain: {this.state.top.wet ? this.state.top.hot + '' : 'false'}</p>
-              
-            <h3>Pant</h3>
+                  </div>
+                  <div className="pant-attributes">
                     <p>Hot: {this.state.pant.hot ? this.state.pant.hot + '' : 'false'}</p>
                     <p>Formal: {this.state.pant.formal ? this.state.pant.hot + '' : 'false'}</p>
                     <p>Athleisure: {this.state.pant.athleisure ? this.state.pant.hot + '' : 'false'}</p>
                     <p>Rain: {this.state.pant.wet ? this.state.pant.hot + '' : 'false'}</p>
+                  </div>
           </div>
             
           </div>
