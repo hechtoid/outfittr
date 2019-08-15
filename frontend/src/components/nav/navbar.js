@@ -37,6 +37,14 @@ class NavBar extends React.Component {
                 <Link to={'/new_tops'} id="Shirts"><img alt="shirt" src={whitetop}/>
                 <br />
                 Add Tops</Link>
+              <Link to={'/pickr'} id="logo-pickr">
+               
+               <div className="tooltip"> Pickr
+               <img className="mouse" src="./mouse_over_icon.jpg" alt=""/>
+               <br/>
+               </div>
+               <p className="pickr-text">Create Outfit</p>
+                </Link>
                 </div>
                 <div className="center-div">
                   <Link to={'/'} id="logo">Outfittr</Link>
@@ -45,11 +53,6 @@ class NavBar extends React.Component {
                 <img alt="pants" id="Pants-img" src={blackpant} />
                 </span>
                 <br/>
-              <Link to={'/pickr'} id="logo-pickr">
-               
-               <div className="tooltip"> Pickr
-               </div>
-                </Link>
                   
 
                 </div>
