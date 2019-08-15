@@ -13,6 +13,7 @@ body{
     justify-content: flex-start;
     padding: 15px 0px 0px 15px;
     /* margin-right: 50px; */
+    font-size: 20px;
     
 }
 .center-div{
@@ -28,8 +29,10 @@ body{
     padding: 15px 0px 10px 0px;
     text-decoration: none;
     color: #ffffff;
+    margin-left: 50px;
 }
-
+.logo{
+}
 
 #logo:hover {
     color: lightgray;
@@ -43,6 +46,8 @@ body{
     text-decoration: none;
     color: #ffffff;
     margin-left: 25px;
+    margin-right: 25px;
+    width: 100px;
     /* top: 15px; */
     /* position: relative; */
 }
@@ -67,6 +72,22 @@ body{
 
 .profile-icon:hover{
     cursor: pointer;
+}
+
+
+#nav-link-to-outfits{
+    justify-content: flex-end;
+    font-family: 'Timmana', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    padding: 15px 0px 10px 0px;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 10px 25px 0px 50px;  
+}
+
+#nav-link-to-outfits:hover{
+    color: lightgray;
 }
 
 .contact-us-box{
@@ -144,7 +165,7 @@ body{
 
 #Shirts-img {
     align-self: center;
-    margin-top: 12px;
+    margin-top: 10px;
     height: 25px;
     width: 20px;
     margin-left: 20px;
@@ -157,8 +178,6 @@ body{
     width: 28px;
     margin-left: 20px;
 }
-
-
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 200px;

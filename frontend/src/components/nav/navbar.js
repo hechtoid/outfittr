@@ -38,25 +38,22 @@ class NavBar extends React.Component {
                 <Link to={'/new_tops'} id="Shirts"><img alt="shirt" src={whitetop}/>
                 <br />
                 Add Tops</Link>
-              <Link to={'/pickr'} id="logo-pickr">
-               
-               <div className="tooltip"> Pickr
-               <img className="mouse" src={mouse} alt=""/>
-               <br/>
-               </div>
-               <p className="pickr-text">Create Outfit</p>
-                </Link>
                 </div>
                 <div className="center-div">
-                  <Link to={'/'} id="logo">Outfittr</Link>
-              <span id="picker">
-                <img alt="shirt" id="Shirts-img" src={whitetop} />
-                <img alt="pants" id="Pants-img" src={blackpant} />
-                </span>
-                <br/>
-                  
+              <Link to={'/pickr'} id="logo-pickr">
 
+                <div className="tooltip"> Pickr
+               {/* <img className="mouse" src={mouse} alt="" /> */}
+                  <br />
                 </div>
+                <p className="pickr-text">Outfit Creator</p>
+              </Link>
+                  <Link to={'/'} id="logo">Outfittr</Link>
+              <h2>
+                <Link to="/outfits" id="nav-link-to-outfits">Saved Outfits</Link>
+              </h2>
+                </div>
+                
                 <div className="right-div">
                   <div className="contact-us-box">
                     <div className="contact-us" >

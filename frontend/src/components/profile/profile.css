@@ -15,3 +15,12 @@
 .pants > .garment-box-page {
   border-left: 3px solid white;
 }
+#link-to-outfits{
+    justify-content: center;
+    font-family: 'Timmana', sans-serif;
+    color: white;
+    font-size: 33px;
+    display: flex;
+    text-shadow: 2px 2px #212527;
+    margin-top: 25px;
+}
