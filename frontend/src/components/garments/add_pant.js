@@ -88,7 +88,7 @@ class AddPant extends React.Component {
                       className="clothing-input"
                       value={this.state.name}
                       onChange={this.updateName()}
-                      placeholder="Name your Clothes"
+                      placeholder="item name"
                       />
             <select className="garment-checkbox" className="color-btn" value={this.state.color} onChange={this.updateColor()}>
               <option value="white">white</option> 
@@ -139,7 +139,7 @@ class AddPant extends React.Component {
                 </label>
               </div>
                 </div>
-                    <input className="add-submit-btn" type="submit" value="Submit" />
+                    <input className="add-submit-btn" type="submit" value="Save to Wardrobe" />
               </form>
             </div>
           <br />
