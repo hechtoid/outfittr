@@ -125,11 +125,13 @@
 }
 
  .picker-menu{
-  width: 100px;
+  width: 140px;
   height: 250px;
-  background-color: transparent;
+  /* background-color: transparent; */
   border-radius: 5px;
   border: none;
+  text-align: center;
+  background-color: #646656c4
 }
 
 option {
@@ -137,6 +139,7 @@ option {
   padding-bottom: 10px;
   background-color: white;
   border-radius: 5px;
+  border: 1px solid;
 }
 
 .outfit-selector-outfits{
@@ -241,4 +244,17 @@ h2 {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #3c3c32ea; 
+}
+
+.top-attributes {
+  margin: 42px auto;
+}
+
+.pant-attributes {
+  margin: 150px auto;
+}
+
+.pickr-title {
+  font-weight: 600;
+  font-size: 20px;
 }
