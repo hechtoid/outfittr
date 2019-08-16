@@ -29,45 +29,45 @@ class NavBar extends React.Component {
   getLinks() {
       if (this.props.loggedIn) {
         return (
-            <div className="navbar">
+          <div className="navbar">
                 
-                <div className="left-div">
+            <div className="left-div">
               <Link to={'/new_pants'} id="Pants"><img alt="pants" src={blackpant} />
               <br/>
               Add Pants</Link>
-                <Link to={'/new_tops'} id="Shirts"><img alt="shirt" src={whitetop}/>
-                <br />
-                Add Tops</Link>
-                </div>
-                <div className="center-div">
-              <Link to={'/pickr'} id="logo-pickr">
-
-                <div className="tooltip"> Pickr
-               {/* <img className="mouse" src={mouse} alt="" /> */}
-                  <br />
-                </div>
-                <p className="pickr-text">Outfit Creator</p>
-              </Link>
-                  <Link to={'/'} id="logo">Outfittr</Link>
-              <h2>
-                <Link to="/outfits" id="nav-link-to-outfits">Saved Outfits</Link>
-              </h2>
-                </div>
-                
-                <div className="right-div">
-                  <div className="contact-us-box">
-                    <div className="contact-us" >
-                      <span onClick={this.openCModal}>
-                        Contact Us!
-                      </span>
-                    </div>
-                  </div>
-                  <div className="profile-icon" onClick={this.openUModal} >
-                  </div>
-                  {/* prof/user show modal goes here */}
-                  {/* contact modal goes here */}
-                </div>
+              <Link to={'/new_tops'} id="Shirts"><img alt="shirt" src={whitetop}/>
+              <br />
+              Add Tops</Link>
             </div>
+            <div className="center-div">
+              <div className="tooltip"> 
+                <Link to={'/pickr'} id="logo-pickr">
+                  Outfit Creator
+                {/* <img className="mouse" src={mouse} alt="" /> */}
+                </Link>
+              </div>
+              <div>{/* <p className="pickr-text"></p> */}
+                <Link to={'/'} id="logo">Outfittr</Link>
+              </div>
+              <div>
+                <Link to="/outfits" id="nav-link-to-outfits">Saved Outfits</Link>
+              </div>
+            </div>
+                
+            <div className="right-div">
+              <div className="contact-us-box">
+                <div className="contact-us" >
+                  <span onClick={this.openCModal}>
+                    Contact Us!
+                  </span>
+                </div>
+              </div>
+              <div className="profile-icon" onClick={this.openUModal} >
+              </div>
+              {/* prof/user show modal goes here */}
+              {/* contact modal goes here */}
+            </div>
+          </div>
         );
       } else {
         return (
