@@ -6,6 +6,7 @@ import shirt from './shirt_icon.png'
 import blackpant from '../garments/black_pant.png'
 import whitetop from '../garments/white_top.png'
 import mouse  from './mouse_over_icon.png'
+import marshall from './marshall.jpg'
 // import ContactUsModal from './../contact_us/contact_us';
 
 class NavBar extends React.Component {
@@ -60,8 +61,8 @@ class NavBar extends React.Component {
                   <span onClick={this.openCModal}>
                     Contact Us!
                   </span>
-                <div className="profile-icon" onClick={this.openUModal} ></div>
                 </div>
+                  <div className="profile-icon" onClick={this.openUModal} ><img alt="" src={marshall}/></div>
               </div>
               {/* prof/user show modal goes here */}
               {/* contact modal goes here */}
