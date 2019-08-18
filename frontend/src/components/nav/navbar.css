@@ -4,7 +4,6 @@ body{
 
 .bar div{
     display: flex;
-    width: 100%;
     flex-direction: row;
     background-color: #3b3c32;
 }
@@ -14,11 +13,12 @@ body{
     padding: 15px 0px 0px 15px;
     /* margin-right: 50px; */
     font-size: 20px;
-    
+    width: 33vw;
 }
 .center-div{
     justify-content: center;
     align-content: center;
+    width: 33vw;
 }
 
 #logo{
@@ -28,6 +28,8 @@ body{
     padding: 15px 0px 10px 0px;
     text-decoration: none;
     color: #ffffff;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 
@@ -55,16 +57,20 @@ body{
 
 .right-div{
     justify-content: flex-end;
+    width: 33vw;
 }
 
 .profile-icon{
-    background-image: url('./profileuser.jpg');
-    background-size: contain;
-    max-width: 55px;
-    max-height: 55px;
+    background-size: cover;
+    width: 55px;
+    height: 55px;
     /* background-position: 0px; */
     border-radius: 10px;
     margin: 15px;
+}
+
+.profile-icon img {
+    border-radius: 10px;
 }
 
 .profile-icon:hover{
