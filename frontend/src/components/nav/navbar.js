@@ -60,9 +60,8 @@ class NavBar extends React.Component {
                   <span onClick={this.openCModal}>
                     Contact Us!
                   </span>
+                <div className="profile-icon" onClick={this.openUModal} ></div>
                 </div>
-              </div>
-              <div className="profile-icon" onClick={this.openUModal} >
               </div>
               {/* prof/user show modal goes here */}
               {/* contact modal goes here */}
