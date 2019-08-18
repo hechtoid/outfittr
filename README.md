@@ -84,31 +84,17 @@ in the nav bar, allowing session destroy functionality as well.
 
 
 
-## Group Members & Work Breakdown
+## Group Members
 
 **Nick Piper**,
 **Sam Hecht**,
 **Marshall Randolph**,
 **Ian Ellison**
 
-### July 13 and 14
-  - User Auth -  **Full Team**
-  - Decide on MVPs and app overview - **Nick**
-  - Proposal - **Full Team**  
-
-### July 15 - Continue and complete the basic work from Sunday - **All**
-  - Push frontend to project **Sam and Marshall**
-  - Front end for landing page **Ian**
-  - Decide which data to save in database, and how to structure it **All will discuss**
-  - Finish wireframes and general overview
-  - Seed database - **Full Team**
-
-### July 16
-
-  - Finish backend for Wardrobe/Outfit Generation **Sam**
-  - Finish Frontend for Wardrobe/Outfit generation page
-
-### July 17
-  - Production Readme **Full Team**
-  - Polish up CSS
 ## Technologies
+
+* NodeJS - JavaScript runtime environment
+* ExpressJS - server and backend routing
+* MongoDB - on the cloud via MongoDB Atlas
+* ReactJS - dynamic DOM and frontend routing
+* Redux - flux compliant frontend data store
