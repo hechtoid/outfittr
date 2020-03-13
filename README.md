@@ -18,38 +18,33 @@ using their Outfittr account and generating their outfits.
 
 * Responsive: Being a Single Page App, Outfittr should be able to deliver generated
 outfits rapidly and effectively by using front-end logic running in the client's
-browser.
+browser. 
 
-Outfittr is currently only serving men's clothing products and further functionality
-for women's clothing selections will be addressed in later updates due to the more 
-custom and less interchangeable nature of women's clothing. 
+## Technologies
 
-## Functionality and Minimum Viable Products
+* NodeJS - JavaScript runtime environment
+* ExpressJS - Server and backend routing
+* MongoDB -  noSQL DB on the MongoDB Atlas Cloud
+* ReactJS - dynamic DOM and frontend routing
+* Redux - flux compliant frontend data store
 
-1. User Auth
-    * functional Sign up and Login forms that switch on the landing page
-2. Seeded Wardrobe
-    * Wardrobe items and categories are seeded and functional in order to generate a random outfit.    
-3. Wardrobe Item CRUD
-    * Full create, show, edit, update, and delete functionality of all wardrobe items.
-4. Outfit generation
-    * Generate an outfit randomly at first
-    * Automagically generate a new outfits based on user restrictions and inputs
-    
-### Backend
+## Technical Challenges
 
-Our Backend utilizes MongoDB on an Express/Node stack. A Schema based database (noSQL) is efficient for our purposes: Loading a user profile, preferences, and a finite 'wardrobe' object.      
-A "POJOs all the way down" philosophy also translates smoothly to our Frontend, the React/Redux cycle, preferring a flattened state. 
+* This group project was an excellent learning opportunity to expand our knowledge of the Git version control sofware. Merging, pulling, and branching are all invaluable tools to control group dynamics. 
+* Creating modular, extensible react components greatly streamlined our build process. Our [Garment Box](frontend/src/components/garments/garment_box.js) template supports every individual item, and can easily accomodate more.
+* Advanced control of React lifecycle methods within nested components was another skill I learned, not just `componentDidMount()` but also `componentWillReceiveProps(newState)` and `componentWillMount()`. A useful trick here is to only set state if the new state differs, this avoids being stuck in an infinitely updating loop.
+* Another issue I faced was JavaScript's inability to compare objects; they have no uniquely identifiable object id. After researching this shortcoming of the programming language, I came up with a solution. I marked the objects, each representing a clothing item or outfit, with an extra property representing its original index number.
 
-##### Frontend: React/Node.js
-
-Our clothing items will be visually represented on a web app and users will be able to change selection option in order to make an appropriate and fashionable outfit for the day.
-
-Technical challenges:
-  - Organizing and displaying clothing items from all of the appropriate categories in our MongoDB
-  - Constructing a display page for outfit generation that is both easy to use and aesthetically pleasing
-  - Fetching items with the appropriate boolean values based on our criteria for selection e.g. (hot/cold, wet/dry, formal/informal)
-  - Uploading clothing images. Images will have to be resized appropriately and we need to ensure we are getting images that will work well with the app
+        let tops = this.props.tops.map(a=> Object.assign({}, a))
+        let pants = this.props.pants.map(a=> Object.assign({}, a))
+        let topsI = tops.map((top, index) => (
+        top.index = index
+        ))
+        let pantsI = pants.map((pant, index) => (
+        pant.index = index
+        ))
+    The array of clothing items is filtered depending on user input, changing the indices within the data structure.       
+    This solution allows me to track my objects and efficiently retrieve them from the props array, as indexing is an O(1) operation.
 
 ## UI/UX 
 
@@ -89,29 +84,6 @@ in the nav bar, allowing session destroy functionality as well.
 **Marshall Randolph**,
 **Ian Ellison**
 
-## Technologies
-
-* NodeJS - JavaScript runtime environment
-* ExpressJS - server and backend routing
-* MongoDB - on the cloud via MongoDB Atlas
-* ReactJS - dynamic DOM and frontend routing
-* Redux - flux compliant frontend data store
 
 
-## Technical Challenges
 
-* This group project was an excellent learning opportunity to expand our knowledge of the Git version control sofware. Merging, pulling, and branching are all invaluable tools to control group dynamics. 
-* Creating modular, extensible react components greatly streamlined our build process. Our [Garment Box](frontend/src/components/garments/garment_box.js) template supports every individual item, and can easily accomodate more.
-* Advanced control of React lifecycle methods within nested components was another skill I learned, not just `componentDidMount()` but also `componentWillReceiveProps(newState)` and `componentWillMount()`. A useful trick here is to only set state if the new state differs, this avoids being stuck in an infinitely updating loop.
-* Another issue I faced was JavaScript's inability to compare objects; they have no uniquely identifiable object id. After researching this shortcoming of the programming language, I came up with a solution. I marked the objects, each representing a clothing item or outfit, with an extra property representing its original index number.
-
-        let tops = this.props.tops.map(a=> Object.assign({}, a))
-        let pants = this.props.pants.map(a=> Object.assign({}, a))
-        let topsI = tops.map((top, index) => (
-        top.index = index
-        ))
-        let pantsI = pants.map((pant, index) => (
-        pant.index = index
-        ))
-    The array of clothing items is filtered depending on user input, changing the indices within the data structure.       
-    This solution allows me to track my objects and efficiently retrieve them from the props array, as indexing is an O(1) operation.
