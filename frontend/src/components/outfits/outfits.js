@@ -16,7 +16,6 @@ class Outfits extends React.Component {
     }
 
     componentWillMount() {
-        console.log(this)
         this.props.fetchUserTops(this.props.currentUser.id);
         this.props.fetchUserPants(this.props.currentUser.id);
         this.props.fetchUserOutfits(this.props.currentUser.id);
@@ -28,7 +27,6 @@ class Outfits extends React.Component {
             pants: newState.pants,
             outfits: newState.outfits
         });
-        console.log(this.state)
     }
 
     itemModalHandler(item, type) {

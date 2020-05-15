@@ -16,7 +16,6 @@ class Profile extends React.Component {
     }
     
     componentWillMount() {
-        console.log(this.props.currentUser.id)
         this.props.fetchUserTops(this.props.currentUser.id);
         this.props.fetchUserPants(this.props.currentUser.id);
       this.props.fetchUserOutfits(this.props.currentUser.id);
