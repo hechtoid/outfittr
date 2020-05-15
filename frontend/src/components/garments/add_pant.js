@@ -89,6 +89,7 @@ class AddPant extends React.Component {
                       value={this.state.name}
                       onChange={this.updateName()}
                       placeholder="item name"
+                      required
                       />
             <select className="garment-checkbox" className="color-btn" value={this.state.color} onChange={this.updateColor()}>
               <option value="white">white</option> 

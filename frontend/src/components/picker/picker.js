@@ -183,6 +183,7 @@ class Picker extends React.Component {
                 value={this.state.name}
                 onChange={this.updateName()}
                 placeholder="outfit name"
+                required
               />
               <br/>
                 <input className="outfit-save-btn" type="submit" value="Save to Wardrobe" />
