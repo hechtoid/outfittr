@@ -6,8 +6,7 @@ const passport = require('passport');
 const Pant = require('../../models/Pant');
 
 router.get('/user/:user_id', (req, res) => {
-//	console.log(req);
-    Pant.find({user: req.params.user_id})
+    Pant.find({user: { $in: [req.params.user_id, "5ebf0b16b5ce5b0017463aa0"] } })
         .sort({ date: -1 })
         .then(pants => res.json(pants))
         .catch(err =>
