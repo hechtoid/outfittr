@@ -25,7 +25,10 @@ class AddPant extends React.Component {
   componentDidMount() {
     this.props.fetchUserPants(this.props.currentUser.id);
   }
-
+  itemModalHandler(item, type) {
+    this.props.openItemModal(item, type)
+  }
+  
   handleSubmit(e) {
     e.preventDefault();
     let pant = {
@@ -154,7 +157,7 @@ class AddPant extends React.Component {
               </div>
             <br />
               {this.props.pants.map(pant => (
-                <div className="garment-item">  
+                <div className="garment-item" onClick={this.itemModalHandler.bind(this, pant, "pant")}>  
                   <GarmentBox
                   key={pant._id}
                   name={pant.name}

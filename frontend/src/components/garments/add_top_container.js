@@ -2,6 +2,8 @@ import { connect } from 'react-redux';
 import { composeTop } from '../../actions/top_actions';
 import { fetchUserTops } from '../../actions/top_actions';
 import AddTop from './add_top';
+import { openItemModal } from './../../actions/ui_actions';
+
 
 const mapStateToProps = (state) => {
   return {
@@ -14,7 +16,9 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = dispatch => {
   return {
     composeTop: data => dispatch(composeTop(data)),
-    fetchUserTops: id => dispatch(fetchUserTops(id))
+    fetchUserTops: id => dispatch(fetchUserTops(id)),
+    openItemModal: (item, type) => dispatch(openItemModal(item, type))
+
   };
 };
 

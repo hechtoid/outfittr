@@ -24,6 +24,10 @@ class AddTop extends React.Component {
   componentDidMount(){
     this.props.fetchUserTops(this.props.currentUser.id);
   }
+  itemModalHandler(item, type) {
+    this.props.openItemModal(item, type)
+  }
+  
 
   handleSubmit(e) {
     e.preventDefault();
@@ -154,7 +158,7 @@ class AddTop extends React.Component {
           </div>
           <br/>
           {this.props.tops.map(top => (
-            <div className="garment-item">
+            <div className="garment-item" onClick={this.itemModalHandler.bind(this, top, "top")}>
               <GarmentBox
                 key={top._id}
                 name={top.name}
