@@ -31,7 +31,7 @@ browser.
 ## Technical Challenges
 
 * This group project was an excellent learning opportunity to expand our knowledge of the Git version control sofware. Merging, pulling, and branching are all invaluable tools to control group dynamics. 
-* Creating modular, extensible react components greatly streamlined our build process. Our [Garment Box](frontend/src/components/garments/garment_box.js) template supports every individual item, and can easily accomodate more.
+* Creating modular, extensible react components greatly streamlined our build process. Our [Garment Box](frontend/src/components/garments/boxes/garment_box.js) template supports every individual item, and can easily accomodate more.
 * Advanced control of React lifecycle methods within nested components was another skill I learned, not just `componentDidMount()` but also `componentWillReceiveProps(newState)` and `componentWillMount()`. A useful trick here is to only set state if the new state differs, this avoids being stuck in an infinitely updating loop.
 * Another issue I faced was JavaScript's inability to compare objects; they have no uniquely identifiable object id. After researching this shortcoming of the programming language, I came up with a solution. I marked the objects, each representing a clothing item or outfit, with an extra property representing its original index number.
 

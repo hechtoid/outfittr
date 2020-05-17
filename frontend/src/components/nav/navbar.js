@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import './navbar.css';
 import pant from './pant_icon.png'
 import shirt from './shirt_icon.png'
-import blackpant from '../garments/black_pant.png'
-import whitetop from '../garments/white_top.png'
+import blackpant from '../garments/boxes/black_pant.png'
+import whitetop from '../garments/boxes/white_top.png'
 import mouse  from './mouse_over_icon.png'
 import marshall from './profileuser.jpg'
 // import ContactUsModal from './../contact_us/contact_us';

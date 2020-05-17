@@ -1,5 +1,5 @@
 import React from 'react';
-import GarmentBox from './garment_box';
+import GarmentBox from './boxes/garment_box';
 import './add_pant.css'
 
 class AddPant extends React.Component {

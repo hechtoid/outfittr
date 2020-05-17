@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GarmentBox from '../garments/garment_box';
+import GarmentBox from '../garments/boxes/garment_box';
 import './profile.css';
 
 class Profile extends React.Component {

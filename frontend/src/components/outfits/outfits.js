@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import OutfitBox from '../garments/outfit_box';
+import OutfitBox from '../garments/boxes/outfit_box';
 import './outfits.css';
 
 class Outfits extends React.Component {
