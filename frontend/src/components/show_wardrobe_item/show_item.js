@@ -151,15 +151,15 @@ class ShowItemBox extends React.Component {
 
     check(bool){
         let returnMsg = ""
-        if(bool === "hot"){
-            this.props.item[bool] ? returnMsg = "Wear this in hot weather" : returnMsg = "This won't keep you warm in cold weather"
-        } else if(bool === "wet"){
-            this.props.item[bool] ? returnMsg = "Wear this in the rain" : returnMsg = "This won't keep you dry"
-        } else if(bool === "formal"){
-            this.props.item[bool] ? returnMsg = "Wear this to a formal event" : returnMsg = "This won't be formal enough"
+        if(bool === "formal"){
+            this.props.item[bool] ? returnMsg = "Formal" : returnMsg = "Casual"
         } else if (bool === "athleisure"){
-            this.props.item[bool] ? returnMsg = "Wear this during excercise" : returnMsg = "You shouldn't go running in this"
-        } 
+            this.props.item[bool] ? returnMsg = "Athleisurewear" : returnMsg = "Not stretchy"
+        } else if(bool === "hot"){
+            this.props.item[bool] ? returnMsg = "Comfortable in hot weather" : returnMsg = "Uncomfortable in hot weather"
+        } else if(bool === "wet"){
+            this.props.item[bool] ? returnMsg = "Waterproof" : returnMsg = "Not Waterproof"
+        }
         return returnMsg;
     }
 
@@ -169,10 +169,10 @@ class ShowItemBox extends React.Component {
                 <img className="show-img" src={this.state.image} alt={this.props.color}></img>
                 <div className="details">
                     <div className="details-display">
-                        <span> Hot? {this.check("hot")}</span>
-                        <span> Wet? {this.check("wet")}</span>
-                        <span> Formal? {this.check("formal")}</span>
-                        <span> Athleisure? {this.check("athleisure")}</span>
+                        <span> {this.check("formal")}</span>
+                        <span> {this.check("athleisure")}</span>
+                        <span> {this.check("hot")}</span>
+                        <span> {this.check("wet")}</span>
                     </div>
                 </div>
             </div>
