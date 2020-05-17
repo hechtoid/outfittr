@@ -108,20 +108,20 @@ class AddTop extends React.Component {
             </select>
             <div className="radios">
               <div className="form-left">
+              <label>
+                  Formal?
+                  <input type="checkbox"
+                    className="garment-checkbox"
+                    onChange={this.updateFormal()}
+                    checked={this.state.formal}
+                  />
+                </label>
                 <label>
                   Hot?
                     <input type="checkbox"
                     className="garment-checkbox"
                     onChange={this.updateHot()}
                     checked={this.state.hot}
-                  />
-                </label>
-                <label>
-                  Formal?
-                  <input type="checkbox"
-                    className="garment-checkbox"
-                    onChange={this.updateFormal()}
-                    checked={this.state.formal}
                   />
                 </label>
               </div>
@@ -135,7 +135,7 @@ class AddTop extends React.Component {
                   />
                 </label>
                 <label>
-                  Rain?
+                  Waterproof?
                   <input type="checkbox"
                     className="garment-checkbox"
                     onChange={this.updateWet()}

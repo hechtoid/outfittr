@@ -140,15 +140,6 @@ class Picker extends React.Component {
           <div className="link-to-outfits">
             <Link to="/outfits" id="link-to-outfits">Outfits</Link>
           </div>
-          
-            <label>
-              Hot?
-                <input type="checkbox"
-                className="picker-checkbox"
-                onChange={this.updateHot()}
-                checked={this.state.hot}
-              />
-            </label>
             <label>
               Formal?
                 <input type="checkbox"
@@ -163,6 +154,14 @@ class Picker extends React.Component {
                 className="picker-checkbox"
                 onChange={this.updateAthleisure()}
                 checked={this.state.athleisure}
+              />
+            </label>
+            <label>
+              Hot?
+                <input type="checkbox"
+                className="picker-checkbox"
+                onChange={this.updateHot()}
+                checked={this.state.hot}
               />
             </label>
             <label>

@@ -107,20 +107,20 @@ class AddPant extends React.Component {
 	          </select>
             <div className="radios">
               <div className="form-left">
+              <label>
+                  Formal?
+                  <input type="checkbox"
+                    className="garment-checkbox"
+                    onChange={this.updateFormal()}
+                    checked={this.state.formal}
+                  />
+                </label>
                 <label>
                   Hot?
                     <input type="checkbox"
                     className="garment-checkbox"
                     onChange={this.updateHot()}
                     checked={this.state.hot}
-                  />
-                </label>
-                <label>
-                  Formal?
-                  <input type="checkbox"
-                    className="garment-checkbox"
-                    onChange={this.updateFormal()}
-                    checked={this.state.formal}
                   />
                 </label>
               </div>
@@ -134,7 +134,7 @@ class AddPant extends React.Component {
                   />
                 </label>
                 <label>
-                  Rain?
+                  Waterproof?
                   <input type="checkbox"
                     className="garment-checkbox"
                     onChange={this.updateWet()}
@@ -142,7 +142,7 @@ class AddPant extends React.Component {
                   />
                 </label>
               </div>
-                </div>
+            </div>
                     <input className="add-submit-btn" type="submit" value="Save to Wardrobe" />
               </form>
             </div>
