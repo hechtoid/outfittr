@@ -97,8 +97,6 @@ class Picker extends React.Component {
 }
 
   render()  {
-    // let topm = this.state.top.hot
-    // debugger
     let tops = this.props.tops.map(a=> Object.assign({}, a))
     let pants = this.props.pants.map(a=> Object.assign({}, a))
     let topsI = tops.map((top, index) => (
