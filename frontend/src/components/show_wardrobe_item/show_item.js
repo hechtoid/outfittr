@@ -152,13 +152,13 @@ class ShowItemBox extends React.Component {
     check(bool){
         let returnMsg = ""
         if(bool === "formal"){
-            this.props.item[bool] ? returnMsg = "Formal" : returnMsg = "Casual"
+            returnMsg = this.props.item[bool] ? "Formal" : "Casual"
         } else if (bool === "athleisure"){
-            this.props.item[bool] ? returnMsg = "Athleisurewear" : returnMsg = "Not stretchy"
+            returnMsg = this.props.item[bool] ? "Athleisurewear" : "Not stretchy"
         } else if(bool === "hot"){
-            this.props.item[bool] ? returnMsg = "Comfortable in hot weather" : returnMsg = "Uncomfortable in hot weather"
+            returnMsg = this.props.item[bool] ? "Comfortable in hot weather" : "Uncomfortable in hot weather"
         } else if(bool === "wet"){
-            this.props.item[bool] ? returnMsg = "Waterproof" : returnMsg = "Not Waterproof"
+            returnMsg = this.props.item[bool] ? "Waterproof" : "Not Waterproof"
         }
         return returnMsg;
     }

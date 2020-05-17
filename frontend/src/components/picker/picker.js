@@ -237,16 +237,16 @@ class Picker extends React.Component {
           </div>
           <div className='outfit-selector-attributes'>
                   <div className="top-attributes"> 
-                    <p>Hot: {this.state.top.hot ? this.state.top.hot +'' : 'false'}</p>
-                    <p>Formal: {this.state.top.formal ? this.state.top.hot + '' : 'false'}</p>
-                    <p>Athleisure: {this.state.top.athleisure ? this.state.top.hot + '' : 'false'}</p>
-                    <p>Rain: {this.state.top.wet ? this.state.top.hot + '' : 'false'}</p>
+                    <p>{this.state.top.formal ? "Formal" : "Casual"}</p>
+                    <p>{this.state.top.athleisure ? "Athleisurewear" : "Not stretchy"}</p>
+                    <p>{this.state.top.hot ? "Comfortable in hot weather" : "Uncomfortable in hot weather"}</p>
+                    <p>{this.state.top.wet ? "Waterproof" : "Not Waterproof"}</p>
                   </div>
                   <div className="pant-attributes">
-                    <p>Hot: {this.state.pant.hot ? this.state.pant.hot + '' : 'false'}</p>
-                    <p>Formal: {this.state.pant.formal ? this.state.pant.hot + '' : 'false'}</p>
-                    <p>Athleisure: {this.state.pant.athleisure ? this.state.pant.hot + '' : 'false'}</p>
-                    <p>Rain: {this.state.pant.wet ? this.state.pant.hot + '' : 'false'}</p>
+                    <p>{this.state.pant.formal ? "Formal" : "Casual"}</p>
+                    <p>{this.state.pant.athleisure ? "Athleisurewear" : "Not stretchy"}</p>
+                    <p>{this.state.pant.hot ? "Comfortable in hot weather" : "Uncomfortable in hot weather"}</p>
+                    <p>{this.state.pant.wet ? "Waterproof" : "Not Waterproof"}</p>
                   </div>
           </div>
           </div>
