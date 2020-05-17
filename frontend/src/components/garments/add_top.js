@@ -149,12 +149,14 @@ class AddTop extends React.Component {
         </div>
         <br />
         <div className="garment-container">
+          <div className="demo-item-container">
           <div className="demo-item">
             <GarmentBox
               name={this.state.name}
               color={this.state.color}
               type="top"
             />
+          </div>
           </div>
           <br/>
           {this.props.tops.map(top => (

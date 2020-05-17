@@ -28,7 +28,7 @@ class AddPant extends React.Component {
   itemModalHandler(item, type) {
     this.props.openItemModal(item, type)
   }
-  
+
   handleSubmit(e) {
     e.preventDefault();
     let pant = {
@@ -148,12 +148,14 @@ class AddPant extends React.Component {
             </div>
           <br />
             <div className="garment-container">
+              <div className="demo-item-container">
               <div className="demo-item">
                 <GarmentBox 
                   name={this.state.name} 
                   color={this.state.color} 
                   type="pant" 
                 />
+              </div>
               </div>
             <br />
               {this.props.pants.map(pant => (

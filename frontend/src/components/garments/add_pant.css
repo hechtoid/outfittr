@@ -63,10 +63,13 @@ label {
   text-align: center;
 }
 
+.demo-item-container {
+  width: 100%;
+}
 .demo-item {
   background-color: #64665657;
 
-  height: 300px;
+  height: 500px;
   width: 50%;
   border-radius: 15px;
   margin: 30px;
