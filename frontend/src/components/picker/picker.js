@@ -135,7 +135,6 @@ class Picker extends React.Component {
     return (
     
       <div className="picker-page">
-        <div className="picker-page-overlay"></div>
         <div className="picker-radios">
           {/* <div className="link-to-outfits">
             <Link to="/outfits" id="link-to-outfits">Outfits</Link>
@@ -191,8 +190,6 @@ class Picker extends React.Component {
          
       <div className="outfit-generator-container">
           <div className="outfit-selector-top-bot">
-
-                
                 <label>
                   <h3>Top:</h3>
                   </label>
@@ -252,9 +249,7 @@ class Picker extends React.Component {
                     <p>Rain: {this.state.pant.wet ? this.state.pant.hot + '' : 'false'}</p>
                   </div>
           </div>
-            
           </div>
-          
         </div>
        
     )

@@ -12,11 +12,12 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  position: relative;
-  top:0;
-  bottom:0;
   background-blend-mode: saturation;
+  /* position: relative;
+  top:0;
+  bottom:0; */
   height: 100%;
+  min-height: 100vh;
 
   
 }
@@ -50,15 +51,16 @@
   margin-bottom: 50px;
 }
 .picker-radios {
-  padding-top: 20px;
+  padding-top: 50px;
   text-align: center;
   border: 2px solid black;
-  /* height: 100vh; */
   width: 300px;
   background-color: #646656c4;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: fixed;
+  /* height: calc(100vh - 91px); */
+  height: 70vh;
 }
 
 .picker-checkbox {
@@ -115,7 +117,6 @@
   margin-left: 350px;
   display: flex;
   flex-direction: row;
-
 }
 
 .outfit-selector-top-bot{
@@ -164,7 +165,7 @@
 }
 
 .outfit-selector-attributes{
-  /* height: 100vh; */
+  height: 100vh;
   width: 33%;
 }
 .outfit-selector-attributes h3:first-child {
@@ -252,7 +253,7 @@ h2 {
 }
 
 .pant-attributes {
-  margin: 150px auto;
+  margin-top: 100px auto;
 }
 
 .pickr-title {
