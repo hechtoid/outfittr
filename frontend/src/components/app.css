@@ -1,4 +1,8 @@
 .main{
     margin-top:91px;
+    height: 100%;
     
+}
+#root{
+    height: 100%;
 }

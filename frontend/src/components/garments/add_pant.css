@@ -44,7 +44,7 @@ label {
   font-weight: bold;
   font-size: 25px;
   letter-spacing: 2px;
-  font-family: 'Timmana', sans-serif;
+  font-family: sans-serif;
 }
 
 .garment-container {
@@ -89,6 +89,7 @@ label {
   display: flex;
   justify-content: space-evenly;
   margin: 25% auto;
+  margin-top: 15px;
 }
 
 .form-left {
@@ -120,7 +121,11 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  /* margin-left: 25% auto; */
+  /* margin-right: 25% auto; */
   margin: 25% auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
   height: 30px;
   width: 200px;
   border-radius: 15px;
@@ -132,11 +137,11 @@ label {
   height: 30px;
   width: 50%;
   background-color: #282a1a;
-  margin-top: 20px;
-  padding: 7px;
+  margin-top: 10px;
+  /* padding: 10px; */
   color: white;
   font-weight: bold;
-  font-family: 'Timmana', sans-serif;
+  font-family:  sans-serif;
 }
 
 .add-submit-btn:hover {

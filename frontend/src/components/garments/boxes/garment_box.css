@@ -65,7 +65,7 @@
 
 .wardrobe {
     justify-content: center;
-    font-family: 'Timmana', sans-serif;
+    font-family: sans-serif;
     color: white;
     font-size: 40px;
     display: flex;
@@ -75,7 +75,7 @@
 .tops-n-bottoms {
   margin-top: 95px;
   text-align: center;
-  font-family: 'Timmana', sans-serif;
+  font-family: sans-serif;
   color: white;
   font-size: 40px;
   text-shadow: 2px 2px #212527;
@@ -97,7 +97,7 @@
 
 .wardrobe-item-text {
   margin: 20px;
-  font-family: 'Timmana', sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: white;

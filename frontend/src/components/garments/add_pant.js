@@ -143,7 +143,7 @@ class AddPant extends React.Component {
                 </label>
               </div>
             </div>
-                    <input className="add-submit-btn" type="submit" value="Save to Wardrobe" />
+                    <input className="add-submit-btn" type="submit" value="Save Item" />
               </form>
             </div>
           <br />

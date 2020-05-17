@@ -137,9 +137,9 @@ class Picker extends React.Component {
       <div className="picker-page">
         <div className="picker-page-overlay"></div>
         <div className="picker-radios">
-          <div className="link-to-outfits">
+          {/* <div className="link-to-outfits">
             <Link to="/outfits" id="link-to-outfits">Outfits</Link>
-          </div>
+          </div> */}
             <label>
               Formal?
                 <input type="checkbox"
@@ -183,7 +183,7 @@ class Picker extends React.Component {
                 required
               />
               <br/>
-                <input className="outfit-save-btn" type="submit" value="Save to Wardrobe" />
+                <input className="outfit-save-btn" type="submit" value="Save Outfit" />
             </div>
           </form>
          </div>

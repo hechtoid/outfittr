@@ -43,7 +43,7 @@
 
 .modal-title-box{
     margin: 20px;
-    font-family: 'Timmana', sans-serif;
+    font-family: sans-serif;
     font-size: 28px;
     
 }
@@ -63,7 +63,7 @@
   margin-top: 10px;
   color: white;
   font-weight: bold;
-  font-family: 'Timmana', sans-serif;
+  font-family: sans-serif;
 }
 .logout-button:hover{
   cursor:pointer;

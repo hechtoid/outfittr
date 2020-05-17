@@ -22,7 +22,7 @@ body{
 }
 
 #logo{
-    font-family: 'Timmana', sans-serif;
+    font-family: sans-serif;
     font-weight: 600;
     font-size: 40px;
     padding: 15px 0px 10px 0px;
@@ -38,7 +38,7 @@ body{
 }
 
 #logo-pickr{
-    font-family: 'Timmana', sans-serif;
+    font-family: sans-serif;
     font-weight: 600;
     font-size: 20px;
     padding: 15px 0px 10px 0px;
@@ -80,14 +80,14 @@ body{
 
 #nav-link-to-outfits{
     /* justify-content: flex-end;
-    font-family: 'Timmana', sans-serif;
+    font-family: sans-serif;
     font-weight: 600;
     font-size: 23px;
     padding: 15px 0px 10px 0px;
     text-decoration: none;
     color: #ffffff;
     margin: 10px 25px 0px 50px;   */
-        font-family: 'Timmana', sans-serif;
+        font-family: sans-serif;
     font-weight: 600;
     font-size: 20px;
     padding: 15px 0px 10px 0px;
@@ -110,7 +110,7 @@ body{
 
 .contact-us{
     justify-content: flex-end;
-    font-family: 'Timmana', sans-serif;
+    font-family: sans-serif;
     font-weight: 600;
     font-size: 28px;
     padding: 15px 0px 10px 0px;
@@ -130,11 +130,11 @@ body{
     text-decoration: none;
     margin-right: 15px;
     color: #ffffff;
-    font-family: 'Timmana', sans-serif;
+    font-family: sans-serif;
 }
 
 #Shirts {
-    font-family: 'Timmana', sans-serif;
+    font-family: sans-serif;
     text-decoration: none;
     color: #ffffff;
 }
@@ -199,7 +199,7 @@ body{
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
-  font-family: 'Timmana', sans-serif;
+  font-family: sans-serif;
   font-weight: 600;
   font-size: 20px;
   /* Position the tooltip text - see examples below! */

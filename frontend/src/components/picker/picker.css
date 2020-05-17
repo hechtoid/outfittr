@@ -16,6 +16,7 @@
   top:0;
   bottom:0;
   background-blend-mode: saturation;
+  height: 100%;
 
   
 }
@@ -43,16 +44,16 @@
 
 .link-to-outfits{
   font-weight: bold;
-  font-family: 'Timmana', sans-serif;
+  font-family: sans-serif;
   font-size: 36px;
   text-decoration-line: none;
   margin-bottom: 50px;
 }
 .picker-radios {
-  padding-top: 160px;
+  padding-top: 20px;
   text-align: center;
   border: 2px solid black;
-  height: 100vh;
+  /* height: 100vh; */
   width: 300px;
   background-color: #646656c4;
   border-top-right-radius: 15px;
@@ -102,7 +103,7 @@
   margin-top: 10px;
   color: white;
   font-weight: bold;
-  font-family: 'Timmana', sans-serif;
+  font-family: sans-serif;
 }
 .outfit-save-btn:hover{
   cursor: pointer;
@@ -114,6 +115,7 @@
   margin-left: 350px;
   display: flex;
   flex-direction: row;
+
 }
 
 .outfit-selector-top-bot{
@@ -162,7 +164,7 @@
 }
 
 .outfit-selector-attributes{
-  height: 100vh;
+  /* height: 100vh; */
   width: 33%;
 }
 .outfit-selector-attributes h3:first-child {
@@ -172,7 +174,7 @@
 
 .outfit-selector-attributes h3 {
   color: #282a1a;
-  font-family: 'Timmana', sans-serif;
+  font-family: sans-serif;
   font-size: 29px;
   letter-spacing: 2px;
   text-align: center;
@@ -186,7 +188,7 @@
     1px 1px 0 black;
   font-size: 22px;
   text-align: center;
-  font-family: 'Timmana', sans-serif;
+  font-family: sans-serif;
   letter-spacing: 2px;
 }
 
@@ -220,7 +222,7 @@ select{
 h2 {
   color: #282a1a;
   font-size: 20px;
-  font-family: 'Timmana', sans-serif;
+  font-family: sans-serif;
   text-align: center;
 }
 
