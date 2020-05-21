@@ -28,7 +28,7 @@ class Outfit extends React.Component {
             </div>
             <br></br>
             <div className="outfit-info">
-                outfit created on { (new Date(this.props.location.state.outfit.date)).toLocaleDateString()}
+                outfit saved on { (new Date(this.props.location.state.outfit.date)).toLocaleDateString()}
             </div>
             <div className="outfit">
                 <div className="garment-display-item" onClick={this.itemModalHandler.bind(this, this.state.top, "top")}>
