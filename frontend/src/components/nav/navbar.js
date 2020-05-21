@@ -55,7 +55,7 @@ class NavBar extends React.Component {
                     Contact Info
                   </span>
                 </div>
-                  <div className="profile-icon" onClick={this.openUModal} ><img alt="" src={profilepic}/></div>
+                  <div className="profile-icon" onClick={this.openUModal} ><img alt="profile pic" src={profilepic}/></div>
               </div>
             </div>
           </div>

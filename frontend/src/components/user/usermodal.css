@@ -21,8 +21,9 @@
 .modal-box{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 380px;
-    height: 400px;
+    height: 420px;
     padding: 10px;
     border-radius: 30px;
     background-color: #ffffff;
@@ -50,9 +51,10 @@
 }
 
 .modal-body-logout{
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 20px; 
 }
 
 .logout-button{
@@ -61,11 +63,11 @@
   width: 50%;
   background-color: #212527;
   padding: 7px;
-  margin-top: 10px;
   color: white;
   font-weight: bold;
   font-family: sans-serif;
   transition: 0.1s;
+
 }
 .logout-button:hover{
   cursor:pointer;
@@ -87,5 +89,15 @@
 
 .member-since{
   font-size: 13px;
-
+}
+.modal-pic{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.modal-pic img{
+  width: 234px;
+  height: 234px;
+  margin-bottom: 25px;
+  margin-top: -25px;
 }

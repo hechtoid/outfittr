@@ -4,6 +4,7 @@ import { closeUserModal } from './../../actions/ui_actions';
 import { logout } from '../../actions/session_actions';
 import './usermodal.css';
 import { dateFromObjectId } from '../../util/mongo_date'
+import profilepic from '../nav/profileuser.jpg'
 
 const msp = state => ({
     loggedIn: state.session.isAuthenticated,
@@ -40,6 +41,9 @@ function UserModal({ handle, id, loggedIn, userModalOpen, closeUserModal, logout
                                 <button className="close-modal-button" onClick={ closeUserModal }>X</button>
                             </div>
                         </div>
+                        <div className="modal-pic">
+                                <img alt="profile pic" src={profilepic}/>
+                            </div>
                         <div className="modal-body-logout">
                             <button className="logout-button" onClick={ logout }>logout</button>
                         </div>
