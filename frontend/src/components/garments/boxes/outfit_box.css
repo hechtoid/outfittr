@@ -1,13 +1,13 @@
 .flex-profile-page {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
+  /* width: 100vw; */
   justify-content: center;
 }
 
 .outfit-garment-display-item{
-    display: flex;
-    flex-shrink: 1;
+  display: flex;
+  flex-shrink: 1;
   min-width: 210px;
   background-color: rgba(255, 255, 255, 0.198);
   border-radius: 15px;
@@ -16,7 +16,7 @@
   justify-content: space-bewtween;
   overflow: hidden;
   border: 1px solid black;
-  margin: 30px;
+  margin: 20px;
 }
 
 .outfit-image-box{

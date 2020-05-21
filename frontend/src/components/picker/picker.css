@@ -183,12 +183,12 @@
   text-align: center;
 }
 .outfit-selector-attributes p{
-  color: #a2a58e;
-  text-shadow:
+  color: #282a1a;
+  /* text-shadow:
 		-1px -1px 0 black,
 		1px -1px 0 black,
 		-1px 1px 0 black,
-    1px 1px 0 black;
+    1px 1px 0 black; */
   font-size: 22px;
   text-align: center;
   font-family: sans-serif;
@@ -252,10 +252,11 @@ h2 {
 
 .top-attributes {
   margin: 42px auto;
+  margin-bottom: 75px;
 }
 
 .pant-attributes {
-  margin-top: 100px auto;
+  margin-top: 50px;
 }
 
 .pickr-title {

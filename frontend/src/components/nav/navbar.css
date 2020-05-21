@@ -143,9 +143,11 @@ body{
     font-family: sans-serif;
     font-weight: 700;
     transition: 0.1s;
+    text-align: center;
 }
 
 #shirts {
+    text-align: center;
     font-weight: 700;
     font-family: sans-serif;
     text-decoration: none;

@@ -4,6 +4,12 @@
 }
 
 .wardrobe{
-    margin-bottom: 100px;
+    /* margin-bottom: 50px; */
     margin-top: 50px;
+}
+.flexer{
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
