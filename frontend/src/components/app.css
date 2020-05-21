@@ -8,7 +8,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    /* position: fixed; */
     
+  background-attachment: fixed;    
 }
 #root{
     height: 100%;

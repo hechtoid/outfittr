@@ -4,7 +4,6 @@
 }
 
 .wardrobe{
-    /* margin-bottom: 50px; */
     margin-top: 50px;
 }
 .flexer{
@@ -12,4 +11,5 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    height: 100%;
 }

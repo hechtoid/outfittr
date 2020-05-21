@@ -1,33 +1,9 @@
 .profile-page {
-   /* background-image: */
-    /* linear-gradient(black, black), */
-    
-    /* url('background_image.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-blend-mode: saturation;
-}
-
-/* .background-image {
-  
-  background-image:
-    linear-gradient(black, black),
-    
-    url('background_image.jpg');
-    filter: blur(1px);
-  height: 1200px;
-  width: auto;
-  
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-blend-mode: saturation;
-} */
-
-.flex-profile-page {
-  display: flex;
 }
 
 .garment-box-page {

@@ -8,8 +8,11 @@
     /* margin-bottom: -50px; */
 }
 .flex-profile-page{
-    position: relative;
-    top: -100px;
+    /* position: relative;
+    top: -100px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .tops {
   margin-top: -25px;
