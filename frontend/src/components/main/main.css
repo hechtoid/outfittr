@@ -1,10 +1,10 @@
 
 
 .bg{
-  background-image:
+  /* background-image: */
     /* linear-gradient(black, black), */
     
-    url('../garments/boxes/background_image.jpg');
+    /* url('../garments/boxes/background_image.jpg'); */
     /* filter: blur(1px); */
     background-size: cover;
     background-repeat: no-repeat;

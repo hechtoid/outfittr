@@ -29,7 +29,10 @@ function UserModal({ handle, loggedIn, userModalOpen, closeUserModal, logout }) 
                     <div className="modal-box">
                         <div className="modal-title">
                             <div className="modal-title-box">
-                                {handle}'s Profile Settings
+                                Account Info
+                                <br></br>
+                                <br></br>
+                                {handle}
                                 {/* want to render username maybe "{name} Settings" */}
                             </div>
                             <div className="close-modal">

@@ -39,7 +39,7 @@ class Outfits extends React.Component {
             return (<div>This user has no Clothes!</div>) // let's put a loading screen/placeholder
         } else {
             return (
-                <div className="profile-page">
+                <div className="outfits-page">
                     <h2 className="wardrobe">Your Outfits</h2>
                     <div className="flex-profile-page">
                                 {this.state.outfits.map(outfit => (

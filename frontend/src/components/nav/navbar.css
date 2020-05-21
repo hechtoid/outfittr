@@ -13,8 +13,9 @@ body{
     padding: 15px 0px 0px 15px;
     /* margin-right: 50px; */
     font-size: 20px;
-    width: 33vw;
+    /* width: 33vw; */
 }
+
 .center-div{
     justify-content: center;
     align-content: center;
@@ -30,11 +31,13 @@ body{
     color: #ffffff;
     padding-left: 35px;
     padding-right: 35px;
+    transition: 0.1s;
 }
 
 
 #logo:hover {
     color: lightgray;
+    transition: 0.1s;
 }
 
 #logo-pickr{
@@ -49,15 +52,17 @@ body{
     width: 100px;
     /* top: 15px; */
     /* position: relative; */
+    transition: 0.1s;
 }
 
 #logo-pickr:hover{
     color: lightgray;
+    transition: 0.1s;
 }
 
 .right-div{
     justify-content: flex-end;
-    width: 33vw;
+    /* width: 20vw; */
 }
 
 .profile-icon{
@@ -97,10 +102,12 @@ body{
     margin-left: 25px;
     margin-right: 25px;
     width: 100px;
+    transition: 0.1s;
 }
 
 #nav-link-to-outfits:hover{
     color: lightgray;
+    transition: 0.1s;
 }
 
 .contact-us-box{
@@ -112,7 +119,7 @@ body{
     justify-content: flex-end;
     font-family: sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 18px;
     padding: 15px 0px 10px 0px;
     text-decoration: none;
     color: #ffffff;
@@ -120,45 +127,54 @@ body{
 }
 
 
+.contact-us span{
+    transition: 0.1s;
+}
 .contact-us span:hover{
-    justify-content: flex-end;
-    box-sizing: content-box;
+    color: lightgrey;
     cursor: pointer;
+    transition: 0.1s;
 }
 
-#Pants {
+#pants {
     text-decoration: none;
     margin-right: 15px;
     color: #ffffff;
     font-family: sans-serif;
+    font-weight: 700;
+    transition: 0.1s;
 }
 
-#Shirts {
+#shirts {
+    font-weight: 700;
     font-family: sans-serif;
     text-decoration: none;
     color: #ffffff;
+    transition: 0.1s;
 }
 
-#Pants img {
+#pants img {
     margin-top: 10px;
     height: 25px;
     width: 25px;
     margin-left: 20px;
 }
 
-#Shirts img {
+#shirts img {
     margin-top: 10px;
     height: 25px;
     width: 25px;
     margin-left: 20px;
 }
 
-#Pants:hover {
+#pants:hover {
     color: lightgrey;
+    transition: 0.1s;
 }
 
-#Shirts:hover {
+#shirts:hover {
     color: lightgrey;
+    transition: 0.1s;
 }
 
 .navbar{
@@ -167,6 +183,9 @@ body{
    top:0;
    height: 91px;
    z-index: 1;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
 }
 
 #picker {

@@ -33,10 +33,10 @@ class NavBar extends React.Component {
           <div className="navbar">
                 
             <div className="left-div">
-              <Link to={'/new_pants'} id="Pants"><img alt="pants" src={blackpant} />
+              <Link to={'/new_pants'} id="pants"><img alt="pants" src={blackpant} />
               <br/>
               Add Pants</Link>
-              <Link to={'/new_tops'} id="Shirts"><img alt="shirt" src={whitetop}/>
+              <Link to={'/new_tops'} id="shirts"><img alt="shirt" src={whitetop}/>
               <br />
               Add Tops</Link>
             </div>
@@ -59,7 +59,7 @@ class NavBar extends React.Component {
               <div className="contact-us-box">
                 <div className="contact-us" >
                   <span onClick={this.openCModal}>
-                    Contact Us!
+                    Contact Info
                   </span>
                 </div>
                   <div className="profile-icon" onClick={this.openUModal} ><img alt="" src={marshall}/></div>
@@ -82,7 +82,7 @@ class NavBar extends React.Component {
               <div className="contact-us-box">
                 <div className="contact-us">
                   <span onClick={this.openCModal}>
-                    Contact Us!
+                    Contact Info
                   </span>
                 </div>
               </div>

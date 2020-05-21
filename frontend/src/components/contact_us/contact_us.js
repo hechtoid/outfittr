@@ -24,7 +24,7 @@ function ContactUsModal({ contactUsModalOpen, closeContactUsModal }) {
                     <div className="modal-box">
                         <div className="modal-title">
                             <div className="modal-title-box">
-                                Contact Us!
+                                Created by:
                             </div>
                             <div className="close-modal">
                                 <button className="close-modal-button" onClick={closeContactUsModal}>X</button>

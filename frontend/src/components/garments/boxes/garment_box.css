@@ -1,8 +1,8 @@
 .profile-page {
-   background-image:
+   /* background-image: */
     /* linear-gradient(black, black), */
     
-    url('background_image.jpg');
+    /* url('background_image.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -52,12 +52,13 @@
   justify-content: space-evenly;
   overflow: hidden;
   border: 1px solid black;
+  transition: 0.1s;
 }
 
 .garment-display-item:hover {
   cursor: pointer;
   opacity: 1.0;
-  transition: 0.1s;
+  transition: 0.2s;
   background-color: #646656;
 }
 
