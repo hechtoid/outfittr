@@ -9,13 +9,13 @@ class Picker extends React.Component {
 
       this.state = {
           name: "",
-          // color: "white",
           hot: false,
           formal: false,
           wet: false,
           athleisure: false,
-          top: {name: 'shirt', color: 'white'},
-          pant: { name: 'bottom', color: 'white'}
+          top: {},
+          pant: {},
+          wat: ''
       }
       document.title = 'pickr @ outfittr'
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -24,7 +24,21 @@ class Picker extends React.Component {
   componentDidMount(){
     this.props.fetchUserTops(this.props.currentUser.id);
     this.props.fetchUserPants(this.props.currentUser.id);
-    this.props.fetchUserOutfits(this.props.currentUser.id);
+  }
+
+  componentWillReceiveProps(nextProps){
+    let top = this.props.tops[0] ? nextProps.tops[0] : {}
+    let pant = nextProps.pants[0] ? nextProps.pants[0] : {}
+    if (!this.state.top.name) {
+      this.setState({
+        top
+      })
+    }
+    if (!this.state.pant.name) {
+      this.setState({
+        pant
+      })
+    }
   }
 
   handleSubmit(e) {
@@ -191,27 +205,27 @@ class Picker extends React.Component {
       <div className="outfit-generator-container">
           <div className="outfit-selector-top-bot">
                 <label>
-                  <h3>Top:</h3>
+                  <h3>Top</h3>
                   </label>
                   <select className="picker-menu" 
                   // value={this.state.top.name}
                   onChange={this.updateTop()}
                   size={tops.length+1}>
         
-                  <option className="pickr-title" disabled selected value>Select Shirts </option>
+                  {/* <option className="pickr-title" disabled selected value>Select Shirts </option> */}
                     {tops.map((top) => (
                       <option value={top.index}>{top.name}</option>
                       ))}
                   </select>
                               
                   <label>
-                    <h3>Bottom:</h3>
+                    <h3>Pant</h3>
                     </label>
                     <select className="picker-menu"
                       // value='1'
                       onChange={this.updatePant()}
                       size={pants.length + 1} >
-                      <option className="pickr-title" disabled selected value>Pick Pants</option>
+                      {/* <option className="pickr-title" disabled selected value>Pick Pants</option> */}
                       {pants.map((pant) => (
                         <option value={pant.index}>{pant.name}</option>
                       ))}

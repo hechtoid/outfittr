@@ -8,8 +8,7 @@ const mapStateToProps = (state) => {
   return {
     currentUser: state.session.user,
     tops: Object.values(state.tops.user),
-    pants: Object.values(state.pants.user),
-    outfits: Object.values(state.outfits.user)
+    pants: Object.values(state.pants.user)
   };
 };
 
@@ -17,7 +16,6 @@ const mapDispatchToProps = dispatch => {
   return {
     fetchUserPants: id => dispatch(fetchUserPants(id)),
     fetchUserTops: id => dispatch(fetchUserTops(id)),
-    fetchUserOutfits: id => dispatch(fetchUserOutfits(id)),
     composeOutfit: data => dispatch(composeOutfit(data))
   };
 };
