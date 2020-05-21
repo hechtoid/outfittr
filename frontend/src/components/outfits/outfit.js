@@ -22,13 +22,7 @@ class Outfit extends React.Component {
         if (!this.state.pant.name)  return <div className="outfit-container">no outfit selected</div>
         else return ( 
             <div className="outfit-container">
-            <div className="outfit-title">
-                {this.state.name} 
-            </div>
-            <br></br>
-            <div className="outfit-info">
-                outfit saved on { (new Date(this.props.location.state.outfit.date)).toLocaleDateString()}
-            </div>
+            
             <div className="outfit">
                 <div className="garment-display-item" onClick={this.itemModalHandler.bind(this, this.state.top, "top")}>
                             <GarmentBox 
@@ -39,11 +33,16 @@ class Outfit extends React.Component {
                             />
                 </div>
                 <div className="outfit-attributes"> 
-                    <h3>Outfit Attributes</h3>
+                    <div className="outfit-title">
+                        {this.state.name} 
+                    </div>                    
                     <p>{this.state.top.formal && this.state.pant.formal ? "Formal" : "Casual"}</p>
                     <p>{this.state.top.athleisure && this.state.pant.athleisure ? "Athleisurewear" : "Not stretchy"}</p>
                     <p>{this.state.top.hot && this.state.pant.hot ? "Comfortable in hot weather" : "Uncomfortable in hot weather"}</p>
                     <p>{this.state.top.wet && this.state.pant.wet ? "Waterproof" : "Not Waterproof"}</p>
+                    <div className="outfit-info">
+                        added { (new Date(this.props.location.state.outfit.date)).toLocaleDateString()}
+                    </div>
                   </div>
                 <div className="garment-display-item" onClick={this.itemModalHandler.bind(this, this.state.pant, "pant")}>
                             <GarmentBox 

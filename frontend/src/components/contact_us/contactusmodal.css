@@ -68,18 +68,22 @@
 
 .github{
     max-width: 50px;
+    transition: 0.1s;
 }
 
 .github:hover{
     opacity: 0.85;
+    transition: 0.2s;
 }
 
 .linkedin{
     max-width: 50px;
+    transition: 0.1s;
 }
 
 .linkedin:hover{
     opacity: 0.85;
+    transition: 0.2s;
 }
 
 .group-member{

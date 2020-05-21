@@ -25,6 +25,9 @@ function ShowItemModal({ itemModal, closeItemModal }) {
                             <div className="modal-title-box">
                                 {itemModal.data.name}
                             </div>
+                            <div className="modal-date-box">
+                               added { (new Date(itemModal.data.date)).toLocaleDateString()}
+                            </div>
                             <div className="close-modal">
                                 <button className="close-modal-button" onClick={closeItemModal}>X</button>
                             </div>

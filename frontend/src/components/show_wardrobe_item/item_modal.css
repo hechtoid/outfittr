@@ -41,7 +41,11 @@
     margin: 20px;
     font-family: sans-serif;
     font-size: 28px;
-    
+}
+.modal-date-box{
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
 }
 
 .item-modal-image{

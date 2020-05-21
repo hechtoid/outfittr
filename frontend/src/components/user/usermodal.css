@@ -69,7 +69,7 @@
 }
 .logout-button:hover{
   cursor:pointer;
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition: 0.1s;
 }
 
