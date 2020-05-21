@@ -184,15 +184,10 @@
 }
 .outfit-selector-attributes p{
   color: #282a1a;
-  /* text-shadow:
-		-1px -1px 0 black,
-		1px -1px 0 black,
-		-1px 1px 0 black,
-    1px 1px 0 black; */
   font-size: 22px;
   text-align: center;
   font-family: sans-serif;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
 }
 
  /* .show-container{

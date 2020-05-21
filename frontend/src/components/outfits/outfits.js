@@ -8,23 +8,17 @@ class Outfits extends React.Component {
         super(props);
 
         this.state = {
-            tops: [],
-            pants: [],
             outfits: []
         }
         document.title = 'outfits @ outfittr'
     }
 
     componentWillMount() {
-        this.props.fetchUserTops(this.props.currentUser.id);
-        this.props.fetchUserPants(this.props.currentUser.id);
         this.props.fetchUserOutfits(this.props.currentUser.id);
     }
 
     componentWillReceiveProps(newState) {
         this.setState({
-            tops: newState.tops,
-            pants: newState.pants,
             outfits: newState.outfits
         });
     }
@@ -44,14 +38,22 @@ class Outfits extends React.Component {
                     <div className="flexer">
                                 {this.state.outfits.map(outfit => (
                                     // onClick={this.itemModalHandler.bind(this, outfit, "outift")} add this in div below once modal is fixed, nick signing off for now
-                                    <div className="outfit-garment-display-item" > 
-                                        <OutfitBox
-                                            key={outfit._id}
-                                            name={outfit.name}
-                                            pants={outfit.pant}
-                                            top = {outfit.top}
-                                            type="outfit"
-                                        />
+                                    <div key={outfit._id} className="outfit-garment-display-item" > 
+                                         <Link 
+                                            to={{
+                                                pathname: `/outfit`,
+                                                state: {
+                                                    outfit
+                                                }
+                                            }}>
+                                            <OutfitBox
+                                                key={outfit._id}
+                                                name={outfit.name}
+                                                pants={outfit.pant}
+                                                top = {outfit.top}
+                                                type="outfit"
+                                            />
+                                        </Link>
                                     </div>
                                 ))}
                     </div>

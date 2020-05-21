@@ -94,7 +94,7 @@ class AddPant extends React.Component {
                       placeholder="item name"
                       required
                       />
-            <select className="garment-checkbox" className="color-btn" value={this.state.color} onChange={this.updateColor()}>
+            <select className="garment-checkbox" className="color-btn" value={this.state.color} onChange={this.updateColor()} >
               <option value="white">white</option> 
               <option value="red">red</option>
               <option value="orange">orange</option>
@@ -159,7 +159,7 @@ class AddPant extends React.Component {
               </div>
             <br />
               {this.props.pants.map(pant => (
-                <div className="garment-item" onClick={this.itemModalHandler.bind(this, pant, "pant")}>  
+                <div className="garment-item" onClick={this.itemModalHandler.bind(this, pant, "pant")} key={pant._id}>  
                   <GarmentBox
                   key={pant._id}
                   name={pant.name}

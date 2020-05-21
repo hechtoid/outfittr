@@ -160,7 +160,7 @@ class AddTop extends React.Component {
           </div>
           <br/>
           {this.props.tops.map(top => (
-            <div className="garment-item" onClick={this.itemModalHandler.bind(this, top, "top")}>
+            <div className="garment-item" onClick={this.itemModalHandler.bind(this, top, "top")} key={top._id}>
               <GarmentBox
                 key={top._id}
                 name={top.name}

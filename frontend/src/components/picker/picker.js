@@ -240,14 +240,14 @@ class Picker extends React.Component {
                     <p>{this.state.top.formal ? "Formal" : "Casual"}</p>
                     <p>{this.state.top.athleisure ? "Athleisurewear" : "Not stretchy"}</p>
                     <p>{this.state.top.hot ? "Comfortable in hot weather" : "Uncomfortable in hot weather"}</p>
-                    <p>{this.state.top.wet ? "Waterproof" : "Not Waterproof"}</p>
+                    <p>{this.state.top.wet ? "Waterproof" : "Not waterproof"}</p>
                   </div>
                   <hr></hr>
                   <div className="pant-attributes">
                     <p>{this.state.pant.formal ? "Formal" : "Casual"}</p>
                     <p>{this.state.pant.athleisure ? "Athleisurewear" : "Not stretchy"}</p>
                     <p>{this.state.pant.hot ? "Comfortable in hot weather" : "Uncomfortable in hot weather"}</p>
-                    <p>{this.state.pant.wet ? "Waterproof" : "Not Waterproof"}</p>
+                    <p>{this.state.pant.wet ? "Waterproof" : "Not waterproof"}</p>
                   </div>
           </div>
           </div>

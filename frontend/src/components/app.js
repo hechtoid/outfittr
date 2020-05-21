@@ -12,6 +12,7 @@ import AddTopContainer from './garments/add_top_container';
 import AddPantContainer from './garments/add_pant_container';
 import PickerContainer from './picker/picker_container'
 import './app.css';
+import OutfitsContainer from './outfits/outfits_container';
 import OutfitContainer from './outfits/outfit_container';
 
 const App = () => (
@@ -29,7 +30,8 @@ const App = () => (
         <ProtectedRoute exact path="/new_tops" component={AddTopContainer} />
         <ProtectedRoute exact path="/new_pants" component={AddPantContainer} />
         <ProtectedRoute exact path="/pickr" component={PickerContainer} />
-        <ProtectedRoute exact path="/outfits" component={OutfitContainer} />   
+        <ProtectedRoute exact path="/outfits" component={OutfitsContainer} />   
+        <ProtectedRoute exact path="/outfit" component={OutfitContainer} />   
       </Switch>
     </main>
   </div>

@@ -2,7 +2,9 @@
     height: 100%;
     min-height: 100%;
 }
-
+a {
+    text-decoration: none;
+}
 .wardrobe{
     margin-top: 50px;
 }
@@ -12,4 +14,56 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     max-height: 80%;
+}
+
+.outfit-container{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding-top: 15px;
+}
+.outfit-title{
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 42px;
+}
+.outfit-info{
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.outfit{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.outfit .garment-display-item{
+    height: 420px;
+    max-width: 30%;
+}
+
+.outfit-attributes {
+
+    display: flex;
+    flex: 1 0 25%; /* explanation below */
+    margin: 30px;
+    height: 300px;
+    max-width: 27%;
+    min-width: 200px;
+    /* background-color: rgba(255, 255, 255, 0.198); */
+    background-color: #64665657;
+    border-radius: 15px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    border: 1px solid black;
+    transition: 0.1s;
+    
+    font-size: 22px;
+    text-align: center;
+    font-family: sans-serif;
+    height: 420px;
+
 }
