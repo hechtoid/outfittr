@@ -1,6 +1,5 @@
 import React from 'react';
 import ShowBox from './show_box';
-import { Link } from 'react-router-dom';
 import './picker.css'
 
 class Picker extends React.Component {
@@ -214,7 +213,7 @@ class Picker extends React.Component {
         
                   {/* <option className="pickr-title" disabled selected value>Select Shirts </option> */}
                     {tops.map((top) => (
-                      <option value={top.index}>{top.name}</option>
+                      <option value={top.index} key={top._id} >{top.name}</option>
                       ))}
                   </select>
                               
@@ -227,7 +226,7 @@ class Picker extends React.Component {
                       size={pants.length + 1} >
                       {/* <option className="pickr-title" disabled selected value>Pick Pants</option> */}
                       {pants.map((pant) => (
-                        <option value={pant.index}>{pant.name}</option>
+                        <option value={pant.index} key={pant._id} >{pant.name}</option>
                       ))}
                     </select>
                     </div>

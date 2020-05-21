@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import GarmentBox from '../garments/boxes/garment_box';
 
 // import './outfit.css';

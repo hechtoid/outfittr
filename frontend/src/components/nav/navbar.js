@@ -1,13 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
-import pant from './pant_icon.png'
-import shirt from './shirt_icon.png'
 import blackpant from '../garments/boxes/black_pant.png'
 import whitetop from '../garments/boxes/white_top.png'
-import mouse  from './mouse_over_icon.png'
-import marshall from './profileuser.jpg'
-// import ContactUsModal from './../contact_us/contact_us';
+import profilepic from './profileuser.jpg'
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -16,8 +12,6 @@ class NavBar extends React.Component {
     this.openUModal = this.openUModal.bind(this);
     this.openCModal = this.openCModal.bind(this);
   }
-
-  // handle logout on modal which is opened through nav bar
 
   openCModal() {
     this.props.openContactModal();
@@ -44,10 +38,9 @@ class NavBar extends React.Component {
               <div className="tooltip"> 
                 <Link to={'/pickr'} id="logo-pickr">
                   Outfit Creator
-                {/* <img className="mouse" src={mouse} alt="" /> */}
                 </Link>
               </div>
-              <div>{/* <p className="pickr-text"></p> */}
+              <div>
                 <Link to={'/'} id="logo">Outfittr</Link>
               </div>
               <div>
@@ -62,10 +55,8 @@ class NavBar extends React.Component {
                     Contact Info
                   </span>
                 </div>
-                  <div className="profile-icon" onClick={this.openUModal} ><img alt="" src={marshall}/></div>
+                  <div className="profile-icon" onClick={this.openUModal} ><img alt="" src={profilepic}/></div>
               </div>
-              {/* prof/user show modal goes here */}
-              {/* contact modal goes here */}
             </div>
           </div>
         );
