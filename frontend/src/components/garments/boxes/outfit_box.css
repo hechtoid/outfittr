@@ -10,13 +10,21 @@
   overflow: hidden;
   border: 1px solid black;
   margin: 20px;
+  transition: 0.1s;
+}
+
+.outfit-garment-display-item:hover{
+  cursor: pointer;
+  opacity: 1.0;
+  transition: 0.2s;
+  background-color: #646656;
 }
 
 .outfit-image-box{
-    display: flex;
-    flex-direction: column;
-    max-width: 210px;
-    max-height: 480px;
+  display: flex;
+  flex-direction: column;
+  max-width: 210px;
+  max-height: 480px;
 }
 
 .outfit-garment-img{
@@ -31,6 +39,6 @@
 }
 
 .outfit-image-box div{
-    box-sizing: border-box;
-    min-width: 23%;
+  box-sizing: border-box;
+  min-width: 23%;
 }
