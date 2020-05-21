@@ -15,7 +15,7 @@ class AddPant extends React.Component {
           athleisure: false,
           newPant: ""
       }
-      document.title = 'new pants! outfittr'
+      document.title = 'new pants @ outfittr'
       this.handleSubmit = this.handleSubmit.bind(this);
   } 
 

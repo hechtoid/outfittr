@@ -12,7 +12,7 @@ class Outfits extends React.Component {
             pants: [],
             outfits: []
         }
-        document.title = 'outfittr outfits'
+        document.title = 'outfits @ outfittr'
     }
 
     componentWillMount() {

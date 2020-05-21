@@ -3,12 +3,13 @@ import { connect } from 'react-redux';
 import { closeUserModal } from './../../actions/ui_actions';
 import { logout } from '../../actions/session_actions';
 import './usermodal.css';
-
+import { dateFromObjectId } from '../../util/mongo_date'
 
 const msp = state => ({
     loggedIn: state.session.isAuthenticated,
     userModalOpen: state.ui.userModalOpen,
-    handle: (state.session.user ? state.session.user.handle : 'guest')
+    handle: (state.session.user ? state.session.user.handle : 'guest'),
+    id: (state.session.user ? state.session.user.id : 'guest'),
 })
 
 const mdp = dispatch => {
@@ -18,7 +19,7 @@ const mdp = dispatch => {
     }
 }
 
-function UserModal({ handle, loggedIn, userModalOpen, closeUserModal, logout }) {
+function UserModal({ handle, id, loggedIn, userModalOpen, closeUserModal, logout }) {
     if (!userModalOpen || !loggedIn) {
         closeUserModal()
         return null;
@@ -29,11 +30,11 @@ function UserModal({ handle, loggedIn, userModalOpen, closeUserModal, logout }) 
                     <div className="modal-box">
                         <div className="modal-title">
                             <div className="modal-title-box">
-                                Account Info
-                                <br></br>
-                                <br></br>
                                 {handle}
-                                {/* want to render username maybe "{name} Settings" */}
+                                <br></br>
+                                <span className="member-since">
+                                    MEMBER SINCE {dateFromObjectId(id).toLocaleDateString()}
+                                </span>
                             </div>
                             <div className="close-modal">
                                 <button className="close-modal-button" onClick={ closeUserModal }>X</button>

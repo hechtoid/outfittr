@@ -33,6 +33,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-weight: 700;
 }
 
 .close-modal{
@@ -42,7 +43,7 @@
 }
 
 .modal-title-box{
-    margin: 20px;
+    /* margin: 20px; */
     font-family: sans-serif;
     font-size: 28px;
     
@@ -79,4 +80,9 @@
 }
 .close-modal-button:hover{
   cursor:pointer;
+}
+
+.member-since{
+  font-size: 13px;
+
 }

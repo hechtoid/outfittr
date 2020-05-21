@@ -12,7 +12,7 @@ class Profile extends React.Component {
             pants: [],
             outfits: []
         }
-      document.title = 'outfittr wardrobe'
+      document.title = 'wardrobe @ outfittr'
     }
     
     componentWillMount() {

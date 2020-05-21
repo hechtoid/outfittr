@@ -14,7 +14,7 @@ class AddTop extends React.Component {
           athleisure: false,
           newTop: ""
       }
-      document.title = 'new shirt! outfittr'
+      document.title = 'new shirt @ outfittr'
       this.handleSubmit = this.handleSubmit.bind(this);
   } 
 

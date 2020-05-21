@@ -29,9 +29,7 @@ const App = () => (
         <ProtectedRoute exact path="/new_tops" component={AddTopContainer} />
         <ProtectedRoute exact path="/new_pants" component={AddPantContainer} />
         <ProtectedRoute exact path="/pickr" component={PickerContainer} />
-        <ProtectedRoute exact path="/outfits" component={OutfitContainer} />
-        <ProtectedRoute component={ProfileContainer} />
-
+        <ProtectedRoute exact path="/outfits" component={OutfitContainer} />   
       </Switch>
     </main>
   </div>
