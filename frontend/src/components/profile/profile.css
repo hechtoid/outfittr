@@ -1,34 +1,25 @@
 .profile-page{
   height: 100%;
-  width: 100VW
+  width: 100%;
 }
 
 .wardrobe{
-    padding-top: 25px;
-    /* margin-bottom: -50px; */
+  padding-top: 25px;
+  /* margin-bottom: -50px; */
 }
 .flex-profile-page{
-    /* position: relative;
-    top: -100px; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  position: relative;
+  top: -100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  
 }
-.tops {
-  margin-top: -25px;
-}
-.pants {
-  margin-top: -25px;
-}
+
 .pants > .garment-box-page {
   border-left: 3px solid white;
 }
-#link-to-outfits{
-    justify-content: center;
-    font-family: sans-serif;
-    color: white;
-    font-size: 33px;
-    display: flex;
-    text-shadow: 2px 2px #212527;
-    margin-top: 25px;
+
+.profile-page *{
 }

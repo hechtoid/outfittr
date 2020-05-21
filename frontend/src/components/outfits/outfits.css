@@ -7,9 +7,9 @@
     margin-top: 50px;
 }
 .flexer{
-    margin: 25px;
+    margin: 25px 25px 0 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 100%;
+    max-height: 80%;
 }
