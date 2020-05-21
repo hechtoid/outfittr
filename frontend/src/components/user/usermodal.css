@@ -65,9 +65,12 @@
   color: white;
   font-weight: bold;
   font-family: sans-serif;
+  transition: 0.1s;
 }
 .logout-button:hover{
   cursor:pointer;
+  transform: scale(1.05);
+  transition: 0.1s;
 }
 
 .close-modal-button{

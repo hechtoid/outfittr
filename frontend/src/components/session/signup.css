@@ -64,13 +64,15 @@ p {
   margin-top: 20px;
   color: white;
   font-weight: bold;
+  transition: 0.2s;
 
 }
 
 .submit-btn:hover {
   cursor: pointer;
   background-color:#786f65;
-  color: black;
+  /* color: black; */
+  transition: 0.3s;
 }
 
 .login-link {

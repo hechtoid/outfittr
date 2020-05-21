@@ -153,9 +153,11 @@ label {
   color: white;
   font-weight: bold;
   font-family:  sans-serif;
+  transition: 0.1s;
 }
 
 .add-submit-btn:hover {
+  transition: 0.2s;
   cursor: pointer;
   background-color:#786f65;
   color: black;
