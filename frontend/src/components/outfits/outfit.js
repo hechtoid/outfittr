@@ -39,7 +39,7 @@ class Outfit extends React.Component {
                     <p>{this.state.top.formal && this.state.pant.formal ? "Formal" : "Casual"}</p>
                     <p>{this.state.top.athleisure && this.state.pant.athleisure ? "Athleisurewear" : "Not stretchy"}</p>
                     <p>{this.state.top.hot && this.state.pant.hot ? "Comfortable in hot weather" : "Uncomfortable in hot weather"}</p>
-                    <p>{this.state.top.wet && this.state.pant.wet ? "Waterproof" : "Not Waterproof"}</p>
+                    <p>{this.state.top.wet && this.state.pant.wet ? "Waterproof" : "Not waterproof"}</p>
                     <div className="outfit-info">
                         added { (new Date(this.props.location.state.outfit.date)).toLocaleDateString()}
                     </div>

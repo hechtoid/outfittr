@@ -158,7 +158,7 @@ class ShowItemBox extends React.Component {
         } else if(bool === "hot"){
             returnMsg = this.props.item[bool] ? "Comfortable in hot weather" : "Uncomfortable in hot weather"
         } else if(bool === "wet"){
-            returnMsg = this.props.item[bool] ? "Waterproof" : "Not Waterproof"
+            returnMsg = this.props.item[bool] ? "Waterproof" : "Not waterproof"
         }
         return returnMsg;
     }
