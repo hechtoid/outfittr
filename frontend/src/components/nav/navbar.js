@@ -71,14 +71,13 @@ class NavBar extends React.Component {
         );
       } else {
         return (
-          <div>
-            <div></div>
+          <div className="logged-out">
+            <div className="left-div">
+            </div>
             <div className="center-div">
               <Link to={'/'} id="logo">Outfittr</Link>
             </div>
             <div className="right-div">
-              {/* only here for testing purposes when not logged in <div className="profile-icon">
-              </div> */}
               <div className="contact-us-box">
                 <div className="contact-us">
                   <span onClick={this.openCModal}>
@@ -86,9 +85,9 @@ class NavBar extends React.Component {
                   </span>
                 </div>
               </div>
-              {/* <Contactus logout={this.props.logout}/> */}
             </div>
           </div>
+          
         );
       }
   }

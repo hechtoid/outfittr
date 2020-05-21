@@ -1,7 +1,8 @@
 .login-form-box {
-  display: flex;
   margin: auto;  
   border-radius: 15px;
+  height: 100%;
+
 }
 
 .login-form {
@@ -68,7 +69,7 @@
   font-family: sans-serif;
   color: #212527;
   font-size: 40px;
-  margin: 0;
+  margin-bottom: 50px;
 }
 
 .signup-text {

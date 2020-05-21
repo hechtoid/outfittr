@@ -249,3 +249,8 @@ body{
     height: 30px;
     width: 30px;
 }
+
+.logged-out{
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -55,7 +55,7 @@ border-radius: 15px;
 width: 350px;
 height: auto;
 margin-left: 100px;
-padding: 50px 25px 0px 25px;
+padding: 0 25px;
 background: #a2a58e
 /* background-color: white; */
 }
@@ -74,5 +74,5 @@ background: #a2a58e
 
 .splash-left-box h1 {
     text-align: center;
-    padding: 40px;      
+    padding: 10px;      
 }

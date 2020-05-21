@@ -12,9 +12,9 @@ class MainPage extends React.Component {
           <span>
             The <strong>Premier</strong> 
             <br/>
-            Outfit Generating Web App
+            Outfit Tracking App
             <br />
-            We Keep You Looking <i>Sharp!!</i>
+            We Keep You Looking <i>Sharp</i>
             <br />
           </span>
         </div>
@@ -22,8 +22,9 @@ class MainPage extends React.Component {
         <br/>
         <div className="splash-left-box">
           <h1> What is Outfittr?</h1>
-            <p>Outfittr is an inventory system wardrobe app.   <br></br>
-              Currently it tracks pants, shirts, and complete outfits. <br></br>
+            <p>Outfittr is a wardrobe inventory system.   <br></br>
+              Currently it tracks pants and shirts <br></br>
+              and complete outfits. <br></br>
               Each item is tagged with several booleans, <br></br>
               which allow for easy filtering and grouping.
             </p>

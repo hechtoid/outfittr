@@ -16,13 +16,13 @@
   background-size: cover;
 }
 
-.logo {
+/* .logo {
   text-align: center;
   font-family: sans-serif;
   color: #212527;
   font-size: 40px;
   margin: 0;
-}
+} */
 
 .signup-form-box {
   display: flex;

@@ -88,8 +88,8 @@ class LoginForm extends React.Component {
   render() {
     return (
       <div className="login-form-box">
+        <h1 className="logo">Outfittr</h1> 
         <form onSubmit={this.handleSubmit}>
-          <h1 className="logo">Outfittr</h1> 
           <div className="login-form">
             <br/>
               <input type="text"
@@ -99,7 +99,7 @@ class LoginForm extends React.Component {
                 onChange={this.update('email')}
                 placeholder="Email"
               />
-            <br/>
+            <br></br>
               <input type="password"
                 id="password-input"
                 className="input-field"
