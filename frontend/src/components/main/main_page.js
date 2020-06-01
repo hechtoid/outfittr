@@ -23,12 +23,12 @@ class MainPage extends React.Component {
         <div className="splash-left-box">
           <h1> What is Outfittr?</h1>
             <p>Outfittr is a wardrobe inventory system.   <br></br>
-              Currently it tracks pants and shirts <br></br>
+              Currently it tracks pants and shirts, <br></br>
               and complete outfits. <br></br>
               Each item is tagged with several booleans, <br></br>
               which allow for easy filtering and grouping.
             </p>
-          <h3> Try our Demo User Login and generate an outfit today!!!</h3>
+          <h3> Login as our Demo User and generate an outfit today!</h3>
         </div>
         <div className="splash-right-box">
           <LoginFormContainer/>
